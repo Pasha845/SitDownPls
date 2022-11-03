@@ -1,0 +1,64 @@
+@import '_variables.scss';
+
+.useful {
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__slider-wrapper {
+    position: relative;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: calc(656 / 1280 * 100% - 32px);
+    border-radius: 10px;
+    height: auto;
+    background-color: $grey_light;
+  }
+
+  &__cube {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    min-height: 250px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 32.7px;
+    color: $black;
+  }
+
+  &__link {
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .useful {
+    &__text {
+      font-size: 16px;
+      line-height: 21.8px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .useful {
+    &__slide {
+      width: 100%;
+    }
+  }
+}

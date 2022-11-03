@@ -1,0 +1,151 @@
+@import '_variables.scss';
+
+.cooperation {
+  max-width: 842px;
+  padding-bottom: 70px;
+
+  &__margin {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+
+  &__div:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 400;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 29px;
+    color: $grey_shade;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__image-div {
+    margin-left: 37px;
+  }
+
+  &__style-image {
+    max-width: 587px;
+    position: relative;
+    line-height: 24px;
+  }
+
+  &__style-image:before {
+    display: inline-block;	
+    position: absolute;
+    top: 0;
+    left: -37px;
+    text-align: right;
+  }
+
+  &__image-one:before {
+    content: url(../images/network.svg);
+  }
+
+  &__image-two:before {
+    content: url(../images/briefcase.svg);
+  }
+
+  &__image-three:before {
+    content: url(../images/git-pull-request.svg);
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 15.5px;
+    line-height: 22px;
+    color: $secondary;
+  }
+
+  &__num-div {
+    margin-left: 26px;
+    counter-reset: num;
+  }
+
+  &__number {
+    position: relative;
+  }
+
+  &__number:before {
+    content: counter(num) '.'; 
+    counter-increment: num;
+    display: inline-block;	
+    position: absolute;
+    top: 0;
+    left: -26px;  
+    color: $secondary;
+    text-align: right;
+  }
+
+  &__subtext {
+    margin: 0;
+    margin-left: 32px;
+    margin-top: 22px;
+    max-width: 515px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cooperation {
+    max-width: 624px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cooperation {
+    max-width: 296px;
+
+    &__title {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__style-image {
+      line-height: 21px;
+    }
+
+    &__mobile-title {
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    &__number:before {
+      top: 1px;
+      font-size: 16px;
+      line-height: 29px;
+    }
+
+    &__div picture {
+      margin-top: 9px;
+      width: 36px;
+    }
+
+    &__subtext {
+      margin: 0;
+      margin-left: 16px;
+      max-width: 190px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

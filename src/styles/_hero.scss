@@ -1,0 +1,169 @@
+@import '_variables.scss';
+
+.hero {
+  &__swiper {
+    position: relative;
+  }
+
+  &__style-foto {
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__foto-1 {
+    background-image: url("../images/hero__default-foto-1.jpg");
+  }
+
+  &__foto-2 {
+    background-image: url("../images/hero__default-foto-2.jpg");
+  }
+
+  &__foto-3 {
+    background-image: url("../images/hero__default-foto-3.jpg");
+  }
+
+  &__container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  &__title {
+    max-width: 560px;
+    margin: 0;
+    margin-bottom: 49px;
+    font-size: 48px;
+    line-height: 65.4px;
+    font-weight: 700;
+    color: $grey;
+  }
+
+  &__title-color {
+    color: $white;
+  }
+
+  &__mobile-btn {
+    display: none;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 362px;
+  width: 85px;
+  height: 15px;
+  outline: none;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: $black;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    &__foto-1 {
+      background-image: url("../images/hero__mini-foto-1.jpg");
+    }
+  
+    &__foto-2 {
+      background-image: url("../images/hero__mini-foto-2.jpg");
+    }
+  
+    &__foto-3 {
+      background-image: url("../images/hero__mini-foto-3.jpg");
+    }
+
+    &__container {
+      max-width: 952px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &__foto-1 {
+      background-image: url("../images/hero__nano-foto-1.jpg");
+    }
+  
+    &__foto-2 {
+      background-image: url("../images/hero__nano-foto-2.jpg");
+    }
+  
+    &__foto-3 {
+      background-image: url("../images/hero__nano-foto-3.jpg");
+    }
+
+    &__container {
+      max-width: 624px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    &__style-foto {
+      padding: 30px 0;
+    }
+
+    &__foto-1 {
+      background-image: url("../images/hero__mobile-foto-1.jpg");
+    }
+  
+    &__foto-2 {
+      background-image: url("../images/hero__mobile-foto-2.jpg");
+    }
+  
+    &__foto-3 {
+      background-image: url("../images/hero__mobile-foto-3.jpg");
+    }
+
+    &__container {
+      max-width: 296px;
+      padding: 0;
+    }
+
+    &__title {
+      width: 204px;
+      margin-left: 17px;
+      margin-bottom: 95px;
+      font-size: 20px;
+      line-height: 27.24px;
+    }
+
+    &__btn {
+      display: none;
+    }
+
+    &__mobile-btn {
+      display: block;
+      margin-top: 5px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  .swiper-pagination {
+    top: 185px;
+    width: 26px;
+    height: 6px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+  }
+}

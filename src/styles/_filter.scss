@@ -1,0 +1,202 @@
+@import '_variables.scss';
+
+.filter {
+  grid-column: span 3;
+  
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: normal;
+  }
+
+  &__category-title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-weight: 600;
+    color: $grey;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 77px;
+  }
+
+  &__category:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  &__checkbox-wrap {
+    font-size: 16px;
+    line-height: 20.8px;
+    color: $grey;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  &__visual-check {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  &__visual-check::before {
+    width: 19px;
+    height: 19px;
+  }
+  
+  &__checkbox:checked ~ &__checkbox-content &__visual-check::before {
+    background: url("../images/checkbox-mark-filter.svg") no-repeat center;
+  }
+
+  &__label {
+    display: flex;
+    margin-right: 69px;
+  }
+
+  &__value {
+    margin-right: 9px;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: $grey_shade;
+  }
+
+  &__input {
+    width: 86px;
+    padding-left: 12px;
+    border: 1px solid $grey;
+    border-radius: 2px;
+    color: $grey_shade;
+  }
+
+  &__price-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__field {
+    display: flex;
+    align-items: center;
+    color: $grey_shade;
+  }
+
+  &__field input {
+    width: 86px;
+    height: 30px;
+    outline: none;
+    font-size: 16px;
+    margin-left: 10px;
+    padding-left: 12px;
+    border-radius: 2px;
+    border: 1px solid $grey;
+    color: $grey_shade;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &__slider {
+    height: 3px;
+    position: relative;
+    background: $md_grey;
+    border-radius: 5px;
+  }
+
+  &__progress {
+    height: 100%;
+    left: 5%;
+    right: 33%;
+    position: absolute;
+    border-radius: 5px;
+    background: $primary;
+  }
+
+  &__range-input {
+    position: relative;
+  }
+
+  &__range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;
+    background: url("../images/triangle.svg") no-repeat center;
+    pointer-events: auto;
+    -webkit-appearance: none;
+  }
+
+  &__range-min::-webkit-slider-thumb {
+    margin-left: 6px;
+  }
+
+  &__range-max::-webkit-slider-thumb {
+    margin-left: -2px;
+  }
+
+  &__banner {
+    border-radius: 10px;
+    background-color: $black;
+  }
+
+  &__banner picture {
+    width: 296px;
+  }
+
+  &__cube {
+    padding: 30px;
+  }
+
+  &__banner-title {
+    margin: 0;
+    font-family: 'Playfair Display';
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 900;
+    color: $gold;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 12px;
+    max-width: 200px;
+    font-size: 16px;
+    line-height: 22px;
+    color: $grey
+  }
+
+  &__link {
+    margin: 0;
+  }
+
+  &__price-title {
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .filter {
+    display: none;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}

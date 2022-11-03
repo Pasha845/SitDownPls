@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Главная</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1 class="visually-hidden">SitDownPls</h1>
+  <header class="header">
+    <div class="header__logo-mobile">
+      <div class="header__logo-margin container flex">
+        <svg class="header__logo" width="187" height="27">
+          <use xlink:href="images/sprite.svg#logo"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="header__padding">
+      <div class="header__container container flex">
+        <div class="header__div flex">
+          <div class="header__filter" id="filter">
+            <h3 class="header__filter-subtitle">Ваш регион:</h3>
+            <select class="js-gallery-choices">
+              <option value="Moscow">Москва</option>
+              <option value="Kazan">Казань</option>
+              <option value="Ufa">Уфа</option>
+              <option value="Permian">Пермь</option>
+            </select>
+          </div>
+          <a class="header__tel" href="tel:+74958854547" id="tel">
+            <span class="container-focus-link">
+              <svg class="header__tel-icon" width="16.5" height="16.5">
+                <use xlink:href="images/sprite.svg#phone"></use>
+              </svg>
+              +7 (495) 885-45-47
+            </span>
+          </a>
+        </div>
+        <div class="w">
+          <nav class="header__subcube flex">
+            <ul class="header__menu list-reset flex" id="menu">
+              <li class="header__link-margin">
+                <a class="container-sublink" href="#" aria-label="О компании"><span class="container-focus-link">О компании</span></a>
+              </li>
+              <li class="header__link-margin">
+                <a class="container-sublink" href="#" aria-label="Гарантия и возврат"><span class="container-focus-link">Гарантия и возврат</span></a>
+              </li>
+              <li class="header__link-margin">
+                <a class="container-sublink" href="#" aria-label="Корпоративным клиентам"><span class="container-focus-link">Корпоративным клиентам</span></a>
+              </li>
+              <li class="header__link-margin">
+                <a class="container-sublink" href="#" aria-label="Дизайн-решение"><span class="container-focus-link">Дизайн-решение</span></a>
+              </li>
+            </ul>
+            <div class="link-media-1">
+              <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+                <span class="container-focus-link">
+                  <svg width="26" height="28">
+                    <use xlink:href="images/sprite.svg#cabinet"></use>
+                  </svg>
+                </span>
+              </a>
+              <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+                <span class="container-focus-link">
+                  <span class="header__count">0</span>
+                  <svg class="header__basket" width="30" height="28">
+                    <use xlink:href="images/sprite.svg#basket"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header__media-border">
+      <div class="header__holder container flex">
+        <svg class="header__burger js-burger" type="button" aria-label="Бургер меню">
+          <use xlink:href="images/sprite.svg#burger"></use>
+        </svg>
+        <svg class="header__logo logo-media" width="187" height="27">
+          <use xlink:href="images/sprite.svg#logo"></use>
+        </svg>
+        <div class="link-media-3">
+          <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+            <span class="container-focus-link">
+              <svg width="26" height="28">
+                <use xlink:href="images/sprite.svg#cabinet"></use>
+              </svg>
+            </span>
+          </a>
+          <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+            <span class="container-focus-link">
+              <span class="header__count">0</span>
+              <svg class="header__basket" width="30" height="28">
+                <use xlink:href="images/sprite.svg#basket"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <nav class="header__cube flex js-menu">
+          <div>
+            <svg class="header__menu-exit js-exit" type="button" aria-label="Закрыть меню">
+              <use xlink:href="images/sprite.svg#menu-exit"></use>
+            </svg>
+            <ul class="header__submenu flex list-reset js-menu" id="header__cube">
+              <li class="header__main-link-margin">
+                <a class="container-link js-menu-link" href="catalog.html" aria-label="Каталог"><span class="container-focus-link">Каталог</span></a>
+              </li>
+              <li class="header__main-link-margin">
+                <a class="container-link js-menu-link" href="#" aria-label="Магазины"><span class="container-focus-link">Магазины</span></a>
+              </li>
+              <li class="header__main-link-margin">
+                <a class="container-link js-menu-link" href="#" aria-label="Шоу-рум"><span class="container-focus-link">Шоу-рум</span></a>
+              </li>
+              <li class="header__main-link-margin">
+                <a class="container-link js-menu-link" href="#" aria-label="Доставка и оплата"><span class="container-focus-link">Доставка и оплата</span></a>
+              </li>
+              <li class="header__main-link-margin">
+                <a class="container-link js-menu-link" href="#" aria-label="Дисконт"><span class="container-focus-link">Дисконт</span></a>
+              </li>
+              <li class="header__main-link-margin">
+                <a class="container-link js-menu-link" href="#" aria-label="Контакты"><span class="container-focus-link">Контакты</span></a>
+              </li>
+            </ul>
+          </div>
+          <svg class="header__menu-photo" width="161" height="112">
+            <use xlink:href="images/sprite.svg#menu-photo"></use>
+          </svg>
+        </nav>
+      </div>
+    </div>
+    <div class="header__search-div container flex">
+      <form class="header__form flex">
+        <label class="header__label">
+          <input class="header__input" type="search" placeholder="Я хочу купить...">
+          <svg class="header__search-icon" width="20" height="20">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          <button class="header__btn-search" type="submit">
+            <svg width="32" height="32">
+              <use xlink:href="images/sprite.svg#btn-search"></use>
+            </svg>
+          </button>
+        </label>
+        <div class="header__item">
+          <button class="header__item-btn js-header-dropdown-btn" type="button" data-path="one">
+            <span class="header__item-text">Категория</span>
+          </button>
+          <div class="header__dropdown js-header-drop" data-target="one">
+            <div class="header__dropdown-wrap">
+              <ul class="header__drop-list list-reset">
+                <li class="header__dropdown-item"><a class="header__item-link" href="#">Диваны</a></li>
+                <li class="header__dropdown-item"><a class="header__item-link" href="#">Кресла</a></li>
+                <li class="header__dropdown-item"><a class="header__item-link" href="#">Пуфы</a></li>
+                <li class="header__dropdown-item"><a class="header__item-link" href="#">Кровати</a></li>
+                <li class="header__dropdown-item"><a class="header__item-link" href="#">Тумбы</a></li>
+                <li class="header__dropdown-item"><a class="header__item-link" href="#">Комоды</a></li>
+                <li class="header__dropdown-item"><a class="header__item-link" href="#">Стулья</a></li>
+                <li class="header__dropdown-item"><a class="header__item-link" href="#">Столы</a></li>
+                <li class="header__dropdown-item"><a class="header__item-link" href="#">Аксессуары</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="link-media-2">
+        <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+          <span class="container-focus-link">
+            <svg width="26" height="28">
+              <use xlink:href="images/sprite.svg#cabinet"></use>
+            </svg>
+          </span>
+        </a>
+        <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+          <span class="container-focus-link">
+            <span class="header__count">0</span>
+            <svg class="header__basket" width="30" height="28">
+              <use xlink:href="images/sprite.svg#basket"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="header__link-div container">
+      <ul class="header__breadcrumbs list-reset">
+        <li class="header__breadcrumbs-item">
+          <a class="container-sublink" href="index.html" aria-label="Главная"><span class="container-focus-link">Главная</span></a>
+        </li>
+        <li class="header__breadcrumbs-item">
+          <a class="container-sublink" href="catalog.html" aria-label="Каталог"><span class="container-focus-link">Каталог</span></a>
+        </li>
+        <li class="header__breadcrumbs-item">
+          <a class="container-sublink" href="#" aria-label="Диваны"><span class="container-focus-link">Диваны</span></a>
+        </li>
+        <li class="header__breadcrumbs-item">
+          <a class="container-sublink last-link" aria-label="Прямые диваны"><span class="container-focus-link">Прямые диваны</span></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="main flex container">
+    <section class="filter">
+      <h2 class="filter__title">Фильтровать по:</h2>
+      <form class="filter__form">
+        <div class="filter__category">
+          <h3 class="filter__category-title">Категория</h3>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Диваны</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-two">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Кресла</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-three">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Пуфы</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Кровати</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Тумбы</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Комоды</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Стулья</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Столы</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Аксессуары</span>
+            </span>
+          </label>
+        </div>
+        <div class="filter__category">
+          <h2 class="filter__category-title filter__price-title">Цена</h2>
+          <div class="filter__price-input">
+            <div class="filter__field">
+              <span>от</span>
+              <input class="filter__input-min" type="number" value="2000">
+            </div>
+            <div class="filter__field">
+              <span>до</span>
+              <input class="filter__input-max" type="number" value="150000">
+            </div>
+          </div>
+          <div class="filter__slider">
+            <div class="filter__progress"></div>
+          </div>
+          <div class="filter__range-input">
+            <input class="filter__range-min" type="range" min="0" max="220000" value="2000" step="100">
+            <input class="filter__range-max" type="range" min="0" max="220000" value="150000" step="100">
+          </div>
+        </div>
+        <div class="filter__category">
+          <h3 class="filter__category-title">Скидка</h3>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Более 5 000</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Менее 5 000</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Не важно</span>
+            </span>
+          </label>
+        </div>
+        <div class="filter__category">
+          <h3 class="filter__category-title">Цвет</h3>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Коричневый</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Черный</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Бежевый</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Серый</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Белый</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Синий</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Оранжевый</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Желтый</span>
+            </span>
+          </label>
+          <label class="filter__checkbox-wrap">
+            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+            <span class="contacts__checkbox-content filter__checkbox-content">
+              <span class="contacts__visual-check filter__visual-check"></span>
+              <span class="contacts__check-text">Зеленый</span>
+            </span>
+          </label>
+        </div>
+      </form>
+      <div class="filter__banner">
+        <picture>
+          <source srcset="/images/filter__mini-foto.png" media="(min-width: 320px) and (max-width: 768px)">
+          <source srcset="/images/filter__default-foto.png" media="(min-width: 769px)">
+          <img srcset="/images/filter__default-foto.png" alt="Default image" src="#">
+        </picture>
+        <div class="filter__cube">
+          <h2 class="filter__banner-title">Оксфорд 1950</h2>
+          <p class="filter__text">Новая коллекция изысканных кресел</p>
+          <a class="categories__link" href="#">В каталог
+            <span class="categories__btn categories__next"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="catalog">
+      <h2 class="catalog__title container-title">Каталог</h2>
+      <div class="catalog__filter">
+        <div class="catalog__filter-div flex">
+          <h3 class="catalog__filter-title">Фильтры:</h3>
+          <div class="catalog__drop-div flex">
+            <div class="catalog__item-drop">
+              <button class="catalog__item-btn js-header-dropdown-btn" type="button" data-path="two">
+                <span class="catalog__item-text">Категория</span>
+              </button>
+              <div class="catalog__dropdown js-header-drop" data-target="two">
+                <div class="catalog__dropdown-wrap">
+                  <ul class="catalog__drop-list list-reset">
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Диваны</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-two">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Кресла</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-three">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Пуфы</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Кровати</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Тумбы</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Комоды</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Стулья</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Столы</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Аксессуары</span>
+                      </span>
+                    </label>
+                    <a class="catalog__dropdown-link" href="#">+ ещё 12</a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__item-drop">
+              <button class="catalog__item-btn js-header-dropdown-btn" type="button" data-path="three">
+                <span class="catalog__item-text">Цена</span>
+              </button>
+              <div class="catalog__dropdown js-header-drop" data-target="three">
+                <div class="catalog__dropdown-wrap">
+                  <ul class="catalog__drop-list list-reset">
+                    <div class="catalog__price-div">
+                      <div class="catalog__field filter__field">
+                        <span>от</span>
+                        <input class="filter__input-min" type="number" value="2000">
+                      </div>
+                      <div class="catalog__field filter__field">
+                        <span>до</span>
+                        <input class="filter__input-max" type="number" value="150000">
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__item-drop">
+              <button class="catalog__item-btn js-header-dropdown-btn" type="button" data-path="four">
+                <span class="catalog__item-text">Скидка</span>
+              </button>
+              <div class="catalog__dropdown js-header-drop" data-target="four">
+                <div class="catalog__dropdown-wrap">
+                  <ul class="catalog__drop-list list-reset">
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Более 5 000</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Менее 5 000</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Не важно</span>
+                      </span>
+                    </label>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__item-drop">
+              <button class="catalog__item-btn js-header-dropdown-btn" type="button" data-path="five">
+                <span class="catalog__item-text">Цвет</span>
+              </button>
+              <div class="catalog__dropdown js-header-drop" data-target="five">
+                <div class="catalog__dropdown-wrap">
+                  <ul class="catalog__drop-list list-reset">
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Коричневый</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Черный</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Бежевый</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Серый</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Белый</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Синий</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Оранжевый</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Желтый</span>
+                      </span>
+                    </label>
+                    <label class="filter__checkbox-wrap">
+                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
+                      <span class="contacts__checkbox-content filter__checkbox-content">
+                        <span class="contacts__visual-check filter__visual-check"></span>
+                        <span class="contacts__check-text">Зеленый</span>
+                      </span>
+                    </label>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__slider-wrapper">
+        <div class="swiper catalog__swiper">
+          <ul class="swiper-wrapper list-reset">
+            <li class="catalog__slide swiper-slide">
+              <div class="catalog__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  5,0
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-1.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-1.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван кожаный “R-94”</h3>
+                  <p class="raiting__price">94 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,8
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-4.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-4.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
+                  <p class="raiting__price">22 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,8
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-7.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-7.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван шиниловый “V-43”</h3>
+                  <p class="raiting__price">19 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__slide swiper-slide">
+              <div class="catalog__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,9
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-2.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-2.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван апартековый “T-75”</h3>
+                  <p class="raiting__price">69 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="#star"></use>
+                  </svg>
+                  4,8
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-5.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-5.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван из шинила “W-95”</h3>
+                  <p class="raiting__price">22 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,7
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-8.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-8.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван велюровый “S-99”</h3>
+                  <p class="raiting__price">19 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__slide swiper-slide">
+              <div class="catalog__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,8
+                </p>
+                <a href="product.html">
+                  <picture class="raiting__photo">
+                    <source srcset="/images/raiting__default-foto-3.png" media="(min-width: 320px)">
+                    <img srcset="/images/raiting__default-foto-3.png" alt="Default image" src="#">
+                  </picture>
+                </a>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван тканевый “D-31”</h3>
+                  <p class="raiting__price">28 490 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,8
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-6.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-6.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван флоковый “G-41”</h3>
+                  <p class="raiting__price">17 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,7
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-9.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-9.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван из кожзама “F-85”</h3>
+                  <p class="raiting__price">26 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__slide swiper-slide">
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,6
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-10.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-10.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван флоковый “H-64”</h3>
+                  <p class="raiting__price">25 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,6
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-13.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-13.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван из шинила “С-42”</h3>
+                  <p class="raiting__price">18 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,5
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-16.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-16.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван велюровый “R-85”</h3>
+                  <p class="raiting__price">34 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__slide swiper-slide">
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,6
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-11.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-11.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван флоковый “H-58”</h3>
+                  <p class="raiting__price">23 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,6
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-14.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-14.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван велюровый “U-58”</h3>
+                  <p class="raiting__price">21 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,7
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-17.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-17.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван велюровый “S-44”</h3>
+                  <p class="raiting__price">19 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__slide swiper-slide">
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,6
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-12.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-12.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван из кожзама “R-43”</h3>
+                  <p class="raiting__price">33 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,5
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-15.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-15.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван флоковый “F-41”</h3>
+                  <p class="raiting__price">17 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+              <div class="raiting__item">
+                <p class="raiting__elem">
+                  <svg width="15.75" height="15">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                  4,4
+                </p>
+                <picture class="raiting__photo">
+                  <source srcset="/images/raiting__default-foto-18.png" media="(min-width: 320px)">
+                  <img srcset="/images/raiting__default-foto-18.png" alt="Default image" src="#">
+                </picture>
+                <div class="raiting__cube">
+                  <h3 class="raiting__subtitle">Диван из шинила “С-80”</h3>
+                  <p class="raiting__price">20 990 руб</p>
+                  <button class="raiting__link container-btn-2">Купить</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="catalog__btn catalog__prev" aria-label="К предыдущему слайду">1</button>
+        <button class="catalog__btn catalog__next" aria-label="К следующему слайду">2</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container flex">
+      <div class="footer__icons">
+        <svg class="footer__logo" width="187" height="27">
+          <use xlink:href="images/sprite.svg#logo"></use>
+        </svg>
+        <div class="footer__cube flex">
+          <a class="footer__site container-link" href="#" aria-label="Фейсбук">
+            <span class="container-focus-link">
+              <svg width="30" height="30">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+            </span>
+          </a>
+          <a class="footer__site container-link" href="#" aria-label="ВК">
+            <span class="container-focus-link">
+              <svg  width="30" height="30">
+                <use xlink:href="images/sprite.svg#vk"></use>
+              </svg>
+            </span>
+          </a>
+          <a class="footer__site container-link" href="#" aria-label="Инстаграм">
+            <span class="container-focus-link">
+              <svg width="30" height="30">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__list">
+        <ul class="footer__margin list-reset">
+          <li>
+            <a class="container-link" href="#" aria-label="О нас"><span class="container-focus-link">О нас</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="О компании"><span class="container-focus-link">О компании</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="Блог"><span class="container-focus-link">Блог</span></a>
+          </li>
+        </ul>
+        <ul class="footer__margin list-reset">
+          <li>
+            <a class="container-link" href="#" aria-label="Услуги"><span class="container-focus-link">Услуги</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="Доставка"><span class="container-focus-link">Доставка</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="Рассрочка и кредит"><span class="container-focus-link">Рассрочка и кредит</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="Сборка и установка"><span class="container-focus-link">Сборка и установка</span></a>
+          </li>
+        </ul>
+        <ul class="footer__margin list-reset">
+          <li>
+            <a class="container-link" href="#" aria-label="Связь с нами"><span class="container-focus-link">Связь с нами</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="Обратная связь"><span class="container-focus-link">Обратная связь</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="Контакты"><span class="container-focus-link">Контакты</span></a>
+          </li>
+        </ul>
+        <ul class="footer__margin list-reset">
+          <li>
+            <a class="container-link" href="cooperation.html" aria-label="Сотрудничество"><span class="container-focus-link">Сотрудничество</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="Поставщикам"><span class="container-focus-link">Поставщикам</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="Оптовикам"><span class="container-focus-link">Оптовикам</span></a>
+          </li>
+          <li class="footer__link-margin">
+            <a class="container-sublink" href="#" aria-label="Карьера"><span class="container-focus-link">Карьера</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright-div">
+      <p class="footer__copyright">SDP®   2011-2021</p>
+    </div>
+  </footer>
+  <script src="jquery.js"></script>
+  <script src="choices.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="inputmask.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

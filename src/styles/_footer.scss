@@ -1,0 +1,152 @@
+@import '_variables.scss';
+
+.footer {
+  background-color: $md_grey;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &__icons {
+    grid-column: span 4;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 31px;
+  }
+
+  &__cube {
+    flex-wrap: wrap;
+  }
+
+  &__site {
+    color: $grey;
+  }
+
+  &__site:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__site:before {
+    left: -3px;
+    right: -3px;
+    top: -3px;
+    bottom: -3px;
+    background-color: $primary_light;
+  }
+
+  &__site:hover {
+    color: $primary;
+  }
+
+  &__site:focus:not(:hover):not(:active) {
+    color: $white;
+  }
+
+  &__site:active {
+    color: $primary_shade;
+  }
+
+  &__list {
+    display: flex;
+    grid-column: span 8;
+  }
+
+  &__margin:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  &__link-margin:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &__copyright-div {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    background-color: $white;
+  }
+
+  &__copyright {
+    margin: 0;
+    font-size: 14px;
+    line-height: 19.07px;
+    color: $grey;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    &__margin:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    &__container {
+      grid-template-columns: repeat(9, 1fr);
+    }
+
+    &__icons {
+      grid-column: span 2;
+    }
+
+    &__list {
+      grid-column: span 7;
+    }
+
+    &__margin:not(:last-child) {
+      margin-right: 75px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__container {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    &__icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      grid-column: span 6;
+      margin-bottom: 24px;
+    }
+
+    &__logo {
+      margin-bottom: 0;
+    }
+
+    &__margin:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    &__icons {
+      flex-direction: column;
+      align-items: center;
+      grid-column: span 6;
+    }
+    
+    &__list {
+      display: block;
+      column-count: 2;
+    }
+
+    &__logo,
+    &__margin {
+      margin-bottom: 24px;
+    }
+  }
+}

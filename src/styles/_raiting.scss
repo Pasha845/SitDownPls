@@ -1,0 +1,144 @@
+@import '_variables.scss';
+
+.raiting {
+  padding-top: 35px;
+  padding-bottom: 70px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    grid-column: span 3;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    border-radius: 10px;
+    background-color: $grey_light;
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    line-height: 20.6px;
+    color: $secondary;
+  }
+
+  &__star {
+    margin-right: 6.7px;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  &__cube {
+    padding: 30px;
+    padding-top: 16px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 31.2px;
+    color: $black;
+  }
+
+  &__price {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: $grey_shade;
+  }
+
+  &__btn-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__btn {
+    padding: 20px 34.5px;
+  }
+
+  &__group {
+    display: none;
+    transition: transform .5s ease-in-out;
+  }
+  
+  &__group.is-active {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .raiting {
+    &__list {
+      grid-template-columns: repeat(9, 1fr);
+    }
+
+    &__none {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .raiting {
+    &__list {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .raiting {
+    &__list {
+      grid-gap: 16px;
+    }
+
+    &__item {
+      padding-top: 16px;
+    }
+
+    &__elem {
+      margin-left: 16px;
+      margin-bottom: 15px;
+      font-size: 12px;
+      line-height: 15.6px;
+      color: $secondary;
+    }
+
+    &__star {
+      width: 13px;
+      height: 14px;
+    }
+
+    &__cube {
+      padding: 16px;
+      min-height: 172px;
+    }
+    
+    &__subtitle,
+    &__price {
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 20.8px;
+    }
+
+    &__subbtn {
+      padding: 10px 23px;
+    }
+  }
+}
