@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Главная</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
+  <title>SitDownPls</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -16,7 +16,7 @@
     <div class="header__logo-mobile">
       <div class="header__logo-margin container flex">
         <svg class="header__logo" width="187" height="27">
-          <use xlink:href="images/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </div>
     </div>
@@ -32,16 +32,16 @@
               <option value="Permian">Пермь</option>
             </select>
           </div>
-          <a class="header__tel" href="tel:+74958854547" id="tel">
+          <a class="header__tel" href="tel:+74958854547">
             <span class="container-focus-link">
               <svg class="header__tel-icon" width="16.5" height="16.5">
-                <use xlink:href="images/sprite.svg#phone"></use>
+                <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
               +7 (495) 885-45-47
             </span>
           </a>
         </div>
-        <div class="w">
+        <div class="header__nav-div">
           <nav class="header__subcube flex">
             <ul class="header__menu list-reset flex" id="menu">
               <li class="header__link-margin">
@@ -58,18 +58,18 @@
               </li>
             </ul>
             <div class="link-media-1">
-              <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+              <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
                 <span class="container-focus-link">
                   <svg width="26" height="28">
-                    <use xlink:href="images/sprite.svg#cabinet"></use>
+                    <use xlink:href="img/sprite.svg#cabinet"></use>
                   </svg>
                 </span>
               </a>
-              <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+              <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
                 <span class="container-focus-link">
                   <span class="header__count">0</span>
                   <svg class="header__basket" width="30" height="28">
-                    <use xlink:href="images/sprite.svg#basket"></use>
+                    <use xlink:href="img/sprite.svg#basket"></use>
                   </svg>
                 </span>
               </a>
@@ -80,33 +80,33 @@
     </div>
     <div class="header__media-border">
       <div class="header__holder container flex">
-        <svg class="header__burger js-burger" type="button" aria-label="Бургер меню">
-          <use xlink:href="images/sprite.svg#burger"></use>
+        <svg class="header__burger js-burger" aria-label="Бургер меню">
+          <use xlink:href="img/sprite.svg#burger"></use>
         </svg>
         <svg class="header__logo logo-media" width="187" height="27">
-          <use xlink:href="images/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
         <div class="link-media-3">
-          <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+          <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
             <span class="container-focus-link">
               <svg width="26" height="28">
-                <use xlink:href="images/sprite.svg#cabinet"></use>
+                <use xlink:href="img/sprite.svg#cabinet"></use>
               </svg>
             </span>
           </a>
-          <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+          <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
             <span class="container-focus-link">
               <span class="header__count">0</span>
               <svg class="header__basket" width="30" height="28">
-                <use xlink:href="images/sprite.svg#basket"></use>
+                <use xlink:href="img/sprite.svg#basket"></use>
               </svg>
             </span>
           </a>
         </div>
         <nav class="header__cube flex js-menu">
           <div>
-            <svg class="header__menu-exit js-exit" type="button" aria-label="Закрыть меню">
-              <use xlink:href="images/sprite.svg#menu-exit"></use>
+            <svg class="header__menu-exit js-exit" aria-label="Закрыть меню">
+              <use xlink:href="img/sprite.svg#menu-exit"></use>
             </svg>
             <ul class="header__submenu flex list-reset js-menu" id="header__cube">
               <li class="header__main-link-margin">
@@ -130,7 +130,7 @@
             </ul>
           </div>
           <svg class="header__menu-photo" width="161" height="112">
-            <use xlink:href="images/sprite.svg#menu-photo"></use>
+            <use xlink:href="img/sprite.svg#menu-photo"></use>
           </svg>
         </nav>
       </div>
@@ -140,13 +140,11 @@
         <label class="header__label">
           <input class="header__input" type="search" placeholder="Я хочу купить...">
           <svg class="header__search-icon" width="20" height="20">
-            <use xlink:href="images/sprite.svg#search"></use>
+            <use xlink:href="img/sprite.svg#search"></use>
           </svg>
-          <button class="header__btn-search" type="submit">
-            <svg width="32" height="32">
-              <use xlink:href="images/sprite.svg#btn-search"></use>
-            </svg>
-          </button>
+          <svg class="header__btn-search" width="32" height="32">
+            <use xlink:href="img/sprite.svg#btn-search"></use>
+          </svg>
         </label>
         <div class="header__item">
           <button class="header__item-btn js-header-dropdown-btn" type="button" data-path="one">
@@ -170,18 +168,18 @@
         </div>
       </form>
       <div class="link-media-2">
-        <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+        <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
           <span class="container-focus-link">
             <svg width="26" height="28">
-              <use xlink:href="images/sprite.svg#cabinet"></use>
+              <use xlink:href="img/sprite.svg#cabinet"></use>
             </svg>
           </span>
         </a>
-        <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+        <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
           <span class="container-focus-link">
             <span class="header__count">0</span>
             <svg class="header__basket" width="30" height="28">
-              <use xlink:href="images/sprite.svg#basket"></use>
+              <use xlink:href="img/sprite.svg#basket"></use>
             </svg>
           </span>
         </a>
@@ -235,8 +233,8 @@
             <li class="swiper-slide offers__style-item offers__item">
               <div class="offers__sale">- 9 000</div>
               <picture class="offers__foto">
-                <source srcset="/images/offers__default-foto-1.png" media="(min-width: 320px)">
-                <img srcset="/images/offers__default-foto-1.png" alt="Default image" src="#" width="193" height="210">
+                <source srcset="img/offers__default-foto-1.png" media="(min-width: 320px)">
+                <img srcset="img/offers__default-foto-1.png" alt="Default image" src="#" width="193" height="210">
               </picture>
               <div class="offers__cube">
                 <h3 class="offers__subtitle">Кресло велюровое “X-24”</h3>
@@ -247,12 +245,12 @@
                 <button class="offers__subbtn container-btn-2">Купить</button>
               </div>
             </li>
-            <li class="swiper-slide offers__style-item offers__item--big">
+            <li class="swiper-slide offers__style-item item-big">
               <div class="offers__sale">- 10 000</div>
               <picture class="offers__foto offers__div">
-                <source srcset="/images/offers__mini-foto-2.png" media="(min-width: 320px) and (max-width: 1024px)">
-                <source srcset="/images/offers__default-foto-2.png" media="(min-width: 1025px)">
-                <img srcset="/images/offers__default-foto-2.png" alt="Default image" src="#" width="450" height="245">
+                <source srcset="img/offers__mini-foto-2.png" media="(min-width: 320px) and (max-width: 1024px)">
+                <source srcset="img/offers__default-foto-2.png" media="(min-width: 1025px)">
+                <img srcset="img/offers__default-foto-2.png" alt="Default image" src="#" width="450" height="245">
               </picture>
               <div class="flex">
                 <div class="offers__cube">
@@ -264,16 +262,16 @@
                   <button class="offers__subbtn container-btn-2">Купить</button>
                 </div>
                 <picture class="offers__subfoto">
-                  <source srcset="/images/sofa-1.png" media="(min-width: 1025px)">
-                  <img srcset="/images/sofa-1.png" alt="Default image" src="#" width="230" height="107">
+                  <source srcset="img/sofa-1.png" media="(min-width: 1025px)">
+                  <img srcset="img/sofa-1.png" alt="Default image" src="#" width="230" height="107">
                 </picture>
               </div>
             </li>
             <li class="swiper-slide offers__style-item offers__item">
               <div class="offers__sale">- 600</div>
               <picture class="offers__foto">
-                <source srcset="/images/offers__default-foto-3.png" media="(min-width: 320px)">
-                <img srcset="/images/offers__default-foto-3.png" alt="Default image" src="#" width="149" height="218">
+                <source srcset="img/offers__default-foto-3.png" media="(min-width: 320px)">
+                <img srcset="img/offers__default-foto-3.png" alt="Default image" src="#" width="149" height="218">
               </picture>
               <div class="offers__cube">
                 <h3 class="offers__subtitle">Будильник  “Quartz-23”</h3>
@@ -287,8 +285,8 @@
             <li class="swiper-slide offers__style-item offers__item">
               <div class="offers__sale">- 300</div>
               <picture class="offers__foto">
-                <source srcset="/images/offers__default-foto-4.png" media="(min-width: 320px)">
-                <img srcset="/images/offers__default-foto-4.png" alt="Default image" src="#" width="117" height="210">
+                <source srcset="img/offers__default-foto-4.png" media="(min-width: 320px)">
+                <img srcset="img/offers__default-foto-4.png" alt="Default image" src="#" width="117" height="210">
               </picture>
               <div class="offers__cube">
                 <h3 class="offers__subtitle">Мини-скульптура “Oh my deer”</h3>
@@ -299,11 +297,11 @@
                 <button class="offers__subbtn container-btn-2">Купить</button>
               </div>
             </li>
-            <li class="swiper-slide offers__style-item offers__item--big">
+            <li class="swiper-slide offers__style-item item-big">
               <div class="offers__sale">- 10 000</div>
               <picture class="offers__foto offers__div">
-                <source srcset="/images/offers__default-foto-5.png" media="(min-width: 320px)">
-                <img srcset="/images/offers__default-foto-5.png" alt="Default image" src="#" width="450" height="245">
+                <source srcset="img/offers__default-foto-5.png" media="(min-width: 320px)">
+                <img srcset="img/offers__default-foto-5.png" alt="Default image" src="#" width="450" height="245">
               </picture>
               <div class="flex">
                 <div class="offers__cube">
@@ -315,16 +313,16 @@
                   <button class="offers__subbtn container-btn-2">Купить</button>
                 </div>
                 <picture class="offers__subfoto">
-                  <source srcset="/images/sofa-2.png" media="(min-width: 1025px)">
-                  <img srcset="/images/sofa-2.png" alt="Default image" src="#" width="230" height="107">
+                  <source srcset="img/sofa-2.png" media="(min-width: 1025px)">
+                  <img srcset="img/sofa-2.png" alt="Default image" src="#" width="230" height="107">
                 </picture>
               </div>
             </li>
             <li class="swiper-slide offers__style-item offers__item">
               <div class="offers__sale">- 700</div>
               <picture class="offers__foto">
-                <source srcset="/images/offers__default-foto-6.png" media="(min-width: 320px)">
-                <img srcset="/images/offers__default-foto-6.png" alt="Default image" src="#" width="183" height="218">
+                <source srcset="img/offers__default-foto-6.png" media="(min-width: 320px)">
+                <img srcset="img/offers__default-foto-6.png" alt="Default image" src="#" width="183" height="218">
               </picture>
               <div class="offers__cube">
                 <h3 class="offers__subtitle">Термометр + гидрометр “H-18”</h3>
@@ -347,14 +345,14 @@
           <li class="raiting__item">
             <p class="raiting__elem">
               <svg class="raiting__star" width="15.75" height="15">
-                <use xlink:href="images/sprite.svg#star"></use>
+                <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               5,0
             </p>
             <picture class="raiting__photo">
-              <source srcset="/images/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/raiting__default-foto-1.png" media="(min-width: 577px)">
-              <img srcset="/images/raiting__default-foto-1.png" alt="Default image" src="#">
+              <source srcset="img/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/raiting__default-foto-1.png" media="(min-width: 577px)">
+              <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван кожаный “R-94”</h3>
@@ -365,14 +363,14 @@
           <li class="raiting__item">
             <p class="raiting__elem">
               <svg class="raiting__star" width="15.75" height="15">
-                <use xlink:href="images/sprite.svg#star"></use>
+                <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,9
             </p>
             <picture class="raiting__photo">
-              <source srcset="/images/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/raiting__default-foto-2.png" media="(min-width: 577px)">
-              <img srcset="/images/raiting__default-foto-2.png" alt="Default image" src="#">
+              <source srcset="img/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/raiting__default-foto-2.png" media="(min-width: 577px)">
+              <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван апартековый “T-75”</h3>
@@ -383,14 +381,14 @@
           <li class="raiting__item">
             <p class="raiting__elem">
               <svg class="raiting__star" width="15.75" height="15">
-                <use xlink:href="images/sprite.svg#star"></use>
+                <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
             <picture class="raiting__photo">
-              <source srcset="/images/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/raiting__default-foto-3.png" media="(min-width: 577px)">
-              <img srcset="/images/raiting__default-foto-3.png" alt="Default image" src="#">
+              <source srcset="img/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/raiting__default-foto-3.png" media="(min-width: 577px)">
+              <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван тканевый “D-31”</h3>
@@ -401,14 +399,14 @@
           <li class="raiting__item">
             <p class="raiting__elem">
               <svg class="raiting__star" width="15.75" height="15">
-                <use xlink:href="images/sprite.svg#star"></use>
+                <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
             <picture class="raiting__photo">
-              <source srcset="/images/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/raiting__default-foto-4.png" media="(min-width: 577px)">
-              <img srcset="/images/raiting__default-foto-4.png" alt="Default image" src="#">
+              <source srcset="img/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/raiting__default-foto-4.png" media="(min-width: 577px)">
+              <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
@@ -419,14 +417,14 @@
           <li class="raiting__item">
             <p class="raiting__elem">
               <svg class="raiting__star" width="15.75" height="15">
-                <use xlink:href="images/sprite.svg#star"></use>
+                <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
             <picture class="raiting__photo">
-              <source srcset="/images/raiting__mobile-foto-5.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/raiting__default-foto-5.png" media="(min-width: 577px)">
-              <img srcset="/images/raiting__default-foto-5.png" alt="Default image" src="#">
+              <source srcset="img/raiting__mobile-foto-5.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/raiting__default-foto-5.png" media="(min-width: 577px)">
+              <img srcset="img/raiting__default-foto-5.png" alt="Default image" src="#">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван из шинила “W-95”</h3>
@@ -437,14 +435,14 @@
           <li class="raiting__item">
             <p class="raiting__elem">
               <svg class="raiting__star" width="15.75" height="15">
-                <use xlink:href="images/sprite.svg#star"></use>
+                <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
             <picture class="raiting__photo">
-              <source srcset="/images/raiting__mobile-foto-6.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/raiting__default-foto-6.png" media="(min-width: 577px)">
-              <img srcset="/images/raiting__default-foto-6.png" alt="Default image" src="#">
+              <source srcset="img/raiting__mobile-foto-6.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/raiting__default-foto-6.png" media="(min-width: 577px)">
+              <img srcset="img/raiting__default-foto-6.png" alt="Default image" src="#">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван флоковый “G-41”</h3>
@@ -455,13 +453,13 @@
           <li class="raiting__item raiting__none">
             <p class="raiting__elem">
               <svg class="raiting__star" width="15.75" height="15">
-                <use xlink:href="images/sprite.svg#star"></use>
+                <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
             <picture class="raiting__photo">
-              <source srcset="/images/raiting__default-foto-7.png" media="(min-width: 1025px)">
-              <img srcset="/images/raiting__default-foto-7.png" alt="Default image" src="#">
+              <source srcset="img/raiting__default-foto-7.png" media="(min-width: 1025px)">
+              <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван шиниловый “V-43”</h3>
@@ -472,13 +470,13 @@
           <li class="raiting__item raiting__none">
             <p class="raiting__elem">
               <svg class="raiting__star" width="15.75" height="15">
-                <use xlink:href="images/sprite.svg#star"></use>
+                <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,7
             </p>
             <picture class="raiting__photo">
-              <source srcset="/images/raiting__default-foto-8.png" media="(min-width: 320px)">
-              <img srcset="/images/raiting__default-foto-8.png" alt="Default image" src="#">
+              <source srcset="img/raiting__default-foto-8.png" media="(min-width: 320px)">
+              <img srcset="img/raiting__default-foto-8.png" alt="Default image" src="#">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван велюровый “S-99”</h3>
@@ -492,14 +490,14 @@
             <li class="raiting__item">
               <p class="raiting__elem">
                 <svg class="raiting__star" width="15.75" height="15">
-                  <use xlink:href="images/sprite.svg#star"></use>
+                  <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,9
               </p>
               <picture class="raiting__photo">
-                <source srcset="/images/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
-                <source srcset="/images/raiting__default-foto-1.png" media="(min-width: 577px)">
-                <img srcset="/images/raiting__default-foto-1.png" alt="Default image" src="#">
+                <source srcset="img/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
+                <source srcset="img/raiting__default-foto-1.png" media="(min-width: 577px)">
+                <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#">
               </picture>
               <div class="raiting__cube">
                 <h3 class="raiting__subtitle">Диван апартековый “T-75”</h3>
@@ -510,14 +508,14 @@
             <li class="raiting__item">
               <p class="raiting__elem">
                 <svg class="raiting__star" width="15.75" height="15">
-                  <use xlink:href="images/sprite.svg#star"></use>
+                  <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,8
               </p>
               <picture class="raiting__photo">
-                <source srcset="/images/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
-                <source srcset="/images/raiting__default-foto-2.png" media="(min-width: 577px)">
-                <img srcset="/images/raiting__default-foto-2.png" alt="Default image" src="#">
+                <source srcset="img/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
+                <source srcset="img/raiting__default-foto-2.png" media="(min-width: 577px)">
+                <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#">
               </picture>
               <div class="raiting__cube">
                 <h3 class="raiting__subtitle">Диван тканевый “D-31”</h3>
@@ -528,14 +526,14 @@
             <li class="raiting__item">
               <p class="raiting__elem">
                 <svg class="raiting__star" width="15.75" height="15">
-                  <use xlink:href="images/sprite.svg#star"></use>
+                  <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,8
               </p>
               <picture class="raiting__photo">
-                <source srcset="/images/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
-                <source srcset="/images/raiting__default-foto-3.png" media="(min-width: 577px)">
-                <img srcset="/images/raiting__default-foto-3.png" alt="Default image" src="#">
+                <source srcset="img/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
+                <source srcset="img/raiting__default-foto-3.png" media="(min-width: 577px)">
+                <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#">
               </picture>
               <div class="raiting__cube">
                 <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
@@ -546,14 +544,14 @@
             <li class="raiting__item">
               <p class="raiting__elem">
                 <svg class="raiting__star" width="15.75" height="15">
-                  <use xlink:href="images/sprite.svg#star"></use>
+                  <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,8
               </p>
               <picture class="raiting__photo">
-                <source srcset="/images/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
-                <source srcset="/images/raiting__default-foto-4.png" media="(min-width: 577px)">
-                <img srcset="/images/raiting__default-foto-4.png" alt="Default image" src="#">
+                <source srcset="img/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
+                <source srcset="img/raiting__default-foto-4.png" media="(min-width: 577px)">
+                <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#">
               </picture>
               <div class="raiting__cube">
                 <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
@@ -602,13 +600,13 @@
               <h3 class="categories__subtitle" id="categories-title">Диваны</h3>
             </div>
             <picture>
-              <source srcset="/images/categories__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/categories__default-foto-1.png" media="(min-width: 577px)">
-              <img srcset="/images/categories__default-foto-1.png" alt="Default image" src="#">
+              <source srcset="img/categories__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/categories__default-foto-1.png" media="(min-width: 577px)">
+              <img srcset="img/categories__default-foto-1.png" alt="Default image" src="#">
             </picture>
             <div class="categories__padding-link">
-              <a class="categories__link" href="#">В каталог
-                <span class="categories__btn categories__next" id="categories-btn"></span>
+              <a class="block-link" href="#">В каталог
+                <span class="block-btn block-next"></span>
               </a>
             </div>
           </li>
@@ -625,14 +623,14 @@
               <h3 class="categories__subtitle">Кресла</h3>
             </div>
             <picture>
-              <source srcset="/images/categories__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/categories__mini-foto-2.png" media="(min-width: 577px) and (max-width: 1024px)">
-              <source srcset="/images/categories__default-foto-2.png" media="(min-width: 1025px)">
-              <img srcset="/images/categories__default-foto-2.png" alt="Default image" src="#">
+              <source srcset="img/categories__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/categories__mini-foto-2.png" media="(min-width: 577px) and (max-width: 1024px)">
+              <source srcset="img/categories__default-foto-2.png" media="(min-width: 1025px)">
+              <img srcset="img/categories__default-foto-2.png" alt="Default image" src="#">
             </picture>
             <div class="categories__padding-link">
-              <a class="categories__link" href="#">В каталог
-                <span class="categories__btn categories__next"></span>
+              <a class="block-link" href="#">В каталог
+                <span class="block-btn block-next"></span>
               </a>
             </div>
           </li>
@@ -649,14 +647,14 @@
               <h3 class="categories__subtitle">Кровати</h3>
             </div>
             <picture>
-              <source srcset="/images/categories__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/categories__mini-foto-3.png" media="(min-width: 577px) and (max-width: 1024px)">
-              <source srcset="/images/categories__default-foto-3.png" media="(min-width: 1025px)">
-              <img srcset="/images/categories__default-foto-3.png" alt="Default image" src="#">
+              <source srcset="img/categories__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/categories__mini-foto-3.png" media="(min-width: 577px) and (max-width: 1024px)">
+              <source srcset="img/categories__default-foto-3.png" media="(min-width: 1025px)">
+              <img srcset="img/categories__default-foto-3.png" alt="Default image" src="#">
             </picture>
             <div class="categories__padding-link">
-              <a class="categories__link" href="#">В каталог
-                <span class="categories__btn categories__next"></span>
+              <a class="block-link" href="#">В каталог
+                <span class="block-btn block-next"></span>
               </a>
             </div>
           </li>
@@ -673,14 +671,14 @@
               <h3 class="categories__subtitle">Тумбы и комоды</h3>
             </div>
             <picture>
-              <source srcset="/images/categories__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/categories__mini-foto-4.png" media="(min-width: 577px) and (max-width: 1024px)">
-              <source srcset="/images/categories__default-foto-4.png" media="(min-width: 1025px)">
-              <img srcset="/images/categories__default-foto-4.png" alt="Default image" src="#">
+              <source srcset="img/categories__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/categories__mini-foto-4.png" media="(min-width: 577px) and (max-width: 1024px)">
+              <source srcset="img/categories__default-foto-4.png" media="(min-width: 1025px)">
+              <img srcset="img/categories__default-foto-4.png" alt="Default image" src="#">
             </picture>
             <div class="categories__padding-link">
-              <a class="categories__link" href="#">В каталог
-                <span class="categories__btn categories__next"></span>
+              <a class="block-link" href="#">В каталог
+                <span class="block-btn block-next"></span>
               </a>
             </div>
           </li>
@@ -697,14 +695,14 @@
               <h3 class="categories__subtitle">Стулья</h3>
             </div>
             <picture>
-              <source srcset="/images/categories__mobile-foto-5.png" media="(min-width: 320px) and (max-width: 576px)">
-              <source srcset="/images/categories__mini-foto-5.png" media="(min-width: 577px) and (max-width: 1024px)">
-              <source srcset="/images/categories__default-foto-5.png" media="(min-width: 1025px)">
-              <img srcset="/images/categories__default-foto-5.png" alt="Default image" src="#">
+              <source srcset="img/categories__mobile-foto-5.png" media="(min-width: 320px) and (max-width: 576px)">
+              <source srcset="img/categories__mini-foto-5.png" media="(min-width: 577px) and (max-width: 1024px)">
+              <source srcset="img/categories__default-foto-5.png" media="(min-width: 1025px)">
+              <img srcset="img/categories__default-foto-5.png" alt="Default image" src="#">
             </picture>
             <div class="categories__padding-link">
-              <a class="categories__link" href="#">В каталог
-                <span class="categories__btn categories__next"></span>
+              <a class="block-link" href="#">В каталог
+                <span class="block-btn block-next"></span>
               </a>
             </div>
           </li>
@@ -727,8 +725,8 @@
           <ul class="swiper-wrapper list-reset">
             <li class="useful__slide swiper-slide">
               <picture>
-                <source class="useful__foto" srcset="/images/useful__default-foto-1.jpg" media="(min-width: 320px)">
-                <img class="useful__foto" srcset="/images/useful__default-foto-1.jpg" alt="Default image" src="#" width="624" height="426">
+                <source class="useful__foto" srcset="img/useful__default-foto-1.jpg" media="(min-width: 320px)">
+                <img class="useful__foto" srcset="img/useful__default-foto-1.jpg" alt="Default image" src="#" width="624" height="426">
               </picture>
               <div class="useful__cube">
                 <p class="useful__text">
@@ -739,8 +737,8 @@
             </li>
             <li class="useful__slide swiper-slide">
               <picture>
-                <source class="useful__foto" srcset="/images/useful__default-foto-2.jpg" media="(min-width: 320px)">
-                <img class="useful__foto" srcset="/images/useful__default-foto-2.jpg" alt="Default image" src="#" width="624" height="426">
+                <source class="useful__foto" srcset="img/useful__default-foto-2.jpg" media="(min-width: 320px)">
+                <img class="useful__foto" srcset="img/useful__default-foto-2.jpg" alt="Default image" src="#" width="624" height="426">
               </picture>
               <div class="useful__cube">
                 <p class="useful__text">
@@ -751,8 +749,8 @@
             </li>
             <li class="useful__slide swiper-slide">
               <picture>
-                <source class="useful__foto" srcset="/images/useful__default-foto-3.jpg" media="(min-width: 320px)">
-                <img class="useful__foto" srcset="/images/useful__default-foto-3.jpg" alt="Default image" src="#" width="624" height="426">
+                <source class="useful__foto" srcset="img/useful__default-foto-3.jpg" media="(min-width: 320px)">
+                <img class="useful__foto" srcset="img/useful__default-foto-3.jpg" alt="Default image" src="#" width="624" height="426">
               </picture>
               <div class="useful__cube">
                 <p class="useful__text">
@@ -763,8 +761,8 @@
             </li>
             <li class="useful__slide swiper-slide">
               <picture>
-                <source class="useful__foto" srcset="/images/useful__default-foto-4.jpg" media="(min-width: 320px)">
-                <img class="useful__foto" srcset="/images/useful__default-foto-4.jpg" alt="Default image" src="#" width="624" height="426">
+                <source class="useful__foto" srcset="img/useful__default-foto-4.jpg" media="(min-width: 320px)">
+                <img class="useful__foto" srcset="img/useful__default-foto-4.jpg" alt="Default image" src="#" width="624" height="426">
               </picture>
               <div class="useful__cube">
                 <p class="useful__text">
@@ -775,8 +773,8 @@
             </li>
             <li class="useful__slide swiper-slide">
               <picture>
-                <source class="useful__foto" srcset="/images/useful__default-foto-5.jpg" media="(min-width: 320px)">
-                <img class="useful__foto" srcset="/images/useful__default-foto-5.jpg" alt="Default image" src="#" width="624" height="426">
+                <source class="useful__foto" srcset="img/useful__default-foto-5.jpg" media="(min-width: 320px)">
+                <img class="useful__foto" srcset="img/useful__default-foto-5.jpg" alt="Default image" src="#" width="624" height="426">
               </picture>
               <div class="useful__cube">
                 <p class="useful__text">
@@ -791,18 +789,18 @@
     </section>
     
     <section class="contacts container">
-      <div class="modal__popap" id="popup">
-        <div class="modal__popap-container">
+      <div class="modal-popap" id="popup">
+        <div class="modal-popap-container">
           <a class="modal-close" onclick="location.reload()">
             <svg width="20" height="20">
-              <use xlink:href="images/sprite.svg#modal-close"></use>
+              <use xlink:href="img/sprite.svg#modal-close"></use>
             </svg>
           </a>
-          <div class="modal__popap-div flex">
+          <div class="modal-popap-div flex">
             <svg width="172" height="117">
-              <use xlink:href="images/sprite.svg#modal"></use>
+              <use xlink:href="img/sprite.svg#modal"></use>
             </svg>
-            <p class="modal__popap-text">Спасибо, мы вам перезвоним!</p>
+            <p class="modal-popap-text">Спасибо, мы вам перезвоним!</p>
           </div>
         </div>
       </div>
@@ -824,11 +822,11 @@
           </label>
           <button class="contacts__btn container-btn-1" id="submit-btn">Отправить</button>
           <div class="contacts__checboxes">
-            <label class="contacts__checkbox-wrap">
-              <input class="contacts__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
-              <span class="contacts__checkbox-content">
-                <span class="contacts__visual-check"></span>
-                <span class="contacts__check-text">Принимаю <a class="contacts__link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
+            <label class="checkbox-wrap">
+              <input class="checkbox checkbox-hidden" type="checkbox" checked>
+              <span class="checkbox-content">
+                <span class="checkbox-check"></span>
+                <span class="checkbox-text">Принимаю <a class="contacts__link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
               </span>
             </label>
           </div>
@@ -841,27 +839,27 @@
     <div class="footer__container container flex">
       <div class="footer__icons">
         <svg class="footer__logo" width="187" height="27">
-          <use xlink:href="images/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
         <div class="footer__cube flex">
           <a class="footer__site container-link" href="#" aria-label="Фейсбук">
             <span class="container-focus-link">
               <svg width="30" height="30">
-                <use xlink:href="images/sprite.svg#facebook"></use>
+                <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </span>
           </a>
           <a class="footer__site container-link" href="#" aria-label="ВК">
             <span class="container-focus-link">
               <svg  width="30" height="30">
-                <use xlink:href="images/sprite.svg#vk"></use>
+                <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </span>
           </a>
           <a class="footer__site container-link" href="#" aria-label="Инстаграм">
             <span class="container-focus-link">
               <svg width="30" height="30">
-                <use xlink:href="images/sprite.svg#instagram"></use>
+                <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
             </span>
           </a>
@@ -924,13 +922,19 @@
       <p class="footer__copyright">SDP®   2011-2021</p>
     </div>
   </footer>
-  <script src="choices.min.js"></script>
+  <script src="libs/choices.min.js"></script>
+  <script src="libs/just-validate3.3.3.min.js"></script>
+  <script src="libs/inputmask.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-  <script src="inputmask.min.js"></script>
   <script src="https://unpkg.com/@popperjs/core"></script>
   <script src="https://unpkg.com/tippy.js"></script>
-  <script src="validate.js"></script>
-  <script src="app.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/burger-menu.js"></script>
+  <script src="js/selector.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/block.js"></script>
+  <script src="js/validate.js"></script>
 </body>
 </html>

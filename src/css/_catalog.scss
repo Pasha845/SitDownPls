@@ -3,7 +3,7 @@
 .catalog {
   position: relative;
   grid-column: span 9;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
 
   &__slider-wrapper {
     position: relative;
@@ -22,14 +22,21 @@
     margin-bottom: 32px;
     padding-top: 30px;
     border-radius: 10px;
+    height: 390px;
     background-color: $grey_light;
   }
 
   &__elem {
+    display: flex;
+    align-items: center;
     margin: 0;
     margin-left: 30px;
     line-height: 20.6px;
     color: $secondary;
+  }
+
+  &__star {
+    margin-right: 6.7px;
   }
 
   &__photo {
@@ -39,13 +46,7 @@
   }
 
   &__cube {
-    position: relative;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 30px;
-    min-height: 230px;
   }
 
   &__subtitle {
@@ -125,6 +126,29 @@
     border-color: $primary;
   }
 
+  &__btn--disabled {
+    color: $white;
+    background-color: $primary;
+    pointer-events: none;
+    cursor: auto;
+  }
+  
+  &__btn:hover {
+    color: $white;
+    background-color: $primary;
+  }
+  
+  &__btn:focus {
+    border-color: $primary;
+    background-color: $primary_light;
+    outline: none;
+  }
+  
+  &__btn:active {
+    border-color: $primary_shade;
+    background-color: $primary_shade;
+  }
+  
   &__filter {
     display: none;
   }
@@ -288,6 +312,12 @@
 
     &__dropdown-link {
       color: $primary;
+    }
+
+    &__field {
+      display: flex;
+      align-items: center;
+      color: $grey_shade;
     }
 
     &__field:not(:last-child) {

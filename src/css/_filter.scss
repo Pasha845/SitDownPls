@@ -30,29 +30,6 @@
     margin-bottom: 26px;
   }
 
-  &__checkbox-wrap {
-    font-size: 16px;
-    line-height: 20.8px;
-    color: $grey;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-
-  &__visual-check {
-    margin-right: 12px;
-    width: 20px;
-    height: 20px;
-  }
-  
-  &__visual-check::before {
-    width: 19px;
-    height: 19px;
-  }
-  
-  &__checkbox:checked ~ &__checkbox-content &__visual-check::before {
-    background: url("../images/checkbox-mark-filter.svg") no-repeat center;
-  }
-
   &__label {
     display: flex;
     margin-right: 69px;
@@ -73,7 +50,7 @@
     color: $grey_shade;
   }
 
-  &__price-input {
+  &__div-input {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -85,21 +62,33 @@
     color: $grey_shade;
   }
 
-  &__field input {
-    width: 86px;
-    height: 30px;
-    outline: none;
-    font-size: 16px;
+  .input-min,
+  .input-max {
     margin-left: 10px;
     padding-left: 12px;
     border-radius: 2px;
     border: 1px solid $grey;
+    width: 86px;
+    height: 30px;
+    font-size: 16px;
     color: $grey_shade;
+    transition: border-color .3s, background-color .3s;
   }
 
-  input[type="number"]::-webkit-outer-spin-button,
-  input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  .input-min:hover,
+  .input-max:hover {
+    border-color: $primary;
+  }
+
+  .input-min:focus,
+  .input-max:focus {
+    background-color: $pink_violet;
+    outline: none;
+  }
+  
+  .input-min:active,
+  .input-max:active {
+    border-color: $primary_shade;
   }
 
   &__slider {
@@ -129,17 +118,28 @@
     top: 0;
     background: none;
     pointer-events: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    appearance: none;
   }
 
   input[type="range"]::-webkit-slider-thumb {
+    margin-top: 3px;
     width: 13px;
     height: 13px;
-    margin-top: 3px;
-    background: url("../images/triangle.svg") no-repeat center;
+    background-color: $primary;
+    mask-image: url("../img/triangle.svg");
     pointer-events: auto;
-    -webkit-appearance: none;
+    appearance: none;
+    transition: background-color .3s;
+  }
+
+  input[type="range"]:hover::-webkit-slider-thumb,
+  input[type="range"]:active::-webkit-slider-thumb {
+    background-color: $primary_light;
+  }
+
+  input[type="range"]:focus::-webkit-slider-thumb {
+    background-color: $primary_shade;
+    outline: none;
   }
 
   &__range-min::-webkit-slider-thumb {

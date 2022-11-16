@@ -112,7 +112,8 @@ const catalogSlider = new Swiper('.catalog__swiper', {
   spaceBetween: 20,
   navigation: {
     nextEl: ".catalog__next",
-    prevEl: ".catalog__prev"
+    prevEl: ".catalog__prev",
+    disabledClass: "catalog__btn--disabled"
   },
   scrollbar: {
     hide: true

@@ -17,7 +17,7 @@
     width: calc(328 / 1280 * 100% - 32px);
   }
 
-  &__item--big {
+  .item-big {
     width: calc(656 / 1280 * 100% - 32px);
   }
 
@@ -37,7 +37,7 @@
     font-size: 14px;
     line-height: 19.07px;
     color: $white;
-    background-image: url("../images/sale.png");
+    background-image: url("../img/sale.png");
     background-repeat: no-repeat;
   }
 
@@ -85,7 +85,7 @@
 @media (max-width: 1024px) {
   .offers {
     &__item,
-    &__item--big {
+    .item-big {
       width: calc(296 / 952 * 100%);
     }
 
@@ -98,7 +98,7 @@
 @media (max-width: 576px) {
   .offers {
     &__item,
-    &__item--big {
+    .item-big {
       width: 100%;
     }
   }

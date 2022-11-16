@@ -6,15 +6,13 @@ im.mask(selector);
 
 const validation = new JustValidate('.contacts__form', {
   errorFieldCssClass: "is-invalid",
-  errorFieldStyle: {
-    border: '1px solid #FF6972',
-  },
+  successFieldCssClass: "is-valid",
   errorLabelStyle: {
+    left: "18px",
+    top: "-21px",
     fontSize: "12px",
-    color: '#FF6972'
-  },
-  focusInvalidField: true,
-  lockForm: true
+    color: '#D11616'
+  }
 });
 
 validation
@@ -22,10 +20,12 @@ validation
     {
       rule: 'minLength',
       value: 3,
+      errorMessage: 'Имя дожно состоять минимум из 3 символов'
     },
     {
       rule: 'maxLength',
       value: 30,
+      errorMessage: 'Имя больше 30 символов'
     },
     {
       rule: 'required',

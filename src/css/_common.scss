@@ -88,17 +88,6 @@ body {
   overflow: hidden;
 }
 
-.checkbox-hidden {
-  position: absolute;
-  padding: 0;
-  border: 0;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-}
-
 .list-reset {
   margin: 0;
   padding-left: 0;
@@ -187,7 +176,8 @@ body {
 }
 
 .container-link,
-.container-sublink {
+.container-sublink,
+.container-site-focus {
   position: relative;
   padding: 0;
   border: none;
@@ -205,8 +195,28 @@ body {
   color: $black;
 }
 
+.container-site-cabinet {
+  position: relative;
+  margin-right: 36px;
+  color: $primary;
+}
+
+.container-site-basket {
+  position: relative;
+  width: 41px;
+  height: 28px;
+  color: $primary;
+}
+
+.container-site-cabinet:hover,
+.container-site-basket:hover {
+  color: $primary_light;
+}
+
 .container-link::before,
-.container-sublink::before {
+.container-sublink::before,
+.container-site-cabinet:before,
+.container-site-basket:before {
   content: "";
   position: absolute;
   left: -10px;
@@ -228,13 +238,41 @@ body {
   bottom: 0;
 }
 
+.container-site-cabinet:before {
+  left: -4px;
+  right: 0px;
+  top: -14px;
+  bottom: -4px;
+  background-color: $primary_light;
+}
+
+.container-site-basket:before {
+  left: -15px;
+  right: -4px;
+  top: -11px;
+  bottom: -1px;
+  background-color: $primary_light;
+}
+
+.container-site-cabinet:focus:not(:hover):not(:active),
+.container-site-basket:focus:not(:hover):not(:active) {
+  color: $white;
+}
+
+.container-site-cabinet:active,
+.container-site-basket:active {
+  color: $primary_shade;
+}
+
 .container-link:hover,
 .container-sublink:hover {
   color: $primary;
 }
 
 .container-link:focus:not(:active)::before,
-.container-sublink:focus:not(:active)::before {
+.container-sublink:focus:not(:active)::before,
+.container-site-cabinet:focus:not(:active)::before,
+.container-site-basket:focus:not(:active)::before {
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
@@ -247,6 +285,11 @@ body {
 
 .container-link:focus:not(:hover):not(:active) {
   color: $black;
+  outline: none;
+}
+
+.container-site-cabinet:focus:not(:hover):not(:active),
+.container-site-basket:focus:not(:hover):not(:active) {
   outline: none;
 }
 
@@ -298,7 +341,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .useful__btn--disabled,
 .similar__btn--disabled {
   pointer-events: none;
-  border-color: $grey;
+  opacity: 0.3;
   cursor: auto;
 }
 
@@ -368,7 +411,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border-right: 2px solid $primary;
 }
 
-.modal__popap {
+.modal-popap {
   position: fixed;
   z-index: 99;
   top: 0;
@@ -381,12 +424,12 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 0;
 }
 
-.modal__popap:target {
+.modal-popap:target {
   visibility: visible;
   opacity: 1;
 }
 
-.modal__popap-container {
+.modal-popap-container {
   position: relative;
   margin: 70px auto;
   padding: 20px;
@@ -403,17 +446,165 @@ input[type="search"]::-webkit-search-results-decoration {
   transition: all 200ms;
 }
 
-.modal__popap-div {
+.modal-popap-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 78px;
 }
 
-.modal__popap-text {
+.modal-popap-text {
   font-size: 32px;
   line-height: 1;
   color: $black;
+}
+
+.block-link {
+  position: relative;
+  width: 108px;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 700;
+  color: $primary;
+  transition: color .3s, border-color .3s;
+}
+
+.block-link:hover,
+.block-link:focus {
+  border-color: $primary;
+  outline: none;
+}
+
+.block-link:hover .block-btn {
+  background-color: $primary;
+}
+
+.block-link:hover .block-next::before,
+.block-link:focus .block-next::before,
+.block-link:active .block-next::before {
+  border-color: $white;
+}
+
+.block-link:focus .block-btn {
+  background-color: $primary_light;
+}
+
+.block-link:active .block-btn {
+  color: $primary_shade;
+  background-color: $primary_shade;
+}
+
+.block-btn {
+  position: absolute;
+  z-index: 13;
+  left: 86px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  border: 2px solid $primary;
+  background: none;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.block-btn::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 8px / 2);
+  width: 6.5px;
+  height: 7px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.block-next::before {
+  left: calc(50% - 10px / 2);
+  border-top: 2px solid $primary;
+  border-right: 2px solid $primary;
+}
+
+.checkbox-hidden {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.checkbox-wrap,
+.big-checkbox-wrap {
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.checkbox-content {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.checkbox-check {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+  border: 1px solid $grey;
+  border-radius: 2px;
+  width: 14px;
+  height: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.checkbox-check::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.checkbox:focus:not(:checked) ~ .checkbox-content .checkbox-check,
+.checkbox:checked ~ .checkbox-content .checkbox-check {
+  border-color: $primary;
+  background-color: $primary;
+}
+
+.checkbox:checked ~ .checkbox-content .checkbox-check::before {
+  opacity: 1;
+  background: url("../img/checkbox-mark.svg") no-repeat center;
+}
+
+.big-checkbox-wrap {
+  font-size: 16px;
+  line-height: 20.8px;
+  color: $grey;
+}
+
+.big-visual-check {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.big-visual-check::before {
+  width: 19px;
+  height: 19px;
+}
+
+.big-checkbox:checked ~ .big-checkbox-content .big-visual-check::before {
+  opacity: 1;
+  background: url("../img/checkbox-mark-filter.svg") no-repeat center;
 }
 
 @media (max-width: 1024px) {
@@ -451,19 +642,24 @@ input[type="search"]::-webkit-search-results-decoration {
     right: 16px;
   }
 
-  .modal__popap-div {
+  .modal-popap-div {
     justify-content: center;
     margin-top: 32px;
     width: 194px;
   }
 
-  .modal__popap-div svg {
+  .modal-popap-div svg {
     width: 73px;
     height: 50px;
   }
 
-  .modal__popap-text {
+  .modal-popap-text {
     font-size: 16px;
     text-align: center;
+  }
+
+  .checkbox-text {
+    font-size: 12px;
+    line-height: 16.34px;
   }
 }

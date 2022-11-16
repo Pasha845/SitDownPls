@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Главная</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1 class="visually-hidden">SitDownPls</h1>
@@ -15,7 +14,7 @@
     <div class="header__logo-mobile">
       <div class="header__logo-margin container flex">
         <svg class="header__logo" width="187" height="27">
-          <use xlink:href="images/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </div>
     </div>
@@ -31,16 +30,16 @@
               <option value="Permian">Пермь</option>
             </select>
           </div>
-          <a class="header__tel" href="tel:+74958854547" id="tel">
+          <a class="header__tel" href="tel:+74958854547">
             <span class="container-focus-link">
               <svg class="header__tel-icon" width="16.5" height="16.5">
-                <use xlink:href="images/sprite.svg#phone"></use>
+                <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
               +7 (495) 885-45-47
             </span>
           </a>
         </div>
-        <div class="w">
+        <div class="header__nav-div">
           <nav class="header__subcube flex">
             <ul class="header__menu list-reset flex" id="menu">
               <li class="header__link-margin">
@@ -57,18 +56,18 @@
               </li>
             </ul>
             <div class="link-media-1">
-              <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+              <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
                 <span class="container-focus-link">
                   <svg width="26" height="28">
-                    <use xlink:href="images/sprite.svg#cabinet"></use>
+                    <use xlink:href="img/sprite.svg#cabinet"></use>
                   </svg>
                 </span>
               </a>
-              <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+              <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
                 <span class="container-focus-link">
                   <span class="header__count">0</span>
                   <svg class="header__basket" width="30" height="28">
-                    <use xlink:href="images/sprite.svg#basket"></use>
+                    <use xlink:href="img/sprite.svg#basket"></use>
                   </svg>
                 </span>
               </a>
@@ -79,33 +78,33 @@
     </div>
     <div class="header__media-border">
       <div class="header__holder container flex">
-        <svg class="header__burger js-burger" type="button" aria-label="Бургер меню">
-          <use xlink:href="images/sprite.svg#burger"></use>
+        <svg class="header__burger js-burger" aria-label="Бургер меню">
+          <use xlink:href="img/sprite.svg#burger"></use>
         </svg>
         <svg class="header__logo logo-media" width="187" height="27">
-          <use xlink:href="images/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
         <div class="link-media-3">
-          <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+          <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
             <span class="container-focus-link">
               <svg width="26" height="28">
-                <use xlink:href="images/sprite.svg#cabinet"></use>
+                <use xlink:href="img/sprite.svg#cabinet"></use>
               </svg>
             </span>
           </a>
-          <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+          <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
             <span class="container-focus-link">
               <span class="header__count">0</span>
               <svg class="header__basket" width="30" height="28">
-                <use xlink:href="images/sprite.svg#basket"></use>
+                <use xlink:href="img/sprite.svg#basket"></use>
               </svg>
             </span>
           </a>
         </div>
         <nav class="header__cube flex js-menu">
           <div>
-            <svg class="header__menu-exit js-exit" type="button" aria-label="Закрыть меню">
-              <use xlink:href="images/sprite.svg#menu-exit"></use>
+            <svg class="header__menu-exit js-exit" aria-label="Закрыть меню">
+              <use xlink:href="img/sprite.svg#menu-exit"></use>
             </svg>
             <ul class="header__submenu flex list-reset js-menu" id="header__cube">
               <li class="header__main-link-margin">
@@ -129,7 +128,7 @@
             </ul>
           </div>
           <svg class="header__menu-photo" width="161" height="112">
-            <use xlink:href="images/sprite.svg#menu-photo"></use>
+            <use xlink:href="img/sprite.svg#menu-photo"></use>
           </svg>
         </nav>
       </div>
@@ -139,13 +138,11 @@
         <label class="header__label">
           <input class="header__input" type="search" placeholder="Я хочу купить...">
           <svg class="header__search-icon" width="20" height="20">
-            <use xlink:href="images/sprite.svg#search"></use>
+            <use xlink:href="img/sprite.svg#search"></use>
           </svg>
-          <button class="header__btn-search" type="submit">
-            <svg width="32" height="32">
-              <use xlink:href="images/sprite.svg#btn-search"></use>
-            </svg>
-          </button>
+          <svg class="header__btn-search" width="32" height="32">
+            <use xlink:href="img/sprite.svg#btn-search"></use>
+          </svg>
         </label>
         <div class="header__item">
           <button class="header__item-btn js-header-dropdown-btn" type="button" data-path="one">
@@ -169,18 +166,18 @@
         </div>
       </form>
       <div class="link-media-2">
-        <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+        <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
           <span class="container-focus-link">
             <svg width="26" height="28">
-              <use xlink:href="images/sprite.svg#cabinet"></use>
+              <use xlink:href="img/sprite.svg#cabinet"></use>
             </svg>
           </span>
         </a>
-        <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+        <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
           <span class="container-focus-link">
             <span class="header__count">0</span>
             <svg class="header__basket" width="30" height="28">
-              <use xlink:href="images/sprite.svg#basket"></use>
+              <use xlink:href="img/sprite.svg#basket"></use>
             </svg>
           </span>
         </a>
@@ -232,8 +229,8 @@
       </div>
       <div class="cooperation__div flex">
         <picture>
-          <source srcset="/images/cooperation__foto.png" media="(min-width: 320px)">
-          <img srcset="/images/cooperation__foto.png" alt="Default image" src="#" width="77" height="116">
+          <source srcset="img/cooperation__foto.png" media="(min-width: 320px)">
+          <img srcset="img/cooperation__foto.png" alt="Default image" src="#" width="77" height="116">
         </picture>
         <p class="cooperation__subtext">Срок гарантии на нашу мебель составляет от 18 до 60 месяцев</p>
       </div>
@@ -244,27 +241,27 @@
     <div class="footer__container container flex">
       <div class="footer__icons">
         <svg class="footer__logo" width="187" height="27">
-          <use xlink:href="images/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
         <div class="footer__cube flex">
           <a class="footer__site container-link" href="#" aria-label="Фейсбук">
             <span class="container-focus-link">
               <svg width="30" height="30">
-                <use xlink:href="images/sprite.svg#facebook"></use>
+                <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </span>
           </a>
           <a class="footer__site container-link" href="#" aria-label="ВК">
             <span class="container-focus-link">
               <svg  width="30" height="30">
-                <use xlink:href="images/sprite.svg#vk"></use>
+                <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </span>
           </a>
           <a class="footer__site container-link" href="#" aria-label="Инстаграм">
             <span class="container-focus-link">
               <svg width="30" height="30">
-                <use xlink:href="images/sprite.svg#instagram"></use>
+                <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
             </span>
           </a>
@@ -327,11 +324,10 @@
       <p class="footer__copyright">SDP®   2011-2021</p>
     </div>
   </footer>
-  <script src="jquery.js"></script>
-  <script src="choices.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-  <script src="inputmask.min.js"></script>
-  <script src="app.js"></script>
+  <script src="libs/choices.min.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/burger-menu.js"></script>
+  <script src="js/selector.js"></script>
+  <script src="js/dropdown.js"></script>
 </body>
 </html>

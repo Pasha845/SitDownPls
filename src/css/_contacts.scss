@@ -112,58 +112,20 @@
 
   .just-validate-error-label {
     position: absolute;
-    left: 18px;
-    top: -21px;
     line-height: 16.34px;
+  }  
+  
+  .is-valid {
+    border: 1px solid $green_input;
+  }
+
+  .is-invalid {
+    border: 1px solid $red_input;
   }
 
   &__btn {
     margin-bottom: 15px;
     padding: 17px 32px;
-  }
-  
-  &__checkbox-wrap {
-    font-size: 14px;
-    cursor: pointer;
-    -webkit-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
-    transition: color 0.3s ease;
-  }
-
-  &__checkbox-content {
-    display: flex;
-    margin-bottom: 12px;
-  }
-  
-  &__visual-check {
-    position: relative;
-    display: inline-block;
-    margin-right: 8px;
-    border: 1px solid $grey;
-    border-radius: 2px;
-    width: 14px;
-    height: 14px;
-    transition: border-color 0.3s ease;
-  }
-  
-  &__visual-check::before {
-    content: "";
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  &__checkbox:focus:not(:checked) ~ &__checkbox-content &__visual-check,
-  &__checkbox:checked ~ &__checkbox-content &__visual-check {
-    border-color: $primary;
-    background-color: $primary;
-  }
-  
-  &__checkbox:checked ~ &__checkbox-content &__visual-check::before {
-    opacity: 1;
-    background: url("../images/checkbox-mark.svg") no-repeat center;
   }
 
   &__link {
@@ -179,7 +141,7 @@
     content: "";
     margin-top: 25px;
     grid-column: span 6;
-    background-image: url("../images/contacts__photo-1.png");
+    background-image: url("../img/contacts__photo-1.png");
     background-repeat: no-repeat;
   }
 }
@@ -195,7 +157,7 @@
     &::after {
       grid-column: span 5;
       margin-top: 77px;
-      background-image: url("../images/contacts__photo-2.png");
+      background-image: url("../img/contacts__photo-2.png");
     }
   }
 }
@@ -211,7 +173,7 @@
     &::after {
       grid-column: span 2;
       margin-top: 13px;
-      background-image: url("../images/contacts__photo-3.png");
+      background-image: url("../img/contacts__photo-3.png");
     }
   }
 }
@@ -224,11 +186,6 @@
 
     &__popap-container {
       width: 296px;
-    }
-
-    &__check-text {
-      font-size: 12px;
-      line-height: 16.34px;
     }
 
     &::after {
