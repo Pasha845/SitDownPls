@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Страница карточки товара включает описание товара с модал окном и слайдер.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Главная</title>
+  <title>Карточка товара</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,7 +25,7 @@
         <div class="header__div flex">
           <div class="header__filter" id="filter">
             <h3 class="header__filter-subtitle">Ваш регион:</h3>
-            <select class="js-gallery-choices">
+            <select class="js-choices">
               <option value="Moscow">Москва</option>
               <option value="Kazan">Казань</option>
               <option value="Ufa">Уфа</option>
@@ -208,8 +209,8 @@
   <main>
     <section class="product">
       <div class="container">
-        <div class="modal-popap" id="popup-product">
-          <div class="modal-popap-container product__modal-product flex">
+        <div class="modal" id="popup-product">
+          <div class="modal-container product__modal-product flex">
             <a class="modal-close" href="#">
               <svg width="20" height="20">
                 <use xlink:href="img/sprite.svg#modal-close"></use>
@@ -241,15 +242,11 @@
             </div>
             <div class="product__modal-swiper">
               <div class="product__slider-wrapper">
-                <div class="offers-one">
-                  <button class="swiper-btn swiper-prev product-prev" aria-label="К предыдущему слайду"></button>
-                </div>
-                <div class="offers-two">
-                  <button class="swiper-btn swiper-next product-next" aria-label="К следующему слайду"></button>
-                </div>
+                <button class="swiper-btn swiper-prev product-prev" aria-label="К предыдущему слайду"></button>
+                <button class="swiper-btn swiper-next product-next" aria-label="К следующему слайду"></button>
               </div>
               <div class="swiper product__swiper">
-                <ul class="offers__list swiper-wrapper list-reset">
+                <ul class="swiper-wrapper list-reset">
                   <li class="swiper-slide">
                     <picture>
                       <source srcset="img/product__default-foto-2.png" media="(min-width: 320px)">
@@ -279,8 +276,8 @@
             </div>
           </div>
         </div>
-        <div class="modal-popap" id="popup-order">
-          <div class="modal-popap-container product__modal-order flex">
+        <div class="modal" id="popup-order">
+          <div class="modal-container product__modal-order flex">
             <a class="modal-close" href="#">
               <svg width="20" height="20">
                 <use xlink:href="img/sprite.svg#modal-close"></use>
@@ -291,23 +288,21 @@
               <p class="modal-text">
                 Чтобы оформить заказ — заполните формы ниже и наш менеджер свяжется с вами в течении часа.
               </p>
-              <form class="contacts__form" action="send.php" method="POST" id="form">
-                <label class="contacts__label">
-                  <input class="contacts__input" type="text" placeholder="Как вас зовут?" name="name" id="name">
+              <form class="modal-form" action="send.php" method="post">
+                <label class="container-label">
+                  <input class="container-input" type="text" placeholder="Как вас зовут?" name="name" id="name">
                 </label>
-                <label class="contacts__label">
-                  <input class="contacts__input" type="tel" placeholder="Ваш телефон" name="tel" id="tel">
+                <label class="container-label">
+                  <input class="container-input" type="tel" placeholder="Ваш телефон" name="tel" id="tel">
                 </label>
-                <button class="contacts__btn container-btn-1" id="submit-btn">Отправить</button>
-                <div class="contacts__checboxes">
-                  <label class="checkbox-wrap">
-                    <input class="checkbox checkbox-hidden" type="checkbox" checked>
-                    <span class="checkbox-content">
-                      <span class="checkbox-check"></span>
-                      <span class="checkbox-text">Принимаю <a class="contacts__link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
-                    </span>
-                  </label>
-                </div>
+                <button class="container-btn container-btn-1" id="submit-btn">Отправить</button>
+                <label class="checkbox-wrap">
+                  <input class="checkbox checkbox-hidden" type="checkbox" checked>
+                  <span class="checkbox-content">
+                    <span class="checkbox-check"></span>
+                    <span class="checkbox-text">Принимаю <a class="container-link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
+                  </span>
+                </label>
               </form>
             </div>
           </div>
@@ -341,7 +336,7 @@
           </div>
           <div class="product__item-2 item-order">
             <p class="product__elem">
-              <svg class="raiting__star" width="15.75" height="15">
+              <svg class="swiper-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
@@ -399,86 +394,82 @@
     <section class="similar">
       <div class="container">
         <h2 class="container-title similar__title">Похожие товары</h2>
-        <div class="offers__slider-wrapper">
-          <div class="offers-one">
-            <button class="swiper-btn swiper-prev similar-prev" aria-label="К предыдущему слайду"></button>
-          </div>
-          <div class="offers-two">
-            <button class="swiper-btn swiper-next similar-next" aria-label="К следующему слайду"></button>
-          </div>
+        <div class="similar__slider-wrapper">
+          <button class="swiper-btn swiper-prev similar-prev" aria-label="К предыдущему слайду"></button>
+          <button class="swiper-btn swiper-next similar-next" aria-label="К следующему слайду"></button>
         </div>
         <div class="swiper similar__swiper">
-          <ul class="offers__list swiper-wrapper list-reset">
-            <li class="swiper-slide raiting__item">
-              <p class="raiting__elem">
-                <svg class="raiting__star" width="15.75" height="15">
+          <ul class="swiper-wrapper swiper-list list-reset">
+            <li class="swiper-slide swiper-item">
+              <p class="swiper-elem">
+                <svg class="swiper-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,5
               </p>
-              <picture class="raiting__photo">
+              <picture class="swiper-photo">
                 <source srcset="img/raiting__mobile-foto-16.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-16.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-16.png" alt="Default image" src="#">
               </picture>
-              <div class="raiting__cube">
-                <h3 class="raiting__subtitle">Диван велюровый “R-85”</h3>
-                <p class="raiting__price">34 990 руб</p>
-                <button class="raiting__subbtn container-btn-2">Купить</button>
+              <div class="swiper-cube">
+                <h3 class="swiper-subtitle">Диван велюровый “R-85”</h3>
+                <p class="swiper-price">34 990 руб</p>
+                <button class="swiper-subbtn container-btn-2">Купить</button>
               </div>
             </li>
-            <li class="swiper-slide raiting__item">
-              <p class="raiting__elem">
-                <svg class="raiting__star" width="15.75" height="15">
+            <li class="swiper-slide swiper-item">
+              <p class="swiper-elem">
+                <svg class="swiper-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,6
               </p>
-              <picture class="raiting__photo">
+              <picture class="swiper-photo">
                 <source srcset="img/raiting__mobile-foto-11.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-11.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-11.png" alt="Default image" src="#">
               </picture>
-              <div class="raiting__cube">
-                <h3 class="raiting__subtitle">Диван флоковый “H-58”</h3>
-                <p class="raiting__price">23 990 руб</p>
-                <button class="raiting__subbtn container-btn-2">Купить</button>
+              <div class="swiper-cube">
+                <h3 class="swiper-subtitle">Диван флоковый “H-58”</h3>
+                <p class="swiper-price">23 990 руб</p>
+                <button class="swiper-subbtn container-btn-2">Купить</button>
               </div>
             </li>
-            <li class="swiper-slide raiting__item">
-              <p class="raiting__elem">
-                <svg class="raiting__star" width="15.75" height="15">
+            <li class="swiper-slide swiper-item">
+              <p class="swiper-elem">
+                <svg class="swiper-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,5
               </p>
-              <picture class="raiting__photo">
+              <picture class="swiper-photo">
                 <source srcset="img/raiting__mobile-foto-17.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-17.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-17.png" alt="Default image" src="#">
               </picture>
-              <div class="raiting__cube">
-                <h3 class="raiting__subtitle">Диван велюровый “S-44”</h3>
-                <p class="raiting__price">19 990 руб</p>
-                <button class="raiting__subbtn container-btn-2">Купить</button>
+              <div class="swiper-cube">
+                <h3 class="swiper-subtitle">Диван велюровый “S-44”</h3>
+                <p class="swiper-price">19 990 руб</p>
+                <button class="swiper-subbtn container-btn-2">Купить</button>
               </div>
             </li>
-            <li class="swiper-slide raiting__item">
-              <p class="raiting__elem">
-                <svg class="raiting__star" width="15.75" height="15">
+            <li class="swiper-slide swiper-item">
+              <p class="swiper-elem">
+                <svg class="swiper-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,8
               </p>
-              <picture class="raiting__photo">
+              <picture class="swiper-photo">
                 <source srcset="img/raiting__mobile-foto-7.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-7.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#">
               </picture>
-              <div class="raiting__cube">
-                <h3 class="raiting__subtitle">Диван шиниловый “V-43”</h3>
-                <p class="raiting__price">19 990 руб</p>
-                <button class="raiting__subbtn container-btn-2">Купить</button>
+              <div class="swiper-cube">
+                <h3 class="swiper-subtitle">Диван шиниловый “V-43”</h3>
+                <p class="swiper-price">19 990 руб</p>
+                <button class="swiper-subbtn container-btn-2">Купить</button>
               </div>
             </li>
           </ul>
@@ -575,7 +566,7 @@
     </div>
   </footer>
   <script src="libs/choices.min.js"></script>
-  <script src="libs/just-validate3.3.3.min.js"></script>
+  <script src="libs/just-validate.min.js"></script>
   <script src="libs/inputmask.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>

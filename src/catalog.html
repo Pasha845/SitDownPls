@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Страница каталога включает группы чекбосов, ползунок для фильтрации цены и слайдер.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Главная</title>
+  <title>Каталог</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,7 +25,7 @@
         <div class="header__div flex">
           <div class="header__filter" id="filter">
             <h3 class="header__filter-subtitle">Ваш регион:</h3>
-            <select class="js-gallery-choices">
+            <select class="js-choices">
               <option value="Moscow">Москва</option>
               <option value="Kazan">Казань</option>
               <option value="Ufa">Уфа</option>
@@ -720,7 +721,7 @@
                 <div class="catalog__cube">
                   <h3 class="catalog__subtitle">Диван тканевый “D-31”</h3>
                   <p class="catalog__price">28 490 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                  <a class="catalog__link container-btn-2" href="product.html">Купить</a>
                 </div>
               </div>
               <div class="catalog__item">

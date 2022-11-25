@@ -73,68 +73,17 @@
     border-right-color: $black;
   }
 
-  &__label {
-    display: block;
-    position: relative;
-  }
-
-  &__input {
-    grid-column: span 6;
-    width: 100%;
-    margin-bottom: 30px;
-    padding-left: 18px;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    height: 54px;
-    background-color: $grey_light;
-    transition: background-color .3s;
-  }
-
-  &__input::placeholder {
-    font-size: 16px;
-    line-height: 40px;
-    color: $grey;
-  }
-
-  &__input:hover {
-    background-color: $md_grey;
-  }
-
-  &__input:focus {
-    border-color: $primary;
-    background-color: $pink_light;
-    outline: none;
-  }
-
-  &__input:active {
-    background-color: $grey_light;
-  }
-
   .just-validate-error-label {
     position: absolute;
     line-height: 16.34px;
   }  
   
   .is-valid {
-    border: 1px solid $green_input;
+    border-color: $green_input;
   }
 
   .is-invalid {
-    border: 1px solid $red_input;
-  }
-
-  &__btn {
-    margin-bottom: 15px;
-    padding: 17px 32px;
-  }
-
-  &__link {
-    color: $primary;
-    text-decoration: underline;
-  }
-
-  &__link:focus {
-    outline: none;
+    border-color: $red_input;
   }
 
   &::after {

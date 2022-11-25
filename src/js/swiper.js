@@ -200,8 +200,8 @@ const productSlider = new Swiper('.product__swiper', {
 
 /* similar */
 
+
 const similarSlider = new Swiper('.similar__swiper', {
-  slidesPerView: "auto",
   grid: {
     rows: 1
   },

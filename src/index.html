@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Главная страница включает выпадающее окно с регионом, 3 слайдера на Swiper.js,
+    тултип, открытие дополнительных блоков при нажатии на кнопку, форма поиска с валидацией и отправкой формы.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SitDownPls</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -23,9 +25,9 @@
     <div class="header__padding">
       <div class="header__container container flex">
         <div class="header__div flex">
-          <div class="header__filter" id="filter">
+          <div class="header__filter">
             <h3 class="header__filter-subtitle">Ваш регион:</h3>
-            <select class="js-gallery-choices">
+            <select class="js-choices">
               <option value="Moscow">Москва</option>
               <option value="Kazan">Казань</option>
               <option value="Ufa">Уфа</option>
@@ -221,12 +223,8 @@
       <div class="container">
         <h2 class="container-title">Специальные предложения</h2>
         <div class="offers__slider-wrapper">
-          <div class="offers-one">
-            <button class="swiper-btn swiper-prev offers-prev" aria-label="К предыдущему слайду"></button>
-          </div>
-          <div class="offers-two">
-            <button class="swiper-btn swiper-next offers-next" aria-label="К следующему слайду"></button>
-          </div>
+          <button class="swiper-btn swiper-prev offers-prev" aria-label="К предыдущему слайду"></button>
+          <button class="swiper-btn swiper-next offers-next" aria-label="К следующему слайду"></button>
         </div>
         <div class="swiper offers__swiper">
           <ul class="offers__list swiper-wrapper list-reset">
@@ -352,7 +350,7 @@
             <picture class="raiting__photo">
               <source srcset="img/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-1.png" media="(min-width: 577px)">
-              <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#">
+              <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#" width="266" height="82">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван кожаный “R-94”</h3>
@@ -370,7 +368,7 @@
             <picture class="raiting__photo">
               <source srcset="img/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-2.png" media="(min-width: 577px)">
-              <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#">
+              <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#" width="261" height="101">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван апартековый “T-75”</h3>
@@ -388,7 +386,7 @@
             <picture class="raiting__photo">
               <source srcset="img/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-3.png" media="(min-width: 577px)">
-              <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#">
+              <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#" width="262" height="103">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван тканевый “D-31”</h3>
@@ -406,7 +404,7 @@
             <picture class="raiting__photo">
               <source srcset="img/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-4.png" media="(min-width: 577px)">
-              <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#">
+              <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#" width="257" height="125">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
@@ -424,7 +422,7 @@
             <picture class="raiting__photo">
               <source srcset="img/raiting__mobile-foto-5.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-5.png" media="(min-width: 577px)">
-              <img srcset="img/raiting__default-foto-5.png" alt="Default image" src="#">
+              <img srcset="img/raiting__default-foto-5.png" alt="Default image" src="#" width="265" height="117">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван из шинила “W-95”</h3>
@@ -442,7 +440,7 @@
             <picture class="raiting__photo">
               <source srcset="img/raiting__mobile-foto-6.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-6.png" media="(min-width: 577px)">
-              <img srcset="img/raiting__default-foto-6.png" alt="Default image" src="#">
+              <img srcset="img/raiting__default-foto-6.png" alt="Default image" src="#" width="271" height="117">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван флоковый “G-41”</h3>
@@ -459,7 +457,7 @@
             </p>
             <picture class="raiting__photo">
               <source srcset="img/raiting__default-foto-7.png" media="(min-width: 1025px)">
-              <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#">
+              <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#" width="266" height="130">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван шиниловый “V-43”</h3>
@@ -476,7 +474,7 @@
             </p>
             <picture class="raiting__photo">
               <source srcset="img/raiting__default-foto-8.png" media="(min-width: 320px)">
-              <img srcset="img/raiting__default-foto-8.png" alt="Default image" src="#">
+              <img srcset="img/raiting__default-foto-8.png" alt="Default image" src="#" width="212" height="124">
             </picture>
             <div class="raiting__cube">
               <h3 class="raiting__subtitle">Диван велюровый “S-99”</h3>
@@ -497,7 +495,7 @@
               <picture class="raiting__photo">
                 <source srcset="img/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-1.png" media="(min-width: 577px)">
-                <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#">
+                <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#" width="266" height="82">
               </picture>
               <div class="raiting__cube">
                 <h3 class="raiting__subtitle">Диван апартековый “T-75”</h3>
@@ -515,7 +513,7 @@
               <picture class="raiting__photo">
                 <source srcset="img/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-2.png" media="(min-width: 577px)">
-                <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#">
+                <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#" width="261" height="101">
               </picture>
               <div class="raiting__cube">
                 <h3 class="raiting__subtitle">Диван тканевый “D-31”</h3>
@@ -533,7 +531,7 @@
               <picture class="raiting__photo">
                 <source srcset="img/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-3.png" media="(min-width: 577px)">
-                <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#">
+                <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#" width="262" height="103">
               </picture>
               <div class="raiting__cube">
                 <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
@@ -551,7 +549,7 @@
               <picture class="raiting__photo">
                 <source srcset="img/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-4.png" media="(min-width: 577px)">
-                <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#">
+                <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#" width="257" height="125">
               </picture>
               <div class="raiting__cube">
                 <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
@@ -602,7 +600,7 @@
             <picture>
               <source srcset="img/categories__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/categories__default-foto-1.png" media="(min-width: 577px)">
-              <img srcset="img/categories__default-foto-1.png" alt="Default image" src="#">
+              <img srcset="img/categories__default-foto-1.png" alt="Default image" src="#" width="515" height="308">
             </picture>
             <div class="categories__padding-link">
               <a class="block-link" href="#">В каталог
@@ -626,7 +624,7 @@
               <source srcset="img/categories__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/categories__mini-foto-2.png" media="(min-width: 577px) and (max-width: 1024px)">
               <source srcset="img/categories__default-foto-2.png" media="(min-width: 1025px)">
-              <img srcset="img/categories__default-foto-2.png" alt="Default image" src="#">
+              <img srcset="img/categories__default-foto-2.png" alt="Default image" src="#" width="515" height="308">
             </picture>
             <div class="categories__padding-link">
               <a class="block-link" href="#">В каталог
@@ -650,7 +648,7 @@
               <source srcset="img/categories__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/categories__mini-foto-3.png" media="(min-width: 577px) and (max-width: 1024px)">
               <source srcset="img/categories__default-foto-3.png" media="(min-width: 1025px)">
-              <img srcset="img/categories__default-foto-3.png" alt="Default image" src="#">
+              <img srcset="img/categories__default-foto-3.png" alt="Default image" src="#" width="306" height="202">
             </picture>
             <div class="categories__padding-link">
               <a class="block-link" href="#">В каталог
@@ -674,7 +672,7 @@
               <source srcset="img/categories__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/categories__mini-foto-4.png" media="(min-width: 577px) and (max-width: 1024px)">
               <source srcset="img/categories__default-foto-4.png" media="(min-width: 1025px)">
-              <img srcset="img/categories__default-foto-4.png" alt="Default image" src="#">
+              <img srcset="img/categories__default-foto-4.png" alt="Default image" src="#" width="330" height="202">
             </picture>
             <div class="categories__padding-link">
               <a class="block-link" href="#">В каталог
@@ -698,7 +696,7 @@
               <source srcset="img/categories__mobile-foto-5.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/categories__mini-foto-5.png" media="(min-width: 577px) and (max-width: 1024px)">
               <source srcset="img/categories__default-foto-5.png" media="(min-width: 1025px)">
-              <img srcset="img/categories__default-foto-5.png" alt="Default image" src="#">
+              <img srcset="img/categories__default-foto-5.png" alt="Default image" src="#" width="258" height="202">
             </picture>
             <div class="categories__padding-link">
               <a class="block-link" href="#">В каталог
@@ -714,12 +712,8 @@
       <div class="container">
         <h2 class="container-title">Полезное</h2>
         <div class="useful__slider-wrapper">
-          <div class="useful-one">
-            <button class="swiper-btn swiper-prev useful-prev" aria-label="К предыдущему слайду"></button>
-          </div>
-          <div class="useful-two">
-            <button class="swiper-btn swiper-next useful-next" aria-label="К следующему слайду"></button>
-          </div>
+          <button class="swiper-btn swiper-prev useful-prev" aria-label="К предыдущему слайду"></button>
+          <button class="swiper-btn swiper-next useful-next" aria-label="К следующему слайду"></button>
         </div>
         <div class="swiper useful__swiper">
           <ul class="swiper-wrapper list-reset">
@@ -789,18 +783,18 @@
     </section>
     
     <section class="contacts container">
-      <div class="modal-popap" id="popup">
-        <div class="modal-popap-container">
+      <div class="modal" id="pop-up">
+        <div class="pop-up-container">
           <a class="modal-close" onclick="location.reload()">
             <svg width="20" height="20">
               <use xlink:href="img/sprite.svg#modal-close"></use>
             </svg>
           </a>
-          <div class="modal-popap-div flex">
+          <div class="pop-up-div flex">
             <svg width="172" height="117">
               <use xlink:href="img/sprite.svg#modal"></use>
             </svg>
-            <p class="modal-popap-text">Спасибо, мы вам перезвоним!</p>
+            <p class="pop-up-text">Спасибо, мы вам перезвоним!</p>
           </div>
         </div>
       </div>
@@ -810,26 +804,24 @@
           Безусловно, новая модель организационной деятельности в значительной степени обусловливает важность распределения внутренних резервов
           и ресурсов. <button class="contacts__tultipe js-tultipe" data-tippy-content="Реплицированные с зарубежных источников, исследования формируют глобальную сеть.">?</button>
         </p>
-        <form class="contacts__form" action="send.php" method="POST" id="form">
-          <label class="contacts__label">
-            <input class="contacts__input" type="text" placeholder="Как вас зовут?" name="name" id="name">
+        <form class="contacts__form" action="send.php" method="post">
+          <label class="container-label">
+            <input class="container-input" type="text" placeholder="Как вас зовут?" name="name" id="name">
           </label>
-          <label class="contacts__label">
-            <input class="contacts__input" type="tel" placeholder="Ваш телефон" name="tel" id="tel">
+          <label class="container-label">
+            <input class="container-input" type="tel" placeholder="Ваш телефон" name="tel" id="tel">
           </label>
-          <label class="contacts__label">
-            <input class="contacts__input" type="email" placeholder="Ваш e-mail" name="email" id="email">
+          <label class="container-label">
+            <input class="container-input" type="email" placeholder="Ваш e-mail" name="email" id="email">
           </label>
-          <button class="contacts__btn container-btn-1" id="submit-btn">Отправить</button>
-          <div class="contacts__checboxes">
-            <label class="checkbox-wrap">
-              <input class="checkbox checkbox-hidden" type="checkbox" checked>
-              <span class="checkbox-content">
-                <span class="checkbox-check"></span>
-                <span class="checkbox-text">Принимаю <a class="contacts__link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
-              </span>
-            </label>
-          </div>
+          <button class="container-btn container-btn-1" type="submit">Отправить</button>
+          <label class="checkbox-wrap">
+            <input class="checkbox checkbox-hidden" type="checkbox" checked>
+            <span class="checkbox-content">
+              <span class="checkbox-check"></span>
+              <span class="checkbox-text">Принимаю <a class="container-input-link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
+            </span>
+          </label>
         </form>
       </div>
     </section>
@@ -923,7 +915,7 @@
     </div>
   </footer>
   <script src="libs/choices.min.js"></script>
-  <script src="libs/just-validate3.3.3.min.js"></script>
+  <script src="libs/just-validate.min.js"></script>
   <script src="libs/inputmask.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>

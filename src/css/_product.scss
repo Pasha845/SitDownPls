@@ -25,8 +25,8 @@
   }
 
   &__modal-product {
+    padding: 0;
     flex-direction: column;
-    margin: 143px auto;
     width: 1280px;
   }
 
@@ -152,7 +152,6 @@
   .product {
     &__modal-product {
       flex-direction: column;
-      margin: 160px auto;
       width: 952px;
     }
 
