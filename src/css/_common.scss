@@ -473,6 +473,9 @@ input[type="search"]::-webkit-search-results-decoration {
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   visibility: hidden;
@@ -487,7 +490,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .pop-up-container,
 .modal-container {
   position: relative;
-  margin: 0 auto;
   padding: 20px;
   background-color: $white;
   border-radius: 10px;
@@ -674,7 +676,6 @@ input[type="search"]::-webkit-search-results-decoration {
   background: url("../img/checkbox-mark-filter.svg") no-repeat center;
 }
 
-
 .container-label {
   display: block;
   position: relative;
@@ -703,7 +704,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .container-input:focus {
-  border-color: $primary;
+  /* border-color: $primary; */
   background-color: $pink_light;
   outline: none;
 }
@@ -722,8 +723,21 @@ input[type="search"]::-webkit-search-results-decoration {
   text-decoration: underline;
 }
 
-.container--input-link:focus {
+.container-input-link:focus {
   outline: none;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  line-height: 16.34px;
+}
+
+.is-valid {
+  border-color: $green_input;
+}
+
+.is-invalid {
+  border-color: $red_input;
 }
 
 @media (max-width: 1024px) {

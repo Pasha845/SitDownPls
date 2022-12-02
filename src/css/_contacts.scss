@@ -73,19 +73,6 @@
     border-right-color: $black;
   }
 
-  .just-validate-error-label {
-    position: absolute;
-    line-height: 16.34px;
-  }  
-  
-  .is-valid {
-    border-color: $green_input;
-  }
-
-  .is-invalid {
-    border-color: $red_input;
-  }
-
   &::after {
     content: "";
     margin-top: 25px;
