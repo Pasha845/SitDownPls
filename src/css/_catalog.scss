@@ -5,77 +5,9 @@
   grid-column: span 9;
   padding-bottom: 100px;
 
-  &__slider-wrapper {
-    position: relative;
-  }
-
-  &__title {
-    font-size: 24px;
-    line-height: 31px;
-  }
-
   &__item {
-    position: relative;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 32px;
-    padding-top: 30px;
-    border-radius: 10px;
     height: 390px;
-    background-color: $grey_light;
-  }
-
-  &__elem {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    margin-left: 30px;
-    line-height: 20.6px;
-    color: $secondary;
-  }
-
-  &__star {
-    margin-right: 6.7px;
-  }
-
-  &__photo {
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
-  }
-
-  &__cube {
-    padding: 30px;
-  }
-
-  &__subtitle {
-    margin: 0;
-    margin-bottom: 24px;
-    font-size: 24px;
-    font-weight: normal;
-    color: $black;
-  }
-
-  &__price {
-    margin: 0;
-    margin-bottom: 24px;
-    font-size: 16px;
-    color: $grey_shade;
-  }
-
-  &__link {
-    margin-top: auto;
-  }
-
-  &__link::before {
-    left: -8px;
-    right: -8px;
-    top: 1px;
-  }
-
-  &__focus-link {
-    position: relative;
   }
 
   &__btn {
@@ -165,10 +97,6 @@
       padding-bottom: 32px;
     }
 
-    &__filter-div {
-      align-items: center;
-    }
-
     &__filter-title {
       margin: 0;
       margin-right: 43px;
@@ -215,11 +143,11 @@
     &__item-btn::after {
       content: "";
       display: inline-block;
-      border-right: 1px solid;
-      border-bottom: 1px solid;
-      width: 8px;
+      border-right: 1px solid $primary;
+      border-bottom: 1px solid $primary;
+      width: 9.5px;
       height: 8px;
-      transform: translate(0, calc(-50% + 4px)) rotate(45deg);
+      transform: translate(0, calc(-50% + 3px)) rotate(45deg);
       -webkit-transition: -webkit-transform 0.2s ease;
       transition: -webkit-transform 0.2s ease;
       -o-transition: transform 0.2s ease;
@@ -328,14 +256,18 @@
 
 @media (max-width: 768px) {
   .catalog {
+    &__filter-title {
+      margin-bottom: 16px;
+    }
+
     &__filter-div {
       flex-direction: column;
-      justify-content: flex-start;
     }
 
     &__drop-div {
-      column-count: 2;
       flex-direction: column;
+      column-count: 2;
+      max-width: 405px;
     }
   }
 }

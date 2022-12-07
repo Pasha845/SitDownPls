@@ -6,7 +6,7 @@
   <meta name="description" content="Страница каталога включает группы чекбосов, ползунок для фильтрации цены и слайдер.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Каталог</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+  <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css"> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -207,7 +207,7 @@
     <section class="filter">
       <h2 class="filter__title">Фильтровать по:</h2>
       <form class="filter__form">
-        <div class="filter__category">
+        <div class="filter__category checbox-cube">
           <h3 class="filter__category-title">Категория</h3>
           <label class="big-checkbox-wrap">
             <input class="big-checkbox checkbox checkbox-hidden" type="checkbox" checked>
@@ -293,7 +293,7 @@
             <input class="filter__range-max" type="range" min="0" max="220000" value="150000" step="100">
           </div>
         </div>
-        <div class="filter__category">
+        <div class="filter__category checbox-cube">
           <h3 class="filter__category-title">Скидка</h3>
           <label class="big-checkbox-wrap">
             <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
@@ -310,7 +310,7 @@
             </span>
           </label>
         </div>
-        <div class="filter__category">
+        <div class="filter__category checbox-cube">
           <h3 class="filter__category-title">Цвет</h3>
           <label class="big-checkbox-wrap">
             <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
@@ -379,8 +379,7 @@
       </form>
       <div class="filter__banner">
         <picture>
-          <source srcset="img/filter__mini-foto.png" media="(min-width: 320px) and (max-width: 768px)">
-          <source srcset="img/filter__default-foto.png" media="(min-width: 769px)">
+          <source srcset="img/filter__default-foto.png" media="(min-width: 1025px)">
           <img srcset="img/filter__default-foto.png" alt="Default image" src="#">
         </picture>
         <div class="filter__cube">
@@ -405,7 +404,7 @@
               </button>
               <div class="catalog__dropdown js-header-drop" data-target="two">
                 <div class="catalog__dropdown-wrap">
-                  <div class="catalog__drop-list">
+                  <div class="catalog__drop-list checbox-cube">
                     <label class="big-checkbox-wrap">
                       <input class="big-checkbox checkbox checkbox-hidden" type="checkbox" checked>
                       <span class="big-checkbox-content checkbox-content">
@@ -501,7 +500,7 @@
               </button>
               <div class="catalog__dropdown js-header-drop" data-target="four">
                 <div class="catalog__dropdown-wrap">
-                  <div class="catalog__drop-list list-reset">
+                  <div class="catalog__drop-list checbox-cube">
                     <label class="big-checkbox-wrap">
                       <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
                       <span class="big-checkbox-content checkbox-content">
@@ -526,7 +525,7 @@
               </button>
               <div class="catalog__dropdown js-header-drop" data-target="five">
                 <div class="catalog__dropdown-wrap">
-                  <div class="catalog__drop-list list-reset">
+                  <div class="catalog__drop-list checbox-cube">
                     <label class="big-checkbox-wrap">
                       <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
                       <span class="big-checkbox-content checkbox-content">
@@ -597,326 +596,326 @@
           </div>
         </div>
       </div>
-      <div class="catalog__slider-wrapper">
+      <div class="swiper-slider-wrapper">
         <div class="swiper catalog__swiper">
           <ul class="swiper-wrapper list-reset">
-            <li class="catalog__slide swiper-slide">
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   5,0
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-1.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван кожаный “R-94”</h3>
-                  <p class="catalog__price">94 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван кожаный “R-94”</h3>
+                  <p class="container-price">94 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,8
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-4.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван велюровый “Y-68”</h3>
-                  <p class="catalog__price">22 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “Y-68”</h3>
+                  <p class="container-price">22 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,8
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-7.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван шиниловый “V-43”</h3>
-                  <p class="catalog__price">19 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван шиниловый “V-43”</h3>
+                  <p class="container-price">19 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
-            <li class="catalog__slide swiper-slide">
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,9
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-2.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван апартековый “T-75”</h3>
-                  <p class="catalog__price">69 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван апартековый “T-75”</h3>
+                  <p class="container-price">69 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,8
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-5.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-5.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван из шинила “W-95”</h3>
-                  <p class="catalog__price">22 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из шинила “W-95”</h3>
+                  <p class="container-price">22 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,7
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-8.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-8.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван велюровый “S-99”</h3>
-                  <p class="catalog__price">19 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “S-99”</h3>
+                  <p class="container-price">19 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
-            <li class="catalog__slide swiper-slide">
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,8
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-3.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван тканевый “D-31”</h3>
-                  <p class="catalog__price">28 490 руб</p>
-                  <a class="catalog__link container-btn-2" href="product.html">Купить</a>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван тканевый “D-31”</h3>
+                  <p class="container-price">28 490 руб</p>
+                  <a class="container-subbtn container-btn-2" href="product.html">Купить</a>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,8
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-6.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-6.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван флоковый “G-41”</h3>
-                  <p class="catalog__price">17 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван флоковый “G-41”</h3>
+                  <p class="container-price">17 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,7
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-9.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-9.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван из кожзама “F-85”</h3>
-                  <p class="catalog__price">26 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из кожзама “F-85”</h3>
+                  <p class="container-price">26 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
-            <li class="catalog__slide swiper-slide">
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-10.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-10.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван флоковый “H-64”</h3>
-                  <p class="catalog__price">25 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван флоковый “H-64”</h3>
+                  <p class="container-price">25 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-13.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-13.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван из шинила “С-42”</h3>
-                  <p class="catalog__price">18 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из шинила “С-42”</h3>
+                  <p class="container-price">18 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,5
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-16.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-16.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван велюровый “R-85”</h3>
-                  <p class="catalog__price">34 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “R-85”</h3>
+                  <p class="container-price">34 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
-            <li class="catalog__slide swiper-slide">
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-11.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-11.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван флоковый “H-58”</h3>
-                  <p class="catalog__price">23 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван флоковый “H-58”</h3>
+                  <p class="container-price">23 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-14.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-14.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван велюровый “U-58”</h3>
-                  <p class="catalog__price">21 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “U-58”</h3>
+                  <p class="container-price">21 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,7
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-17.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-17.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван велюровый “S-44”</h3>
-                  <p class="catalog__price">19 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “S-44”</h3>
+                  <p class="container-price">19 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
             <li class="catalog__slide swiper-slide">
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-12.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-12.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван из кожзама “R-43”</h3>
-                  <p class="catalog__price">33 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из кожзама “R-43”</h3>
+                  <p class="container-price">33 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,5
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-15.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-15.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван флоковый “F-41”</h3>
-                  <p class="catalog__price">17 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван флоковый “F-41”</h3>
+                  <p class="container-price">17 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="catalog__elem">
-                  <svg class="catalog__star" width="15.75" height="15">
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
                     <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,4
                 </p>
-                <picture class="catalog__photo">
+                <picture class="container-photo">
                   <source srcset="img/raiting__default-foto-18.png" media="(min-width: 320px)">
                   <img srcset="img/raiting__default-foto-18.png" alt="Default image" src="#">
                 </picture>
-                <div class="catalog__cube">
-                  <h3 class="catalog__subtitle">Диван из шинила “С-80”</h3>
-                  <p class="catalog__price">20 990 руб</p>
-                  <button class="catalog__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из шинила “С-80”</h3>
+                  <p class="container-price">20 990 руб</p>
+                  <button class="container-subbtn container-btn-2">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
           </ul>
         </div>
@@ -1014,8 +1013,7 @@
     </div>
   </footer>
   <script src="libs/choices.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/burger-menu.js"></script>
   <script src="js/selector.js"></script>

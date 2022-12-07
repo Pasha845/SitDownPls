@@ -100,5 +100,9 @@
     &__list {
       grid-gap: 16px;
     }
+
+    &__padding-link {
+      display: none;
+    }
   }
 }

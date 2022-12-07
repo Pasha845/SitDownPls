@@ -6,8 +6,8 @@
   <meta name="description" content="Главная страница включает выпадающее окно с регионом, 3 слайдера на Swiper.js,
     тултип, открытие дополнительных блоков при нажатии на кнопку, форма поиска с валидацией и отправкой формы.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SitDownPls</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Главная</title>
+  <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -223,8 +223,8 @@
       <div class="container">
         <h2 class="container-title">Специальные предложения</h2>
         <div class="offers__slider-wrapper">
-          <button class="swiper-btn swiper-prev offers-prev" aria-label="К предыдущему слайду"></button>
-          <button class="swiper-btn swiper-next offers-next" aria-label="К следующему слайду"></button>
+          <button class="swiper-btn swiper-prev offers__prev" aria-label="К предыдущему слайду"></button>
+          <button class="swiper-btn swiper-next offers__next" aria-label="К следующему слайду"></button>
         </div>
         <div class="swiper offers__swiper">
           <ul class="offers__list swiper-wrapper list-reset">
@@ -339,225 +339,225 @@
     <section class="raiting">
       <div class="container">
         <h2 class="container-title">Высокий рейтинг</h2>
-        <ul class="raiting__list list-reset">
-          <li class="raiting__item">
-            <p class="raiting__elem">
-              <svg class="raiting__star" width="15.75" height="15">
+        <div class="raiting__list">
+          <article class="container-item">
+            <p class="container-elem">
+              <svg class="container-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               5,0
             </p>
-            <picture class="raiting__photo">
+            <picture class="container-photo">
               <source srcset="img/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-1.png" media="(min-width: 577px)">
               <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#" width="266" height="82">
             </picture>
-            <div class="raiting__cube">
-              <h3 class="raiting__subtitle">Диван кожаный “R-94”</h3>
-              <p class="raiting__price">94 990 руб</p>
-              <button class="raiting__subbtn container-btn-2">Купить</button>
+            <div class="container-cube">
+              <h3 class="container-subtitle">Диван кожаный “R-94”</h3>
+              <p class="container-price">94 990 руб</p>
+              <button class="container-subbtn container-btn-2">Купить</button>
             </div>
-          </li>
-          <li class="raiting__item">
-            <p class="raiting__elem">
-              <svg class="raiting__star" width="15.75" height="15">
+          </article>
+          <article class="container-item">
+            <p class="container-elem">
+              <svg class="container-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,9
             </p>
-            <picture class="raiting__photo">
+            <picture class="container-photo">
               <source srcset="img/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-2.png" media="(min-width: 577px)">
               <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#" width="261" height="101">
             </picture>
-            <div class="raiting__cube">
-              <h3 class="raiting__subtitle">Диван апартековый “T-75”</h3>
-              <p class="raiting__price">69 990 руб</p>
-              <button class="raiting__subbtn container-btn-2">Купить</button>
+            <div class="container-cube">
+              <h3 class="container-subtitle">Диван апартековый “T-75”</h3>
+              <p class="container-price">69 990 руб</p>
+              <button class="container-subbtn container-btn-2">Купить</button>
             </div>
-          </li>
-          <li class="raiting__item">
-            <p class="raiting__elem">
-              <svg class="raiting__star" width="15.75" height="15">
+          </article>
+          <article class="container-item">
+            <p class="container-elem">
+              <svg class="container-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
-            <picture class="raiting__photo">
+            <picture class="container-photo">
               <source srcset="img/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-3.png" media="(min-width: 577px)">
               <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#" width="262" height="103">
             </picture>
-            <div class="raiting__cube">
-              <h3 class="raiting__subtitle">Диван тканевый “D-31”</h3>
-              <p class="raiting__price">28 490 руб</p>
-              <button class="raiting__subbtn container-btn-2">Купить</button>
+            <div class="container-cube">
+              <h3 class="container-subtitle">Диван тканевый “D-31”</h3>
+              <p class="container-price">28 490 руб</p>
+              <button class="container-subbtn container-btn-2">Купить</button>
             </div>
-          </li>
-          <li class="raiting__item">
-            <p class="raiting__elem">
-              <svg class="raiting__star" width="15.75" height="15">
+          </article>
+          <article class="container-item">
+            <p class="container-elem">
+              <svg class="container-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
-            <picture class="raiting__photo">
+            <picture class="container-photo">
               <source srcset="img/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-4.png" media="(min-width: 577px)">
               <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#" width="257" height="125">
             </picture>
-            <div class="raiting__cube">
-              <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
-              <p class="raiting__price">22 990 руб</p>
-              <button class="raiting__subbtn container-btn-2">Купить</button>
+            <div class="container-cube">
+              <h3 class="container-subtitle">Диван велюровый “Y-68”</h3>
+              <p class="container-price">22 990 руб</p>
+              <button class="container-subbtn container-btn-2">Купить</button>
             </div>
-          </li>
-          <li class="raiting__item">
-            <p class="raiting__elem">
-              <svg class="raiting__star" width="15.75" height="15">
+          </article>
+          <article class="container-item">
+            <p class="container-elem">
+              <svg class="container-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
-            <picture class="raiting__photo">
+            <picture class="container-photo">
               <source srcset="img/raiting__mobile-foto-5.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-5.png" media="(min-width: 577px)">
               <img srcset="img/raiting__default-foto-5.png" alt="Default image" src="#" width="265" height="117">
             </picture>
-            <div class="raiting__cube">
-              <h3 class="raiting__subtitle">Диван из шинила “W-95”</h3>
-              <p class="raiting__price">22 990 руб</p>
-              <button class="raiting__subbtn container-btn-2">Купить</button>
+            <div class="container-cube">
+              <h3 class="container-subtitle">Диван из шинила “W-95”</h3>
+              <p class="container-price">22 990 руб</p>
+              <button class="container-subbtn container-btn-2">Купить</button>
             </div>
-          </li>
-          <li class="raiting__item">
-            <p class="raiting__elem">
-              <svg class="raiting__star" width="15.75" height="15">
+          </article>
+          <article class="container-item">
+            <p class="container-elem">
+              <svg class="container-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
-            <picture class="raiting__photo">
+            <picture class="container-photo">
               <source srcset="img/raiting__mobile-foto-6.png" media="(min-width: 320px) and (max-width: 576px)">
               <source srcset="img/raiting__default-foto-6.png" media="(min-width: 577px)">
               <img srcset="img/raiting__default-foto-6.png" alt="Default image" src="#" width="271" height="117">
             </picture>
-            <div class="raiting__cube">
-              <h3 class="raiting__subtitle">Диван флоковый “G-41”</h3>
-              <p class="raiting__price">17 990 руб</p>
-              <button class="raiting__subbtn container-btn-2">Купить</button>
+            <div class="container-cube">
+              <h3 class="container-subtitle">Диван флоковый “G-41”</h3>
+              <p class="container-price">17 990 руб</p>
+              <button class="container-subbtn container-btn-2">Купить</button>
             </div>
-          </li>
-          <li class="raiting__item raiting__none">
-            <p class="raiting__elem">
-              <svg class="raiting__star" width="15.75" height="15">
+          </article>
+          <article class="container-item raiting__none">
+            <p class="container-elem">
+              <svg class="container-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
             </p>
-            <picture class="raiting__photo">
+            <picture class="container-photo">
               <source srcset="img/raiting__default-foto-7.png" media="(min-width: 1025px)">
               <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#" width="266" height="130">
             </picture>
-            <div class="raiting__cube">
-              <h3 class="raiting__subtitle">Диван шиниловый “V-43”</h3>
-              <p class="raiting__price">19 990 руб</p>
-              <button class="raiting__subbtn container-btn-2">Купить</button>
+            <div class="container-cube">
+              <h3 class="container-subtitle">Диван шиниловый “V-43”</h3>
+              <p class="container-price">19 990 руб</p>
+              <button class="container-subbtn container-btn-2">Купить</button>
             </div>
-          </li>
-          <li class="raiting__item raiting__none">
-            <p class="raiting__elem">
-              <svg class="raiting__star" width="15.75" height="15">
+          </article>
+          <article class="container-item raiting__none">
+            <p class="container-elem">
+              <svg class="container-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,7
             </p>
-            <picture class="raiting__photo">
+            <picture class="container-photo">
               <source srcset="img/raiting__default-foto-8.png" media="(min-width: 320px)">
               <img srcset="img/raiting__default-foto-8.png" alt="Default image" src="#" width="212" height="124">
             </picture>
-            <div class="raiting__cube">
-              <h3 class="raiting__subtitle">Диван велюровый “S-99”</h3>
-              <p class="raiting__price">19 990 руб</p>
-              <button class="raiting__subbtn container-btn-2">Купить</button>
+            <div class="container-cube">
+              <h3 class="container-subtitle">Диван велюровый “S-99”</h3>
+              <p class="container-price">19 990 руб</p>
+              <button class="container-subbtn container-btn-2">Купить</button>
             </div>
-          </li>
-        </ul>
+          </article>
+        </div>
         <div class="raiting__group container" id="group">
-          <ul class="raiting__list list-reset">
-            <li class="raiting__item">
-              <p class="raiting__elem">
-                <svg class="raiting__star" width="15.75" height="15">
+          <div class="raiting__list">
+            <article class="container-item">
+              <p class="container-elem">
+                <svg class="container-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,9
               </p>
-              <picture class="raiting__photo">
+              <picture class="container-photo">
                 <source srcset="img/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-1.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#" width="266" height="82">
               </picture>
-              <div class="raiting__cube">
-                <h3 class="raiting__subtitle">Диван апартековый “T-75”</h3>
-                <p class="raiting__price">69 990 руб</p>
-                <button class="raiting__subbtn container-btn-2">Купить</button>
+              <div class="container-cube">
+                <h3 class="container-subtitle">Диван апартековый “T-75”</h3>
+                <p class="container-price">69 990 руб</p>
+                <button class="container-subbtn container-btn-2">Купить</button>
               </div>
-            </li>
-            <li class="raiting__item">
-              <p class="raiting__elem">
-                <svg class="raiting__star" width="15.75" height="15">
+            </article>
+            <article class="container-item">
+              <p class="container-elem">
+                <svg class="container-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,8
               </p>
-              <picture class="raiting__photo">
+              <picture class="container-photo">
                 <source srcset="img/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-2.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#" width="261" height="101">
               </picture>
-              <div class="raiting__cube">
-                <h3 class="raiting__subtitle">Диван тканевый “D-31”</h3>
-                <p class="raiting__price">28 490 руб</p>
-                <button class="raiting__subbtn container-btn-2">Купить</button>
+              <div class="container-cube">
+                <h3 class="container-subtitle">Диван тканевый “D-31”</h3>
+                <p class="container-price">28 490 руб</p>
+                <button class="container-subbtn container-btn-2">Купить</button>
               </div>
-            </li>
-            <li class="raiting__item">
-              <p class="raiting__elem">
-                <svg class="raiting__star" width="15.75" height="15">
+            </article>
+            <article class="container-item">
+              <p class="container-elem">
+                <svg class="container-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,8
               </p>
-              <picture class="raiting__photo">
+              <picture class="container-photo">
                 <source srcset="img/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-3.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#" width="262" height="103">
               </picture>
-              <div class="raiting__cube">
-                <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
-                <p class="raiting__price">22 990 руб</p>
-                <button class="raiting__subbtn container-btn-2">Купить</button>
+              <div class="container-cube">
+                <h3 class="container-subtitle">Диван велюровый “Y-68”</h3>
+                <p class="container-price">22 990 руб</p>
+                <button class="container-subbtn container-btn-2">Купить</button>
               </div>
-            </li>
-            <li class="raiting__item">
-              <p class="raiting__elem">
-                <svg class="raiting__star" width="15.75" height="15">
+            </article>
+            <article class="container-item">
+              <p class="container-elem">
+                <svg class="container-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,8
               </p>
-              <picture class="raiting__photo">
+              <picture class="container-photo">
                 <source srcset="img/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-4.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#" width="257" height="125">
               </picture>
-              <div class="raiting__cube">
-                <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
-                <p class="raiting__price">22 990 руб</p>
-                <button class="raiting__subbtn container-btn-2">Купить</button>
+              <div class="container-cube">
+                <h3 class="container-subtitle">Диван велюровый “Y-68”</h3>
+                <p class="container-price">22 990 руб</p>
+                <button class="container-subbtn container-btn-2">Купить</button>
               </div>
-            </li>
-          </ul>
+            </article>
+          </div>
         </div>
         <div class="raiting__btn-div">
           <button class="raiting__btn container-btn-1" id="btn">Смотреть больше товаров</button>
@@ -712,12 +712,12 @@
       <div class="container">
         <h2 class="container-title">Полезное</h2>
         <div class="useful__slider-wrapper">
-          <button class="swiper-btn swiper-prev useful-prev" aria-label="К предыдущему слайду"></button>
-          <button class="swiper-btn swiper-next useful-next" aria-label="К следующему слайду"></button>
+          <button class="swiper-btn swiper-prev useful__prev" aria-label="К предыдущему слайду"></button>
+          <button class="swiper-btn swiper-next useful__next" aria-label="К следующему слайду"></button>
         </div>
         <div class="swiper useful__swiper">
-          <ul class="swiper-wrapper list-reset">
-            <li class="useful__slide swiper-slide">
+          <div class="swiper-wrapper">
+            <article class="useful__slide swiper-slide">
               <picture>
                 <source class="useful__foto" srcset="img/useful__default-foto-1.jpg" media="(min-width: 320px)">
                 <img class="useful__foto" srcset="img/useful__default-foto-1.jpg" alt="Default image" src="#" width="624" height="426">
@@ -728,8 +728,8 @@
                 </p>
                 <a class="useful__link container-btn-2" href="#">Читать</a>
               </div>
-            </li>
-            <li class="useful__slide swiper-slide">
+            </article>
+            <article class="useful__slide swiper-slide">
               <picture>
                 <source class="useful__foto" srcset="img/useful__default-foto-2.jpg" media="(min-width: 320px)">
                 <img class="useful__foto" srcset="img/useful__default-foto-2.jpg" alt="Default image" src="#" width="624" height="426">
@@ -740,8 +740,8 @@
                 </p>
                 <a class="useful__link container-btn-2" href="#">Читать</a>
               </div>
-            </li>
-            <li class="useful__slide swiper-slide">
+            </article>
+            <article class="useful__slide swiper-slide">
               <picture>
                 <source class="useful__foto" srcset="img/useful__default-foto-3.jpg" media="(min-width: 320px)">
                 <img class="useful__foto" srcset="img/useful__default-foto-3.jpg" alt="Default image" src="#" width="624" height="426">
@@ -752,8 +752,8 @@
                 </p>
                 <a class="useful__link container-btn-2" href="#">Читать</a>
               </div>
-            </li>
-            <li class="useful__slide swiper-slide">
+            </article>
+            <article class="useful__slide swiper-slide">
               <picture>
                 <source class="useful__foto" srcset="img/useful__default-foto-4.jpg" media="(min-width: 320px)">
                 <img class="useful__foto" srcset="img/useful__default-foto-4.jpg" alt="Default image" src="#" width="624" height="426">
@@ -764,8 +764,8 @@
                 </p>
                 <a class="useful__link container-btn-2" href="#">Читать</a>
               </div>
-            </li>
-            <li class="useful__slide swiper-slide">
+            </article>
+            <article class="useful__slide swiper-slide">
               <picture>
                 <source class="useful__foto" srcset="img/useful__default-foto-5.jpg" media="(min-width: 320px)">
                 <img class="useful__foto" srcset="img/useful__default-foto-5.jpg" alt="Default image" src="#" width="624" height="426">
@@ -776,8 +776,8 @@
                 </p>
                 <a class="useful__link container-btn-2" href="#">Читать</a>
               </div>
-            </li>
-          </ul>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -815,13 +815,15 @@
             <input class="container-input" type="email" placeholder="Ваш e-mail" name="email" id="email">
           </label>
           <button class="container-btn container-btn-1" type="submit">Отправить</button>
-          <label class="checkbox-wrap">
-            <input class="checkbox checkbox-hidden" type="checkbox" checked>
-            <span class="checkbox-content">
-              <span class="checkbox-check"></span>
-              <span class="checkbox-text">Принимаю <a class="container-input-link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
-            </span>
-          </label>
+          <div class="checbox-cube">
+            <label class="checkbox-wrap">
+              <input class="checkbox checkbox-hidden" type="checkbox" checked>
+              <span class="checkbox-content">
+                <span class="checkbox-check"></span>
+                <span class="checkbox-text">Принимаю <a class="container-input-link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
+              </span>
+            </label>
+          </div>
         </form>
       </div>
     </section>
@@ -917,9 +919,9 @@
   <script src="libs/choices.min.js"></script>
   <script src="libs/just-validate.min.js"></script>
   <script src="libs/inputmask.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/@popperjs/core"></script>
-  <script src="https://unpkg.com/tippy.js"></script>
+  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="//unpkg.com/@popperjs/core"></script>
+  <script src="//unpkg.com/tippy.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/burger-menu.js"></script>
   <script src="js/selector.js"></script>

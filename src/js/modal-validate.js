@@ -40,8 +40,8 @@ validation
     }
   ])
   .onSuccess(() => {
-    document.getElementById('popup-order').style.visibility = "hidden";
-    document.getElementById('popup-order').style.opacity = 0;
+    document.getElementById('pop-up-order').style.visibility = "hidden";
+    document.getElementById('pop-up-order').style.opacity = 0;
     document.getElementById('pop-up').style.visibility = "visible";
     document.getElementById('pop-up').style.opacity = 1;
   })

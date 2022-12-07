@@ -97,9 +97,21 @@
 
 @media (max-width: 576px) {
   .offers {
+    padding-bottom: 59px;
+    
     &__item,
     .item-big {
       width: 100%;
+    }
+
+    &__prev {
+      left: 37%;
+      transform: translate(0, 1720%);
+    }
+
+    &__next {
+      left: 52.5%;
+      transform: translate(0, 1720%);
     }
   }
 }

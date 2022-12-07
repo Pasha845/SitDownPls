@@ -342,7 +342,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .similar__btn--disabled,
 .product__btn--disabled {
   pointer-events: none;
-  opacity: 0.3;
+  filter: grayscale(1) opacity(0.4);
   cursor: auto;
 }
 
@@ -409,7 +409,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 32px;
 }
 
-.swiper-item {
+.container-item {
   grid-column: span 3;
   position: relative;
   flex-grow: 1;
@@ -420,7 +420,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: $grey_light;
 }
 
-.swiper-elem {
+.container-elem {
   display: flex;
   align-items: center;
   margin: 0;
@@ -430,22 +430,22 @@ input[type="search"]::-webkit-search-results-decoration {
   color: $secondary;
 }
 
-.swiper-star {
+.container-star {
   margin-right: 6.7px;
 }
 
-.swiper-photo {
+.container-photo {
   display: flex;
   justify-content: center;
   margin-top: auto;
 }
 
-.swiper-cube {
+.container-cube {
   padding: 30px;
   padding-top: 16px;
 }
 
-.swiper-subtitle {
+.container-subtitle {
   margin: 0;
   margin-bottom: 24px;
   font-size: 24px;
@@ -454,7 +454,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: $black;
 }
 
-.swiper-price {
+.container-price {
   margin: 0;
   margin-bottom: 24px;
   font-size: 16px;
@@ -611,6 +611,14 @@ input[type="search"]::-webkit-search-results-decoration {
   overflow: hidden;
 }
 
+.checbox-cube {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .checkbox-wrap,
 .big-checkbox-wrap {
   font-size: 14px;
@@ -760,6 +768,39 @@ input[type="search"]::-webkit-search-results-decoration {
 
   .container-title {
     font-size: 24px;
+  }
+
+  .container-item {
+    padding-top: 16px;
+  }
+
+  .container-elem {
+    margin-left: 16px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 15.6px;
+    color: $secondary;
+  }
+
+  .container-star {
+    width: 13px;
+    height: 14px;
+  }
+
+  .container-cube {
+    padding: 16px;
+    min-height: 172px;
+  }
+  
+  .container-subtitle,
+  .container-price {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .container-subbtn {
+    padding: 10px 23px;
   }
 
   .pop-up-container {

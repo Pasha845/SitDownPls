@@ -6,7 +6,7 @@
   <meta name="description" content="Страница карточки товара включает описание товара с модал окном и слайдер.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Карточка товара</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+  <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css"> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -209,7 +209,7 @@
   <main>
     <section class="product">
       <div class="container">
-        <div class="modal" id="popup-product">
+        <div class="modal" id="pop-up-product">
           <div class="modal-container product__modal-product flex">
             <a class="modal-close" href="#">
               <svg width="20" height="20">
@@ -218,11 +218,13 @@
             </a>
             <div class="modal-product-photo flex">
               <picture>
-                <source srcset="img/product__default-foto-1.png" media="(min-width: 320px)">
-                <img srcset="img/product__default-foto-1.png" alt="Default image" src="#" width="1065" height="418">
+                <source srcset="img/product__default-foto-1.png" media="(min-width: 577px) and (max-width: 768px)">
+                <source srcset="img/product__mini-foto-1.png" media="(min-width: 769px) and (max-width: 1024px)">
+                <source srcset="img/product__main-default-foto-1.png" media="(min-width: 1025px)">
+                <img srcset="img/product__main-default-foto-1.png" alt="Default image" src="#">
               </picture>
             </div>
-            <div class="product__cube flex">
+            <div class="product__cube-modal flex">
               <picture>
                 <source srcset="img/product__default-foto-2.png" media="(min-width: 1025px)">
                 <img srcset="img/product__default-foto-2.png" alt="Default image" src="#" width="253" height="126">
@@ -242,36 +244,36 @@
             </div>
             <div class="product__modal-swiper">
               <div class="product__slider-wrapper">
-                <button class="swiper-btn swiper-prev product-prev" aria-label="К предыдущему слайду"></button>
-                <button class="swiper-btn swiper-next product-next" aria-label="К следующему слайду"></button>
-              </div>
-              <div class="swiper product__swiper">
-                <ul class="swiper-wrapper list-reset">
-                  <li class="swiper-slide">
-                    <picture>
-                      <source srcset="img/product__default-foto-2.png" media="(min-width: 320px)">
-                      <img srcset="img/product__default-foto-2.png" alt="Default image" src="#" width="253" height="126">
-                    </picture>
-                  </li>
-                  <li class="swiper-slide">
-                    <picture>
-                      <source srcset="img/product__default-foto-3.png" media="(min-width: 320px)">
-                      <img srcset="img/product__default-foto-3.png" alt="Default image" src="#" width="135" height="126">
-                    </picture>
-                  </li>
-                  <li class="swiper-slide">
-                    <picture>
-                      <source srcset="img/product__default-foto-4.png" media="(min-width: 320px)">
-                      <img srcset="img/product__default-foto-4.png" alt="Default image" src="#" width="275" height="126">
-                    </picture>
-                  </li>
-                  <li class="swiper-slide">
-                    <picture>
-                      <source srcset="img/product__default-foto-5.png" media="(min-width: 320px)">
-                      <img srcset="img/product__default-foto-5.png" alt="Default image" src="#" width="135" height="126">
-                    </picture>
-                  </li>
-                </ul>
+                <button class="swiper-btn product__swiper-btn product__prev" aria-label="К предыдущему слайду"></button>
+                <div class="swiper product__swiper">
+                  <ul class="swiper-wrapper list-reset">
+                    <li class="swiper-slide">
+                      <picture>
+                        <source srcset="img/product__modal-default-foto-1.png" media="(min-width: 320px) and (max-width: 1024px)">
+                        <img srcset="img/product__modal-default-foto-1.png" alt="Default image" src="#">
+                      </picture>
+                    </li>
+                    <li class="swiper-slide">
+                      <picture>
+                        <source srcset="img/product__modal-default-foto-2.png" media="(min-width: 320px) and (max-width: 1024px)">
+                        <img srcset="img/product__modal-default-foto-2.png" alt="Default image" src="#">
+                      </picture>
+                    </li>
+                    <li class="swiper-slide">
+                      <picture>
+                        <source srcset="img/product__modal-default-foto-3.png" media="(min-width: 320px) and (max-width: 1024px)">
+                        <img srcset="img/product__modal-default-foto-3.png" alt="Default image" src="#">
+                      </picture>
+                    </li>
+                    <li class="swiper-slide">
+                      <picture>
+                        <source srcset="img/product__modal-default-foto-3.png" media="(min-width: 320px) and (max-width: 1024px)">
+                        <img srcset="img/product__modal-default-foto-3.png" alt="Default image" src="#">
+                      </picture>
+                    </li>
+                  </ul>
+                </div>
+                <button class="swiper-btn product__swiper-btn product__next" aria-label="К следующему слайду"></button>
               </div>
             </div>
           </div>
@@ -291,7 +293,7 @@
             </div>
           </div>
         </div>
-        <div class="modal" id="popup-order">
+        <div class="modal" id="pop-up-order">
           <div class="modal-container product__modal-order flex">
             <a class="modal-close" href="#">
               <svg width="20" height="20">
@@ -311,20 +313,22 @@
                   <input class="container-input" type="tel" placeholder="Ваш телефон" name="tel" id="tel">
                 </label>
                 <button class="container-btn container-btn-1" id="submit-btn">Отправить</button>
-                <label class="checkbox-wrap">
-                  <input class="checkbox checkbox-hidden" type="checkbox" checked>
-                  <span class="checkbox-content">
-                    <span class="checkbox-check"></span>
-                    <span class="checkbox-text">Принимаю <a class="container-link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
-                  </span>
-                </label>
+                <div class="checbox-cube">
+                  <label class="checkbox-wrap">
+                    <input class="checkbox checkbox-hidden" type="checkbox" checked>
+                    <span class="checkbox-content">
+                      <span class="checkbox-check"></span>
+                      <span class="checkbox-text">Принимаю <a class="container-input-link" href="#" aria-label="Пользовательское соглашение">пользовательское соглашение</a></span>
+                    </span>
+                  </label>
+                </div>
               </form>
             </div>
           </div>
         </div>
         <div class="product__container">
           <div class="product__item-1">
-            <a href="#popup-product">
+            <a class="product__pop-up-photo" href="#pop-up-product">
               <picture>
                 <source srcset="img/product__default-foto-1.png" media="(min-width: 320px)">
                 <img srcset="img/product__default-foto-1.png" alt="Default image" src="#" width="1065" height="418">
@@ -351,7 +355,7 @@
           </div>
           <div class="product__item-2 item-order">
             <p class="product__elem">
-              <svg class="swiper-star" width="15.75" height="15">
+              <svg class="product__star swiper-star" width="15.75" height="15">
                 <use xlink:href="img/sprite.svg#star"></use>
               </svg>
               4,8
@@ -360,13 +364,13 @@
             <p class="product__text-order">Мини 120 см без ящика Stark синий (Рогожка)</p>
             <p class="product__price">28 490 руб</p>
             <div class="product__div-links flex">
-              <a class="product__btn container-btn-1" href="#popup-order">Купить в один клик</a>
-              <a class="product__link" href="#">+ Добавить в корзину</a>
+              <a class="product__btn container-btn-1" href="#pop-up-order">Купить в один клик</a>
+              <a class="product__link" href="#" aria-label="Добавить в корзину">+ Добавить в корзину</a>
             </div>
           </div>
         </div>
         <div class="product__container">
-          <div class="product__item-1">
+          <div class="product__item-1  product__media-div">
             <h4 class="product__subtitle">Опорный механизм</h4>
             <p class="product__subtext">
               Опорный механизм напоминает пантограф, к которому добавили дополнительную секцию. У опорного дивана сиденье «выпрыгивает» вперёд и вытаскивает вторую часть спального места. Заключительный штрих — опустить спинку.
@@ -386,21 +390,21 @@
             </div>
           </div>
           <div class="product__item-2">
-            <p class="product__category">Гарантия ..................................................................... <span class="product__category-elem">18 месяцев</span></p>
-            <p class="product__category">Артикул ....................................................................... <span class="product__category-elem">AAA41269004</span></p>
-            <p class="product__category">Длина .......................................................................... <span class="product__category-elem">163 см</span></p>
-            <p class="product__category">Высота ......................................................................... <span class="product__category-elem">90 см</span></p>
-            <p class="product__category">Глубина........................................................................ <span class="product__category-elem">108 см</span></p>
-            <p class="product__category">Спальное место ........................................................ <span class="product__category-elem">200 см х 125 см</span></p>
-            <p class="product__category">Высота посадки ........................................................ <span class="product__category-elem">45 см</span></p>
-            <p class="product__category">Механизм ................................................................... <span class="product__category-elem">Опорный</span></p>
-            <p class="product__category">Тип обивки ................................................................. <span class="product__category-elem">Рогожка</span></p>
-            <p class="product__category">Цвет ............................................................................. <span class="product__category-elem">Синий</span></p>
-            <p class="product__category">Наполнитель ............................................................. <span class="product__category-elem">Независимый пружинный блок</span></p>
-            <p class="product__category">Материал каркаса .................................................... <span class="product__category-elem">Металл. рама с дерев. латами</span></p>
-            <p class="product__category">Количество мест ....................................................... <span class="product__category-elem">Двухместные</span></p>
-            <p class="product__category">Категория ................................................................... <span class="product__category-elem">Прямые тканевые диваны</span></p>
-            <p class="product__category">Возврат ....................................................................... <span class="product__category-elem">Условия</span></p>
+            <p class="product__category">Гарантия<span class="product__category-elem">18 месяцев</span></p>
+            <p class="product__category">Артикул<span class="product__category-elem">AAA41269004</span></p>
+            <p class="product__category">Длина<span class="product__category-elem">163 см</span></p>
+            <p class="product__category">Высота<span class="product__category-elem">90 см</span></p>
+            <p class="product__category">Глубина<span class="product__category-elem">108 см</span></p>
+            <p class="product__category">Спальное место<span class="product__category-elem">200 см х 125 см</span></p>
+            <p class="product__category">Высота посадки<span class="product__category-elem">45 см</span></p>
+            <p class="product__category">Механизм<span class="product__category-elem">Опорный</span></p>
+            <p class="product__category">Тип обивки<span class="product__category-elem">Рогожка</span></p>
+            <p class="product__category">Цвет<span class="product__category-elem">Синий</span></p>
+            <p class="product__category">Наполнитель<span class="product__category-elem">Независимый пружинный блок</span></p>
+            <p class="product__category">Материал каркаса<span class="product__category-elem">Металл. рама с дерев. латами</span></p>
+            <p class="product__category">Количество мест<span class="product__category-elem">Двухместные</span></p>
+            <p class="product__category">Категория<span class="product__category-elem">Прямые тканевые диваны</span></p>
+            <p class="product__category">Возврат<span class="product__category-elem">Условия</span></p>
           </div>
         </div>
       </div>
@@ -408,86 +412,104 @@
 
     <section class="similar">
       <div class="container">
-        <h2 class="container-title similar__title">Похожие товары</h2>
+        <h2 class="similar__title container-title">Похожие товары</h2>
         <div class="similar__slider-wrapper">
-          <button class="swiper-btn swiper-prev similar-prev" aria-label="К предыдущему слайду"></button>
-          <button class="swiper-btn swiper-next similar-next" aria-label="К следующему слайду"></button>
+          <button class="swiper-btn swiper-prev similar__prev" aria-label="К предыдущему слайду"></button>
+          <button class="swiper-btn swiper-next similar__next" aria-label="К следующему слайду"></button>
         </div>
         <div class="swiper similar__swiper">
-          <ul class="swiper-wrapper swiper-list list-reset">
-            <li class="swiper-slide swiper-item">
-              <p class="swiper-elem">
-                <svg class="swiper-star" width="15.75" height="15">
+          <div class="swiper-wrapper">
+            <article class="similar__item container-item swiper-slide">
+              <p class="container-elem">
+                <svg class="container-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,5
               </p>
-              <picture class="swiper-photo">
+              <picture class="container-photo">
                 <source srcset="img/raiting__mobile-foto-16.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-16.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-16.png" alt="Default image" src="#">
               </picture>
-              <div class="swiper-cube">
-                <h3 class="swiper-subtitle">Диван велюровый “R-85”</h3>
-                <p class="swiper-price">34 990 руб</p>
-                <button class="swiper-subbtn container-btn-2">Купить</button>
+              <div class="container-cube">
+                <h3 class="container-subtitle">Диван велюровый “R-85”</h3>
+                <p class="container-price">34 990 руб</p>
+                <button class="container-subbtn container-btn-2">Купить</button>
               </div>
-            </li>
-            <li class="swiper-slide swiper-item">
-              <p class="swiper-elem">
-                <svg class="swiper-star" width="15.75" height="15">
+            </article>
+            <article class="similar__item container-item swiper-slide">
+              <p class="container-elem">
+                <svg class="container-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,6
               </p>
-              <picture class="swiper-photo">
+              <picture class="container-photo">
                 <source srcset="img/raiting__mobile-foto-11.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-11.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-11.png" alt="Default image" src="#">
               </picture>
-              <div class="swiper-cube">
-                <h3 class="swiper-subtitle">Диван флоковый “H-58”</h3>
-                <p class="swiper-price">23 990 руб</p>
-                <button class="swiper-subbtn container-btn-2">Купить</button>
+              <div class="container-cube">
+                <h3 class="container-subtitle">Диван флоковый “H-58”</h3>
+                <p class="container-price">23 990 руб</p>
+                <button class="container-subbtn container-btn-2">Купить</button>
               </div>
-            </li>
-            <li class="swiper-slide swiper-item">
-              <p class="swiper-elem">
-                <svg class="swiper-star" width="15.75" height="15">
+            </article>
+            <article class="similar__item container-item swiper-slide">
+              <p class="container-elem">
+                <svg class="container-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,5
               </p>
-              <picture class="swiper-photo">
+              <picture class="container-photo">
                 <source srcset="img/raiting__mobile-foto-17.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-17.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-17.png" alt="Default image" src="#">
               </picture>
-              <div class="swiper-cube">
-                <h3 class="swiper-subtitle">Диван велюровый “S-44”</h3>
-                <p class="swiper-price">19 990 руб</p>
-                <button class="swiper-subbtn container-btn-2">Купить</button>
+              <div class="container-cube">
+                <h3 class="container-subtitle">Диван велюровый “S-44”</h3>
+                <p class="container-price">19 990 руб</p>
+                <button class="container-subbtn container-btn-2">Купить</button>
               </div>
-            </li>
-            <li class="swiper-slide swiper-item">
-              <p class="swiper-elem">
-                <svg class="swiper-star" width="15.75" height="15">
+            </article>
+            <article class="similar__item container-item swiper-slide">
+              <p class="container-elem">
+                <svg class="container-star" width="15.75" height="15">
                   <use xlink:href="img/sprite.svg#star"></use>
                 </svg>
                 4,8
               </p>
-              <picture class="swiper-photo">
+              <picture class="container-photo">
                 <source srcset="img/raiting__mobile-foto-7.png" media="(min-width: 320px) and (max-width: 576px)">
                 <source srcset="img/raiting__default-foto-7.png" media="(min-width: 577px)">
                 <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#">
               </picture>
-              <div class="swiper-cube">
-                <h3 class="swiper-subtitle">Диван шиниловый “V-43”</h3>
-                <p class="swiper-price">19 990 руб</p>
-                <button class="swiper-subbtn container-btn-2">Купить</button>
+              <div class="container-cube">
+                <h3 class="container-subtitle">Диван шиниловый “V-43”</h3>
+                <p class="container-price">19 990 руб</p>
+                <button class="container-subbtn container-btn-2">Купить</button>
               </div>
-            </li>
-          </ul>
+            </article>
+            <article class="similar__item container-item swiper-slide">
+              <p class="container-elem">
+                <svg class="container-star" width="15.75" height="15">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                4,8
+              </p>
+              <picture class="container-photo">
+                <source srcset="img/raiting__mobile-foto-7.png" media="(min-width: 320px) and (max-width: 576px)">
+                <source srcset="img/raiting__default-foto-7.png" media="(min-width: 577px)">
+                <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#">
+              </picture>
+              <div class="container-cube">
+                <h3 class="container-subtitle">Диван шиниловый “V-43”</h3>
+                <p class="container-price">19 990 руб</p>
+                <button class="container-subbtn container-btn-2">Купить</button>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -583,7 +605,7 @@
   <script src="libs/choices.min.js"></script>
   <script src="libs/just-validate.min.js"></script>
   <script src="libs/inputmask.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/settings.js"></script>
   <script src="js/burger-menu.js"></script>
   <script src="js/selector.js"></script>
