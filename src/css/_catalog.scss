@@ -269,5 +269,31 @@
       column-count: 2;
       max-width: 405px;
     }
+
+    &__prev {
+      left: 0;
+      transform: translate(775%, 0);
+    }
+  
+    &__next {
+      right: 0;
+      transform: translate(-925%, 0);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .catalog {
+    grid-column: span 6;
+
+    &__prev {
+      left: 0;
+      transform: translate(260%, 0);
+    }
+  
+    &__next {
+      right: 0;
+      transform: translate(-410%, 0);
+    }
   }
 }
