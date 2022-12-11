@@ -29,15 +29,26 @@
 @media (max-width: 768px) {
   .similar {
     padding-top: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .similar {
+    padding-bottom: 118px;
+    
+    &__item {
+      width: 140px;
+      height: 278px;
+    }
 
     &__prev {
       left: 37%;
-      transform: translate(0%, 1460%);
+      transform: translate(0%, 980%);
     }
 
     &__next {
       left: 52.5%;
-      transform: translate(0, 1460%);
+      transform: translate(0, 980%);
     }
   }
 }

@@ -397,7 +397,7 @@
       <div class="catalog__filter">
         <div class="catalog__filter-div flex">
           <h3 class="catalog__filter-title">Фильтры:</h3>
-          <div class="catalog__drop-div flex">
+          <div class="catalog__drop-div">
             <div class="catalog__item-drop">
               <button class="catalog__item-btn js-header-dropdown-btn" type="button" data-path="two">
                 <span class="catalog__item-text">Категория</span>
@@ -482,12 +482,12 @@
                   <div class="catalog__drop-list list-reset">
                     <div class="catalog__price-div">
                       <div class="catalog__field">
-                        <span>от</span>
-                        <input class="input-min" type="number" value="2000">
+                        <span class="catalog__mobile-field-word">от</span>
+                        <input class="catalog__mobile-field input-min" type="number" value="2000">
                       </div>
                       <div class="catalog__field">
-                        <span>до</span>
-                        <input class="input-max" type="number" value="150000">
+                        <span class="catalog__mobile-field-word">до</span>
+                        <input class="catalog__mobile-field input-max" type="number" value="150000">
                       </div>
                     </div>
                   </div>
@@ -608,13 +608,14 @@
                   5,0
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-1.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-1.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван кожаный “R-94”</h3>
                   <p class="container-price">94 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -625,13 +626,14 @@
                   4,8
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-4.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-4.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван велюровый “Y-68”</h3>
                   <p class="container-price">22 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -642,13 +644,14 @@
                   4,8
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-7.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-7.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-7.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван шиниловый “V-43”</h3>
                   <p class="container-price">19 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
             </li>
@@ -661,13 +664,14 @@
                   4,9
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-2.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-2.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван апартековый “T-75”</h3>
                   <p class="container-price">69 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -678,13 +682,14 @@
                   4,8
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-5.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-5.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-5.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-5.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван из шинила “W-95”</h3>
                   <p class="container-price">22 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -695,13 +700,14 @@
                   4,7
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-8.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-8.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-8.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-8.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван велюровый “S-99”</h3>
                   <p class="container-price">19 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
             </li>
@@ -714,13 +720,14 @@
                   4,8
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-3.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-3.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван тканевый “D-31”</h3>
-                  <p class="container-price">28 490 руб</p>
-                  <a class="container-subbtn container-btn-2" href="product.html">Купить</a>
+                  <p class="container-price catalog__price">28 490 руб</p>
+                  <button class="container-btn-2 container-mobile-btn"  onclick="window.location.href='product.html'">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -731,13 +738,14 @@
                   4,8
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-6.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-6.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-6.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-6.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван флоковый “G-41”</h3>
                   <p class="container-price">17 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -748,13 +756,14 @@
                   4,7
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-9.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-9.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-9.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-9.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван из кожзама “F-85”</h3>
                   <p class="container-price">26 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
             </li>
@@ -767,13 +776,14 @@
                   4,6
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-10.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-10.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-10.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-10.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван флоковый “H-64”</h3>
                   <p class="container-price">25 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -784,13 +794,14 @@
                   4,6
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-13.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-13.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-13.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-13.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван из шинила “С-42”</h3>
                   <p class="container-price">18 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -801,13 +812,14 @@
                   4,5
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-16.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-16.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-16.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-16.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван велюровый “R-85”</h3>
                   <p class="container-price">34 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
             </li>
@@ -820,13 +832,14 @@
                   4,6
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-11.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-11.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-11.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-11.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван флоковый “H-58”</h3>
                   <p class="container-price">23 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -837,13 +850,14 @@
                   4,6
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-14.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-14.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-14.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-14.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван велюровый “U-58”</h3>
                   <p class="container-price">21 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -854,13 +868,14 @@
                   4,7
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-17.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-17.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-17.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-17.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван велюровый “S-44”</h3>
                   <p class="container-price">19 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
             </li>
@@ -873,13 +888,14 @@
                   4,6
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-12.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-12.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-12.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-12.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван из кожзама “R-43”</h3>
                   <p class="container-price">33 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -890,13 +906,14 @@
                   4,5
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-15.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-15.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-15.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-15.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван флоковый “F-41”</h3>
                   <p class="container-price">17 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
               <article class="catalog__item container-item">
@@ -907,13 +924,14 @@
                   4,4
                 </p>
                 <picture class="container-photo">
-                  <source srcset="img/raiting__default-foto-18.png" media="(min-width: 320px)">
+                  <source srcset="img/raiting__mobile-foto-18.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-18.png" media="(min-width: 577px)">
                   <img srcset="img/raiting__default-foto-18.png" alt="Default image" src="#">
                 </picture>
                 <div class="container-cube">
                   <h3 class="container-subtitle">Диван из шинила “С-80”</h3>
                   <p class="container-price">20 990 руб</p>
-                  <button class="container-subbtn container-btn-2">Купить</button>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
               </article>
             </li>

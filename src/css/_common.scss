@@ -434,14 +434,6 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-right: 6.7px;
 }
 
-.container-sale {
-  padding: 7px 19px;
-  font-size: 14px;
-  line-height: 19.07px;
-  color: $white;
-  background: url("../img/sale.png") no-repeat;
-}
-
 .container-photo {
   display: flex;
   justify-content: center;
@@ -830,7 +822,7 @@ input[type="search"]::-webkit-search-results-decoration {
     line-height: 20.8px;
   }
 
-  .container-btn-2 {
+  .container-mobile-btn {
     padding: 10px 23px;
   }
 

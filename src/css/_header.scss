@@ -364,8 +364,8 @@
 
   &__btn-search {
     position: absolute;
-    top: 13px;
-    right: 26px;
+    top: 15px;
+    right: 32px;
     border: none;
     background: none;
     cursor: pointer;
@@ -610,7 +610,6 @@
     &__div {
       justify-content: space-between;
       width: 100%;
-      padding-bottom: 20px;
     }
 
     &__tel {
@@ -618,8 +617,9 @@
     }
 
     &__nav-div {
-      padding-top: 11px;
-      padding-bottom: 11px;
+      position: absolute;
+      top: 38px;
+      padding: 11px 36px;
       width: 100%;
       background-color: $grey_light;
     }
@@ -630,10 +630,12 @@
     
     &__holder {
       justify-content: space-between;
+      margin-top: 82px;
       width: 100%;
     }
 
     &__menu {
+      padding-top: 7px;
       width: calc(819 / 952 * 100%);
     }
 
@@ -645,10 +647,6 @@
     &__subcube,
     &__cube {
       margin-left: 0;
-    }
-
-    &__cube {
-      width: calc(701 / 925 * 100%);
     }
     
     &__link-margin:not(:last-child) {
@@ -710,7 +708,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .header {
     &__holder {
       padding-top: 33px;
@@ -867,6 +865,10 @@
       justify-content: center;
     }
 
+    &__padding {
+      padding-bottom: 16px;
+    }
+
     &__nav-div {
       display: none;
     }
@@ -881,6 +883,7 @@
     }
 
     &__holder {
+      margin-top: 0;
       padding-top: 10px;
       padding-bottom: 10px;
     }

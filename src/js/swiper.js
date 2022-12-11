@@ -105,7 +105,7 @@ const usefulSlider = new Swiper('.useful__swiper', {
 /* catalog */
 
 const catalogSlider = new Swiper('.catalog__swiper', {
-  slidesPerView: 3,
+  slidesPerView: "auto",
   grid: {
     rows: 1
   },
@@ -124,7 +124,7 @@ const catalogSlider = new Swiper('.catalog__swiper', {
       grid: {
         rows: 1
       },
-      spaceBetween: 32
+      spaceBetween: 16
     },
     669: {
       slidesPerView: 2,
@@ -153,6 +153,7 @@ const catalogSlider = new Swiper('.catalog__swiper', {
 /* product */
 
 const productSlider = new Swiper('.product__swiper', {
+  slidesPerView: "auto",
   grid: {
     rows: 1
   },

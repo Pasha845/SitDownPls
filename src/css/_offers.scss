@@ -13,6 +13,14 @@
     position: relative;
   }
 
+  &__sale {
+    padding: 7px 19px;
+    font-size: 14px;
+    line-height: 19.07px;
+    color: $white;
+    background: url("../img/sale.png") no-repeat;
+  }
+
   &__item {
     width: calc(328 / 1280 * 100% - 32px);
   }
@@ -49,12 +57,12 @@
 
     &__prev {
       left: 37%;
-      transform: translate(0, 1720%);
+      transform: translate(0, 1500%);
     }
 
     &__next {
       left: 52.5%;
-      transform: translate(0, 1720%);
+      transform: translate(0, 1500%);
     }
   }
 }

@@ -6,8 +6,8 @@
   padding-bottom: 100px;
 
   &__item {
-    margin-bottom: 32px;
     height: 390px;
+    margin-bottom: 32px;
   }
 
   &__btn {
@@ -105,10 +105,15 @@
       font-weight: normal;
     }
 
+    &__drop-div {
+      display: flex;
+      justify-content: space-between;
+      width: calc(844 / 952 * 100%);
+    }
+
     &__item-drop {
       position: relative;
       width: 187px;
-      margin-right: 32px;
       color: inherit;
     }
 
@@ -173,7 +178,7 @@
       padding-bottom: 23px;
       padding-left: 28px;
       padding-right: 100px;
-      border: 2px solid $md_grey;
+      border: 1px solid $md_grey;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       background-color: $white;
@@ -251,10 +256,22 @@
     &__field:not(:last-child) {
       margin-bottom: 12px;
     }
+
+    &__mobile-field-word {
+      margin-right: 9px;
+    }
+
+    &__mobile-field {
+      padding: 4px 13px;
+      border: 1px solid $grey;
+      border-radius: 4px;
+      width: 86px;
+      color: $grey_shade;
+    }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .catalog {
     &__filter-title {
       margin-bottom: 16px;
@@ -265,9 +282,13 @@
     }
 
     &__drop-div {
-      flex-direction: column;
+      display: block;
       column-count: 2;
-      max-width: 405px;
+      width: calc(405 / 624 * 100%);
+    }
+
+    &__item-drop {
+      margin-bottom: 16px;
     }
 
     &__prev {
@@ -285,6 +306,23 @@
 @media (max-width: 576px) {
   .catalog {
     grid-column: span 6;
+
+    &__item {
+      width: 140px;
+      height: 278px;
+    }
+
+    &__drop-div {
+      width: 100%;
+    }
+    
+    &__item-drop,
+    &__item-btn,
+    &__item-text,
+    &__dropdown,
+    &__drop-list {
+      width: 140px;
+    }
 
     &__prev {
       left: 0;
