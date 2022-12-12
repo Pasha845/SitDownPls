@@ -6,12 +6,17 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-auto-flow: dense;
     grid-gap: 32px;
   }
 
   &__item-1,
   &__item-2 {
     grid-column: span 6;
+  }
+
+  &__item-2 {
+    max-width: 544px;
   }
 
   &__elem {
@@ -24,9 +29,13 @@
     color: $secondary;
   }
 
+  &__star {
+    margin-right: 6px;
+  }
+
   &__modal-product {
+    padding: 0;
     flex-direction: column;
-    margin: 143px auto;
     width: 1280px;
   }
 
@@ -34,12 +43,31 @@
     flex-direction: column;
   }
 
+  .modal-product-photo {
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &__pop-up-photo:focus {
+    outline: none;
+  }
+
   &__cube {
-    justify-content: space-between;
     margin-top: 16px;
-    margin-bottom: 32px;
+  }
+
+  &__cube,
+  &__cube-modal {
+    justify-content: space-between;
     padding: 10px 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: $grey_light;
+  }
+
+  &__cube-modal {
+    padding: 20px 50px;
   }
 
   &__subtitle {
@@ -65,14 +93,42 @@
     width: 526px;
   }
 
-  .modal-product-photo {
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
-  }
-
   &__modal-swiper {
     display: none;
+  }
+
+  &__swiper {
+    padding: 20px 67px;
+  }
+
+  &__slider-wrapper {
+    position: relative;
+  }
+
+  &__swiper-btn {
+    top: 50%;
+  }
+
+  &__prev {
+    left: 0;
+    transform: translate(50%, -50%);
+  }
+
+  &__prev::before {
+    left: calc(50% - 6px / 2);
+    border-left: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+  }
+  
+  &__next {
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  &__next::before {
+    left: calc(50% - 15px / 2);
+    border-top: 2px solid $primary;
+    border-right: 2px solid $primary;
   }
 
   &__modal-order {
@@ -117,6 +173,7 @@
 
   &__div-links {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   &__btn {
@@ -135,28 +192,48 @@
     cursor: pointer;
   }
 
+  &__link:focus {
+    outline: none;
+  }
+
   &__category {
+    display: flex;
+    align-items: baseline;
     margin: 0;
     font-size: 14px;
     line-height: 25.2px;
     color: $grey;
   }
 
+  &__category::before {
+    content: '';
+    border-bottom: 2px dotted;
+    flex-grow: 1;
+    order: 2;
+    margin: 0 4px;
+    max-width: 287px;
+  }
+
   &__category-elem {
-    margin-left: 4px;
+    order: 3;
     color: $black;
   }
 }
 
 @media (max-width: 1024px) {
   .product {
+    padding-bottom: 35px;
+
     &__modal-product {
       flex-direction: column;
-      margin: 160px auto;
       width: 952px;
     }
 
     &__cube {
+      padding: 10px;
+    }
+
+    &__cube-modal {
       display: none;
     }
 
@@ -185,25 +262,41 @@
 
 @media (max-width: 768px) {
   .product {
+    padding-bottom: 16px;
+
     &__container {
       grid-template-columns: repeat(6, 1fr);
     }
 
-    &__item-1 {
-      grid-column: span 6;
-    }
-
+    &__item-1,
     &__item-2 {
       grid-column: span 6;
     }
 
     &__cube {
+      justify-content: space-between;
+      align-items: center;
       flex-direction: column;
+      margin-top: 32px;
+      padding: 25px;
       width: 187px;
+      height: 350px;
+    }
+
+    &__media-div {
+      max-width: 514px;
+    }
+    
+    .last-text {
+      margin-bottom: 32px;
     }
 
     .item-order {
       grid-column: span 4;
+    }
+
+    &__modal-product {
+      width: 624px;
     }
   }
 }
@@ -219,6 +312,8 @@
     &__cube {
       flex-direction: row;
       width: 100%;
+      height: 81px;
+      padding: 10px;
     }
 
     .item-order {
@@ -240,13 +335,33 @@
       line-height: 31.2px;
     }
 
-    &__btn {
+    &__div-links {
       width: 100%;
     }
 
     &__link {
-      margin-bottom: 32px;
+      margin: 0;
       line-height: 20.8px;
+    }
+
+    &__category {
+      font-size: 10px;
+      line-height: 13.62px;
+    }
+  
+    &__category::before {
+      content: '';
+      border-bottom: none;
+      flex-grow: 0;
+      order: 2;
+      margin: 0 4px;
+      width: 100%;
+    }
+  
+    &__category-elem {
+      font-size: 14px;
+      line-height: 19.07px;
+      order: 1;
     }
 
     &__photo {

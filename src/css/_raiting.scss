@@ -1,0 +1,61 @@
+@import '_variables.scss';
+
+.raiting {
+  padding-top: 35px;
+  padding-bottom: 70px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  &__btn-div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__btn {
+    padding: 20px 34.5px;
+  }
+
+  &__group {
+    display: none;
+    transition: transform .5s ease;
+  }
+  
+  &__group.is-active {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .raiting {
+    &__list {
+      grid-template-columns: repeat(9, 1fr);
+    }
+
+    &__none {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .raiting {
+    &__list {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .raiting {
+    padding-top: 59px;
+
+    &__list {
+      grid-gap: 16px;
+    }
+  }
+}

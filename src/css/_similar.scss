@@ -1,0 +1,54 @@
+@import '_variables.scss';
+
+.similar {
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 70px;
+
+  &__title {
+    margin-bottom: 26px;
+    font-size: 24px;
+    line-height: 31.2px;
+  }
+
+  &__slider-wrapper {
+    position: relative;
+  }
+
+  &__item {
+    height: 390px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .similar {
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .similar {
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .similar {
+    padding-bottom: 118px;
+    
+    &__item {
+      width: 140px;
+      height: 278px;
+    }
+
+    &__prev {
+      left: 37%;
+      transform: translate(0%, 980%);
+    }
+
+    &__next {
+      left: 52.5%;
+      transform: translate(0, 980%);
+    }
+  }
+}

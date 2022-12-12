@@ -16,15 +16,25 @@ const clean = () => {
   return del(['dist'])
 }
 
+const normalize = () => {
+  return src('src/css/**/normalize.css')
+    .pipe(dest('dist/css'))
+}
+
 const resources = () => {
   return src('src/resources/**')
     .pipe(dest('dist'))
 }
 
+const libs = () => {
+  return src('src/libs/**')
+    .pipe(dest('dist/libs'))
+}
+
 const styles = () => {
-  return src('src/styles/**/style.css')
+  return src('src/css/**/style.css')
     .pipe(sourcemaps.init())
-    .pipe(concat('main.css'))
+    .pipe(concat('css/style.css'))
     .pipe(autoprefixers({
       cascade: false
     }))
@@ -46,7 +56,7 @@ const htmlMinify = () => {
 }
 
 const svgSprites = () => {
-  return src('src/images/svg/**/*.svg')
+  return src('src/img/svg/**/*.svg')
     .pipe(svgSprite({
       mode: {
         stack: {
@@ -54,18 +64,18 @@ const svgSprites = () => {
         }
       }
     }))
-    .pipe(dest('dist/images'))
+    .pipe(dest('dist/img'))
 }
 
-const images = () => {
+const img = () => {
   return src([
-    'src/images/**/*.jpg',
-    'src/images/**/*.png',
-    'src/images/*.svg',
-    'src/images/**/*.jpeg',
+    'src/img/**/*.jpg',
+    'src/img/**/*.png',
+    'src/img/*.svg',
+    'src/img/**/*.jpeg'
   ])
   .pipe(image())
-  .pipe(dest('dist/images'))
+  .pipe(dest('dist/img'))
 }
 
 const scripts = () => {
@@ -76,13 +86,12 @@ const scripts = () => {
   .pipe(babel({
     presets: ['@babel/env']
   }))
-  .pipe(concat('app.js'))
   .pipe(uglify({
     toplevel: true
   }
   ).on('error', notify.onError))
   .pipe(sourcemaps.write())
-  .pipe(dest('dist'))
+  .pipe(dest('dist/js'))
   .pipe(browserSync.stream())
 }
 
@@ -95,13 +104,15 @@ const watchFiles = () => {
 }
 
 watch('src/**/*.html', htmlMinify)
-watch('src/styles/**/*.css', styles)
-watch('src/images/svg/**/*.svg', svgSprites)
+watch('src/css/**/*.css', styles)
+watch('src/img/svg/**/*.svg', svgSprites)
 watch('src/js/**/*.js', scripts)
+watch('src/resources/normalize.css', normalize)
 watch('src/resources/**', resources)
+watch('src/libs/**', libs)
 
 exports.styles = styles
 exports.scripts = scripts
 exports.htmlMinify = htmlMinify
-exports.default = series(clean, resources, htmlMinify, scripts, styles, svgSprites, images, watchFiles)
-exports.build = series(clean, resources, svgSprites, images, watchFiles)
+exports.default = series(clean, normalize, resources, libs, htmlMinify, scripts, styles, svgSprites, img, watchFiles)
+exports.build = series(clean, normalize, resources, libs, svgSprites, img, watchFiles)

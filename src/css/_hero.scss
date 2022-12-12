@@ -12,23 +12,23 @@
   }
 
   &__foto-1 {
-    background-image: url("../images/hero__default-foto-1.jpg");
+    background-image: url("../img/hero__default-foto-1.jpg");
   }
 
   &__foto-2 {
-    background-image: url("../images/hero__default-foto-2.jpg");
+    background-image: url("../img/hero__default-foto-2.jpg");
   }
 
   &__foto-3 {
-    background-image: url("../images/hero__default-foto-3.jpg");
+    background-image: url("../img/hero__default-foto-3.jpg");
   }
 
   &__container {
-    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 60px;
     padding-right: 60px;
+    max-width: 1280px;
   }
 
   &__title {
@@ -73,15 +73,15 @@
 @media (max-width: 1024px) {
   .hero {
     &__foto-1 {
-      background-image: url("../images/hero__mini-foto-1.jpg");
+      background-image: url("../img/hero__mini-foto-1.jpg");
     }
   
     &__foto-2 {
-      background-image: url("../images/hero__mini-foto-2.jpg");
+      background-image: url("../img/hero__mini-foto-2.jpg");
     }
   
     &__foto-3 {
-      background-image: url("../images/hero__mini-foto-3.jpg");
+      background-image: url("../img/hero__mini-foto-3.jpg");
     }
 
     &__container {
@@ -95,15 +95,15 @@
 @media (max-width: 768px) {
   .hero {
     &__foto-1 {
-      background-image: url("../images/hero__nano-foto-1.jpg");
+      background-image: url("../img/hero__nano-foto-1.jpg");
     }
   
     &__foto-2 {
-      background-image: url("../images/hero__nano-foto-2.jpg");
+      background-image: url("../img/hero__nano-foto-2.jpg");
     }
   
     &__foto-3 {
-      background-image: url("../images/hero__nano-foto-3.jpg");
+      background-image: url("../img/hero__nano-foto-3.jpg");
     }
 
     &__container {
@@ -119,15 +119,15 @@
     }
 
     &__foto-1 {
-      background-image: url("../images/hero__mobile-foto-1.jpg");
+      background-image: url("../img/hero__mobile-foto-1.jpg");
     }
   
     &__foto-2 {
-      background-image: url("../images/hero__mobile-foto-2.jpg");
+      background-image: url("../img/hero__mobile-foto-2.jpg");
     }
   
     &__foto-3 {
-      background-image: url("../images/hero__mobile-foto-3.jpg");
+      background-image: url("../img/hero__mobile-foto-3.jpg");
     }
 
     &__container {

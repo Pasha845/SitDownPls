@@ -57,8 +57,20 @@
 
 @media (max-width: 576px) {
   .useful {
+    padding-bottom: 59px;
+    
     &__slide {
       width: 100%;
+    }
+
+    &__prev {
+      left: 37%;
+      transform: translate(0%, 1460%);
+    }
+
+    &__next {
+      left: 52.5%;
+      transform: translate(0, 1460%);
     }
   }
 }

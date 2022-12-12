@@ -1,6 +1,6 @@
 @import '_variables.scss';
 
-.cooperation {
+.co-op {
   max-width: 842px;
   padding-bottom: 70px;
 
@@ -50,16 +50,16 @@
     text-align: right;
   }
 
-  &__image-one:before {
-    content: url(../images/network.svg);
+  .image-one:before {
+    content: url(../img/network.svg);
   }
 
-  &__image-two:before {
-    content: url(../images/briefcase.svg);
+  .image-two:before {
+    content: url(../img/briefcase.svg);
   }
 
-  &__image-three:before {
-    content: url(../images/git-pull-request.svg);
+  .image-three:before {
+    content: url(../img/git-pull-request.svg);
   }
 
   &__subtitle {
@@ -101,13 +101,13 @@
 }
 
 @media (max-width: 768px) {
-  .cooperation {
+  .co-op {
     max-width: 624px;
   }
 }
 
 @media (max-width: 576px) {
-  .cooperation {
+  .co-op {
     max-width: 296px;
 
     &__title {

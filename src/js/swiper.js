@@ -23,8 +23,8 @@ const offersSlider = new Swiper('.offers__swiper', {
   },
   spaceBetween: 32,
   navigation: {
-    nextEl: ".offers-next",
-    prevEl: ".offers-prev",
+    nextEl: ".offers__next",
+    prevEl: ".offers__prev",
     disabledClass: "offers__btn--disabled"
   },
   scrollbar: {
@@ -63,8 +63,8 @@ const usefulSlider = new Swiper('.useful__swiper', {
   },
   spaceBetween: 32,
   navigation: {
-    nextEl: ".useful-next",
-    prevEl: ".useful-prev",
+    nextEl: ".useful__next",
+    prevEl: ".useful__prev",
     disabledClass: "useful__btn--disabled"
   },
   scrollbar: {
@@ -105,14 +105,15 @@ const usefulSlider = new Swiper('.useful__swiper', {
 /* catalog */
 
 const catalogSlider = new Swiper('.catalog__swiper', {
-  slidesPerView: 3,
+  slidesPerView: "auto",
   grid: {
     rows: 1
   },
   spaceBetween: 20,
   navigation: {
     nextEl: ".catalog__next",
-    prevEl: ".catalog__prev"
+    prevEl: ".catalog__prev",
+    disabledClass: "catalog__btn--disabled"
   },
   scrollbar: {
     hide: true
@@ -123,7 +124,7 @@ const catalogSlider = new Swiper('.catalog__swiper', {
       grid: {
         rows: 1
       },
-      spaceBetween: 32
+      spaceBetween: 16
     },
     669: {
       slidesPerView: 2,
@@ -156,43 +157,34 @@ const productSlider = new Swiper('.product__swiper', {
   grid: {
     rows: 1
   },
-  spaceBetween: 32,
   navigation: {
-    nextEl: ".product-next",
-    prevEl: ".product-prev",
-    disabledClass: ".product__btn--disabled"
+    nextEl: ".product__next",
+    prevEl: ".product__prev",
+    disabledClass: "product__btn--disabled"
   },
   scrollbar: {
     hide: true
   },
   breakpoints: {
     400: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       grid: {
         rows: 1
-      },
-      spaceBetween: 32
+      }
     },
     669: {
       slidesPerView: 2,
       grid: {
         rows: 1
       },
-      spaceBetween: 32
+      spaceBetween: 78
     },
     924: {
       slidesPerView: 3,
       grid: {
         rows: 1
       },
-      spaceBetween: 32
-    },
-    1150: {
-      slidesPerView: 3,
-      grid: {
-        rows: 1
-      },
-      spaceBetween: 32
+      spaceBetween: 78
     }
   }
 });
@@ -200,14 +192,13 @@ const productSlider = new Swiper('.product__swiper', {
 /* similar */
 
 const similarSlider = new Swiper('.similar__swiper', {
-  slidesPerView: "auto",
   grid: {
     rows: 1
   },
   spaceBetween: 32,
   navigation: {
-    nextEl: ".similar-next",
-    prevEl: ".similar-prev",
+    nextEl: ".similar__next",
+    prevEl: ".similar__prev",
     disabledClass: "similar__btn--disabled"
   },
   scrollbar: {
@@ -219,7 +210,7 @@ const similarSlider = new Swiper('.similar__swiper', {
       grid: {
         rows: 1
       },
-      spaceBetween: 32
+      spaceBetween: 16
     },
     669: {
       slidesPerView: 2,

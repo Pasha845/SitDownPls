@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Страница каталога включает группы чекбосов, ползунок для фильтрации цены и слайдер.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Главная</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="main.css">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css"> 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <h1 class="visually-hidden">SitDownPls</h1>
@@ -15,7 +16,7 @@
     <div class="header__logo-mobile">
       <div class="header__logo-margin container flex">
         <svg class="header__logo" width="187" height="27">
-          <use xlink:href="images/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </div>
     </div>
@@ -24,23 +25,23 @@
         <div class="header__div flex">
           <div class="header__filter" id="filter">
             <h3 class="header__filter-subtitle">Ваш регион:</h3>
-            <select class="js-gallery-choices">
+            <select class="js-choices">
               <option value="Moscow">Москва</option>
               <option value="Kazan">Казань</option>
               <option value="Ufa">Уфа</option>
               <option value="Permian">Пермь</option>
             </select>
           </div>
-          <a class="header__tel" href="tel:+74958854547" id="tel">
+          <a class="header__tel" href="tel:+74958854547">
             <span class="container-focus-link">
               <svg class="header__tel-icon" width="16.5" height="16.5">
-                <use xlink:href="images/sprite.svg#phone"></use>
+                <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
               +7 (495) 885-45-47
             </span>
           </a>
         </div>
-        <div class="w">
+        <div class="header__nav-div">
           <nav class="header__subcube flex">
             <ul class="header__menu list-reset flex" id="menu">
               <li class="header__link-margin">
@@ -57,18 +58,18 @@
               </li>
             </ul>
             <div class="link-media-1">
-              <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+              <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
                 <span class="container-focus-link">
                   <svg width="26" height="28">
-                    <use xlink:href="images/sprite.svg#cabinet"></use>
+                    <use xlink:href="img/sprite.svg#cabinet"></use>
                   </svg>
                 </span>
               </a>
-              <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+              <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
                 <span class="container-focus-link">
                   <span class="header__count">0</span>
                   <svg class="header__basket" width="30" height="28">
-                    <use xlink:href="images/sprite.svg#basket"></use>
+                    <use xlink:href="img/sprite.svg#basket"></use>
                   </svg>
                 </span>
               </a>
@@ -79,33 +80,33 @@
     </div>
     <div class="header__media-border">
       <div class="header__holder container flex">
-        <svg class="header__burger js-burger" type="button" aria-label="Бургер меню">
-          <use xlink:href="images/sprite.svg#burger"></use>
+        <svg class="header__burger js-burger" aria-label="Бургер меню">
+          <use xlink:href="img/sprite.svg#burger"></use>
         </svg>
         <svg class="header__logo logo-media" width="187" height="27">
-          <use xlink:href="images/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
         <div class="link-media-3">
-          <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+          <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
             <span class="container-focus-link">
               <svg width="26" height="28">
-                <use xlink:href="images/sprite.svg#cabinet"></use>
+                <use xlink:href="img/sprite.svg#cabinet"></use>
               </svg>
             </span>
           </a>
-          <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+          <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
             <span class="container-focus-link">
               <span class="header__count">0</span>
               <svg class="header__basket" width="30" height="28">
-                <use xlink:href="images/sprite.svg#basket"></use>
+                <use xlink:href="img/sprite.svg#basket"></use>
               </svg>
             </span>
           </a>
         </div>
         <nav class="header__cube flex js-menu">
           <div>
-            <svg class="header__menu-exit js-exit" type="button" aria-label="Закрыть меню">
-              <use xlink:href="images/sprite.svg#menu-exit"></use>
+            <svg class="header__menu-exit js-exit" aria-label="Закрыть меню">
+              <use xlink:href="img/sprite.svg#menu-exit"></use>
             </svg>
             <ul class="header__submenu flex list-reset js-menu" id="header__cube">
               <li class="header__main-link-margin">
@@ -129,7 +130,7 @@
             </ul>
           </div>
           <svg class="header__menu-photo" width="161" height="112">
-            <use xlink:href="images/sprite.svg#menu-photo"></use>
+            <use xlink:href="img/sprite.svg#menu-photo"></use>
           </svg>
         </nav>
       </div>
@@ -139,13 +140,11 @@
         <label class="header__label">
           <input class="header__input" type="search" placeholder="Я хочу купить...">
           <svg class="header__search-icon" width="20" height="20">
-            <use xlink:href="images/sprite.svg#search"></use>
+            <use xlink:href="img/sprite.svg#search"></use>
           </svg>
-          <button class="header__btn-search" type="submit">
-            <svg width="32" height="32">
-              <use xlink:href="images/sprite.svg#btn-search"></use>
-            </svg>
-          </button>
+          <svg class="header__btn-search" width="32" height="32">
+            <use xlink:href="img/sprite.svg#btn-search"></use>
+          </svg>
         </label>
         <div class="header__item">
           <button class="header__item-btn js-header-dropdown-btn" type="button" data-path="one">
@@ -169,18 +168,18 @@
         </div>
       </form>
       <div class="link-media-2">
-        <a class="header__site container-link" href="#" aria-label="Личный кабинет"> 
+        <a class="container-site-cabinet" href="#" aria-label="Личный кабинет"> 
           <span class="container-focus-link">
             <svg width="26" height="28">
-              <use xlink:href="images/sprite.svg#cabinet"></use>
+              <use xlink:href="img/sprite.svg#cabinet"></use>
             </svg>
           </span>
         </a>
-        <a class="header__cart container-sublink" href="#" aria-label="Корзина с товарами">
+        <a class="container-site-basket" href="#" aria-label="Корзина с товарами">
           <span class="container-focus-link">
             <span class="header__count">0</span>
             <svg class="header__basket" width="30" height="28">
-              <use xlink:href="images/sprite.svg#basket"></use>
+              <use xlink:href="img/sprite.svg#basket"></use>
             </svg>
           </span>
         </a>
@@ -208,82 +207,82 @@
     <section class="filter">
       <h2 class="filter__title">Фильтровать по:</h2>
       <form class="filter__form">
-        <div class="filter__category">
+        <div class="filter__category checbox-cube">
           <h3 class="filter__category-title">Категория</h3>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Диваны</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox" checked>
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Диваны</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-two">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Кресла</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Кресла</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-three">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Пуфы</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Пуфы</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Кровати</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Кровати</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Тумбы</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Тумбы</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Комоды</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Комоды</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Стулья</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Стулья</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Столы</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Столы</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Аксессуары</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Аксессуары</span>
             </span>
           </label>
         </div>
         <div class="filter__category">
           <h2 class="filter__category-title filter__price-title">Цена</h2>
-          <div class="filter__price-input">
+          <div class="filter__div-input">
             <div class="filter__field">
               <span>от</span>
-              <input class="filter__input-min" type="number" value="2000">
+              <input class="filter__input-price input-min" type="number" value="2000">
             </div>
             <div class="filter__field">
               <span>до</span>
-              <input class="filter__input-max" type="number" value="150000">
+              <input class="filter__input-price input-max" type="number" value="150000">
             </div>
           </div>
           <div class="filter__slider">
@@ -294,108 +293,100 @@
             <input class="filter__range-max" type="range" min="0" max="220000" value="150000" step="100">
           </div>
         </div>
-        <div class="filter__category">
+        <div class="filter__category checbox-cube">
           <h3 class="filter__category-title">Скидка</h3>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Более 5 000</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Более 5 000</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Менее 5 000</span>
-            </span>
-          </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Не важно</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox" checked>
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Не вадно</span>
             </span>
           </label>
         </div>
-        <div class="filter__category">
+        <div class="filter__category checbox-cube">
           <h3 class="filter__category-title">Цвет</h3>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Коричневый</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Коричневый</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Черный</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Черный</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Бежевый</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Бежевый</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Серый</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Серый</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Белый</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Белый</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Синий</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Синий</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Оранжевый</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox" checked>
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Оранжевый</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Желтый</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Желтый</span>
             </span>
           </label>
-          <label class="filter__checkbox-wrap">
-            <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-            <span class="contacts__checkbox-content filter__checkbox-content">
-              <span class="contacts__visual-check filter__visual-check"></span>
-              <span class="contacts__check-text">Зеленый</span>
+          <label class="big-checkbox-wrap">
+            <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+            <span class="big-checkbox-content checkbox-content">
+              <span class="big-visual-check checkbox-check"></span>
+              <span class="checkbox-text">Зеленый</span>
             </span>
           </label>
         </div>
       </form>
       <div class="filter__banner">
         <picture>
-          <source srcset="/images/filter__mini-foto.png" media="(min-width: 320px) and (max-width: 768px)">
-          <source srcset="/images/filter__default-foto.png" media="(min-width: 769px)">
-          <img srcset="/images/filter__default-foto.png" alt="Default image" src="#">
+          <source srcset="img/filter__default-foto.png" media="(min-width: 1025px)">
+          <img srcset="img/filter__default-foto.png" alt="Default image" src="#">
         </picture>
         <div class="filter__cube">
           <h2 class="filter__banner-title">Оксфорд 1950</h2>
           <p class="filter__text">Новая коллекция изысканных кресел</p>
-          <a class="categories__link" href="#">В каталог
-            <span class="categories__btn categories__next"></span>
+          <a class="block-link" href="#">В каталог
+            <span class="block-btn block-next"></span>
           </a>
         </div>
       </div>
@@ -406,79 +397,79 @@
       <div class="catalog__filter">
         <div class="catalog__filter-div flex">
           <h3 class="catalog__filter-title">Фильтры:</h3>
-          <div class="catalog__drop-div flex">
+          <div class="catalog__drop-div">
             <div class="catalog__item-drop">
               <button class="catalog__item-btn js-header-dropdown-btn" type="button" data-path="two">
                 <span class="catalog__item-text">Категория</span>
               </button>
               <div class="catalog__dropdown js-header-drop" data-target="two">
                 <div class="catalog__dropdown-wrap">
-                  <ul class="catalog__drop-list list-reset">
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Диваны</span>
+                  <div class="catalog__drop-list checbox-cube">
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox" checked>
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Диваны</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-two">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Кресла</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Кресла</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-three">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Пуфы</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Пуфы</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Кровати</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Кровати</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Тумбы</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Тумбы</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Комоды</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Комоды</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Стулья</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Стулья</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Столы</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Столы</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Аксессуары</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Аксессуары</span>
                       </span>
                     </label>
                     <a class="catalog__dropdown-link" href="#">+ ещё 12</a>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -488,18 +479,18 @@
               </button>
               <div class="catalog__dropdown js-header-drop" data-target="three">
                 <div class="catalog__dropdown-wrap">
-                  <ul class="catalog__drop-list list-reset">
+                  <div class="catalog__drop-list list-reset">
                     <div class="catalog__price-div">
-                      <div class="catalog__field filter__field">
-                        <span>от</span>
-                        <input class="filter__input-min" type="number" value="2000">
+                      <div class="catalog__field">
+                        <span class="catalog__mobile-field-word">от</span>
+                        <input class="catalog__mobile-field input-min" type="number" value="2000">
                       </div>
-                      <div class="catalog__field filter__field">
-                        <span>до</span>
-                        <input class="filter__input-max" type="number" value="150000">
+                      <div class="catalog__field">
+                        <span class="catalog__mobile-field-word">до</span>
+                        <input class="catalog__mobile-field input-max" type="number" value="150000">
                       </div>
                     </div>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -509,29 +500,22 @@
               </button>
               <div class="catalog__dropdown js-header-drop" data-target="four">
                 <div class="catalog__dropdown-wrap">
-                  <ul class="catalog__drop-list list-reset">
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Более 5 000</span>
+                  <div class="catalog__drop-list checbox-cube">
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Более 5 000</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Менее 5 000</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox" checked>
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Не вадно</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Не важно</span>
-                      </span>
-                    </label>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -541,399 +525,415 @@
               </button>
               <div class="catalog__dropdown js-header-drop" data-target="five">
                 <div class="catalog__dropdown-wrap">
-                  <ul class="catalog__drop-list list-reset">
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Коричневый</span>
+                  <div class="catalog__drop-list checbox-cube">
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Коричневый</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Черный</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Черный</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Бежевый</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Бежевый</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Серый</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Серый</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Белый</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Белый</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Синий</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Синий</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one" checked>
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Оранжевый</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox" checked>
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Оранжевый</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Желтый</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Желтый</span>
                       </span>
                     </label>
-                    <label class="filter__checkbox-wrap">
-                      <input class="contacts__checkbox filter__checkbox checkbox-hidden" type="checkbox" name="check-one">
-                      <span class="contacts__checkbox-content filter__checkbox-content">
-                        <span class="contacts__visual-check filter__visual-check"></span>
-                        <span class="contacts__check-text">Зеленый</span>
+                    <label class="big-checkbox-wrap">
+                      <input class="big-checkbox checkbox checkbox-hidden" type="checkbox">
+                      <span class="big-checkbox-content checkbox-content">
+                        <span class="big-visual-check checkbox-check"></span>
+                        <span class="checkbox-text">Зеленый</span>
                       </span>
                     </label>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="catalog__slider-wrapper">
+      <div class="swiper-slider-wrapper">
         <div class="swiper catalog__swiper">
           <ul class="swiper-wrapper list-reset">
-            <li class="catalog__slide swiper-slide">
-              <div class="catalog__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   5,0
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-1.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-1.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-1.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-1.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-1.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван кожаный “R-94”</h3>
-                  <p class="raiting__price">94 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван кожаный “R-94”</h3>
+                  <p class="container-price">94 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,8
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-4.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-4.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-4.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-4.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-4.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван велюровый “Y-68”</h3>
-                  <p class="raiting__price">22 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “Y-68”</h3>
+                  <p class="container-price">22 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,8
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-7.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-7.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-7.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-7.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-7.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван шиниловый “V-43”</h3>
-                  <p class="raiting__price">19 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван шиниловый “V-43”</h3>
+                  <p class="container-price">19 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
-            <li class="catalog__slide swiper-slide">
-              <div class="catalog__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,9
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-2.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-2.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-2.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-2.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-2.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван апартековый “T-75”</h3>
-                  <p class="raiting__price">69 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван апартековый “T-75”</h3>
+                  <p class="container-price">69 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,8
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-5.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-5.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-5.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-5.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-5.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван из шинила “W-95”</h3>
-                  <p class="raiting__price">22 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из шинила “W-95”</h3>
+                  <p class="container-price">22 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="catalog__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,7
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-8.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-8.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-8.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-8.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-8.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван велюровый “S-99”</h3>
-                  <p class="raiting__price">19 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “S-99”</h3>
+                  <p class="container-price">19 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
-            <li class="catalog__slide swiper-slide">
-              <div class="catalog__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,8
                 </p>
-                <a href="product.html">
-                  <picture class="raiting__photo">
-                    <source srcset="/images/raiting__default-foto-3.png" media="(min-width: 320px)">
-                    <img srcset="/images/raiting__default-foto-3.png" alt="Default image" src="#">
-                  </picture>
-                </a>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван тканевый “D-31”</h3>
-                  <p class="raiting__price">28 490 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
-                </div>
-              </div>
-              <div class="catalog__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
-                  </svg>
-                  4,8
-                </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-6.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-6.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-3.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-3.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-3.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван флоковый “G-41”</h3>
-                  <p class="raiting__price">17 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван тканевый “D-31”</h3>
+                  <p class="container-price catalog__price">28 490 руб</p>
+                  <button class="container-btn-2 container-mobile-btn"  onclick="window.location.href='product.html'">Купить</button>
                 </div>
-              </div>
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                  4,8
+                </p>
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-6.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-6.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-6.png" alt="Default image" src="#">
+                </picture>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван флоковый “G-41”</h3>
+                  <p class="container-price">17 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
+                </div>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,7
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-9.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-9.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-9.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-9.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-9.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван из кожзама “F-85”</h3>
-                  <p class="raiting__price">26 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из кожзама “F-85”</h3>
+                  <p class="container-price">26 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
-            <li class="catalog__slide swiper-slide">
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-10.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-10.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-10.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-10.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-10.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван флоковый “H-64”</h3>
-                  <p class="raiting__price">25 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван флоковый “H-64”</h3>
+                  <p class="container-price">25 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-13.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-13.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-13.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-13.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-13.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван из шинила “С-42”</h3>
-                  <p class="raiting__price">18 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из шинила “С-42”</h3>
+                  <p class="container-price">18 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,5
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-16.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-16.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-16.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-16.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-16.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван велюровый “R-85”</h3>
-                  <p class="raiting__price">34 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “R-85”</h3>
+                  <p class="container-price">34 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
-            <li class="catalog__slide swiper-slide">
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+            <li class="container-slide swiper-slide">
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-11.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-11.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-11.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-11.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-11.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван флоковый “H-58”</h3>
-                  <p class="raiting__price">23 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван флоковый “H-58”</h3>
+                  <p class="container-price">23 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-14.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-14.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-14.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-14.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-14.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван велюровый “U-58”</h3>
-                  <p class="raiting__price">21 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “U-58”</h3>
+                  <p class="container-price">21 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,7
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-17.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-17.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-17.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-17.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-17.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван велюровый “S-44”</h3>
-                  <p class="raiting__price">19 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван велюровый “S-44”</h3>
+                  <p class="container-price">19 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
             <li class="catalog__slide swiper-slide">
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,6
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-12.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-12.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-12.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-12.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-12.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван из кожзама “R-43”</h3>
-                  <p class="raiting__price">33 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из кожзама “R-43”</h3>
+                  <p class="container-price">33 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,5
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-15.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-15.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-15.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-15.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-15.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван флоковый “F-41”</h3>
-                  <p class="raiting__price">17 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван флоковый “F-41”</h3>
+                  <p class="container-price">17 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
-              <div class="raiting__item">
-                <p class="raiting__elem">
-                  <svg width="15.75" height="15">
-                    <use xlink:href="images/sprite.svg#star"></use>
+              </article>
+              <article class="catalog__item container-item">
+                <p class="container-elem">
+                  <svg class="container-star" width="15.75" height="15">
+                    <use xlink:href="img/sprite.svg#star"></use>
                   </svg>
                   4,4
                 </p>
-                <picture class="raiting__photo">
-                  <source srcset="/images/raiting__default-foto-18.png" media="(min-width: 320px)">
-                  <img srcset="/images/raiting__default-foto-18.png" alt="Default image" src="#">
+                <picture class="container-photo">
+                  <source srcset="img/raiting__mobile-foto-18.png" media="(min-width: 320px) and (max-width: 576px)">
+                  <source srcset="img/raiting__default-foto-18.png" media="(min-width: 577px)">
+                  <img srcset="img/raiting__default-foto-18.png" alt="Default image" src="#">
                 </picture>
-                <div class="raiting__cube">
-                  <h3 class="raiting__subtitle">Диван из шинила “С-80”</h3>
-                  <p class="raiting__price">20 990 руб</p>
-                  <button class="raiting__link container-btn-2">Купить</button>
+                <div class="container-cube">
+                  <h3 class="container-subtitle">Диван из шинила “С-80”</h3>
+                  <p class="container-price">20 990 руб</p>
+                  <button class="container-btn-2 container-mobile-btn">Купить</button>
                 </div>
-              </div>
+              </article>
             </li>
           </ul>
         </div>
@@ -947,27 +947,27 @@
     <div class="footer__container container flex">
       <div class="footer__icons">
         <svg class="footer__logo" width="187" height="27">
-          <use xlink:href="images/sprite.svg#logo"></use>
+          <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
         <div class="footer__cube flex">
           <a class="footer__site container-link" href="#" aria-label="Фейсбук">
             <span class="container-focus-link">
               <svg width="30" height="30">
-                <use xlink:href="images/sprite.svg#facebook"></use>
+                <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </span>
           </a>
           <a class="footer__site container-link" href="#" aria-label="ВК">
             <span class="container-focus-link">
               <svg  width="30" height="30">
-                <use xlink:href="images/sprite.svg#vk"></use>
+                <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </span>
           </a>
           <a class="footer__site container-link" href="#" aria-label="Инстаграм">
             <span class="container-focus-link">
               <svg width="30" height="30">
-                <use xlink:href="images/sprite.svg#instagram"></use>
+                <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
             </span>
           </a>
@@ -1030,11 +1030,13 @@
       <p class="footer__copyright">SDP®   2011-2021</p>
     </div>
   </footer>
-  <script src="jquery.js"></script>
-  <script src="choices.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-  <script src="inputmask.min.js"></script>
-  <script src="app.js"></script>
+  <script src="libs/choices.min.js"></script>
+  <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/burger-menu.js"></script>
+  <script src="js/selector.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/price.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 </html>

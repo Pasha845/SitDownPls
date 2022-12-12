@@ -1,20 +1,15 @@
 var selector = document.querySelector("input[type='tel']");
 var im = new Inputmask("+7 (999)-999-99-99");
-var close = document.getElementById("btn-close");
-
 im.mask(selector);
-
 const validation = new JustValidate('.contacts__form', {
   errorFieldCssClass: "is-invalid",
-  errorFieldStyle: {
-    border: '1px solid #FF6972',
-  },
+  successFieldCssClass: "is-valid",
   errorLabelStyle: {
+    left: "18px",
+    top: "-21px",
     fontSize: "12px",
-    color: '#FF6972'
-  },
-  focusInvalidField: true,
-  lockForm: true
+    color: '#D11616'
+  }
 });
 
 validation
@@ -22,10 +17,12 @@ validation
     {
       rule: 'minLength',
       value: 3,
+      errorMessage: 'Имя дожно состоять минимум из 3 символов'
     },
     {
       rule: 'maxLength',
       value: 30,
+      errorMessage: 'Имя больше 30 символов'
     },
     {
       rule: 'required',
@@ -49,8 +46,8 @@ validation
     },
   ])
   .onSuccess(() => {
-    document.getElementById('popup').style.visibility = "visible";
-    document.getElementById('popup').style.opacity = 1;
+    document.getElementById('pop-up').style.visibility = "visible";
+    document.getElementById('pop-up').style.opacity = 1;
   })
 
 tippy('.js-tultipe', {
