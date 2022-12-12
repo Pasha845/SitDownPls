@@ -734,9 +734,12 @@
     &__nav-div {
       padding-top: 15px;
       padding-bottom: 15px;
+      padding-left: 72px;
+      padding-right: 72px;
     }
 
     &__menu {
+      justify-content: space-between;
       width: 100%;
     }
 

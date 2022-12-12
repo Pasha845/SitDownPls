@@ -101,11 +101,11 @@ body {
 }
 
 .container {
-  max-width: 1340px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
+  max-width: 1340px;
 }
 
 .container-title {
@@ -769,7 +769,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 @media (max-width: 1024px) {
   .container {
-    max-width: 1012px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
   .container-subfoto {
@@ -779,14 +780,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 684px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    max-width: 296px;
-    padding: 0;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .container-title {
