@@ -2036,13 +2036,13 @@ input[type="search"]::-webkit-search-results-decoration {
     padding: 30px 0;
   }
   .hero__foto-1 {
-    background-image: url("../img/hero__mobile-foto-1.jpg");
+    background-image: url("../img/hero__mobile-foto-1.webp");
   }
   .hero__foto-2 {
-    background-image: url("../img/hero__mobile-foto-2.jpg");
+    background-image: url("../img/hero__mobile-foto-2.webp");
   }
   .hero__foto-3 {
-    background-image: url("../img/hero__mobile-foto-3.jpg");
+    background-image: url("../img/hero__mobile-foto-3.webp");
   }
   .hero__container {
     max-width: 296px;
@@ -2262,7 +2262,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .banner__photo {
     margin-bottom: 32px;
     padding: 30px 0;
-    background-image: url("../img/banner__mobile-foto.png");
+    background-image: url("../img/banner__mobile-foto.webp");
   }
   .banner__title {
     font-size: 24px;

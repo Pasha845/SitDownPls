@@ -1,16 +1,17 @@
-const { src, dest, series, watch } = require('gulp')
-const concat = require('gulp-concat')
-const htmlMin = require('gulp-htmlmin')
-const autoprefixers = require('gulp-autoprefixer')
-const cleanCSS = require('gulp-clean-css')
-const svgSprite = require('gulp-svg-sprite')
-const image = require('gulp-image')
-const babel = require('gulp-babel')
-const uglify = require('gulp-uglify-es').default
-const notify = require('gulp-notify')
-const sourcemaps = require('gulp-sourcemaps')
-const del = require('del')
-const browserSync = require('browser-sync').create()
+const { src, dest, series, watch } = require('gulp');
+const concat = require('gulp-concat');
+const htmlMin = require('gulp-htmlmin');
+const autoprefixers = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+const svgSprite = require('gulp-svg-sprite');
+const image = require('gulp-image');
+const imagewebp = require('gulp-webp');
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify-es').default;
+const notify = require('gulp-notify');
+const sourcemaps = require('gulp-sourcemaps');
+const del = require('del');
+const browserSync = require('browser-sync').create();
 
 const clean = () => {
   return del(['dist'])
@@ -78,6 +79,14 @@ const img = () => {
   .pipe(dest('dist/img'))
 }
 
+const webpImages = () => {
+  return src([
+    'src/img/webp/**/*.{jpg,png}'
+  ])
+  .pipe(imagewebp())
+  .pipe(dest('dist/img'))
+}
+
 const scripts = () => {
   return src([
     'src/js/**/*.js',
@@ -114,5 +123,5 @@ watch('src/libs/**', libs)
 exports.styles = styles
 exports.scripts = scripts
 exports.htmlMinify = htmlMinify
-exports.default = series(clean, normalize, resources, libs, htmlMinify, scripts, styles, svgSprites, img, watchFiles)
-exports.build = series(clean, normalize, resources, libs, svgSprites, img, watchFiles)
+exports.default = series(clean, normalize, resources, libs, htmlMinify, scripts, styles, svgSprites, img, webpImages, watchFiles)
+exports.build = series(clean, normalize, resources, libs, svgSprites, img, webpImages, watchFiles)
