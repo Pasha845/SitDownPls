@@ -9,7 +9,7 @@
 - Just-validate - валидация полей формы,
 - Inputmask - создание маски для телефона
 
-С работой можно ознакомится по ссылке [pashagorul.temp.swtest.ru](pashagorul.temp.swtest.ru)
+С работой можно ознакомится по [ссылке](https://pashagorul.temp.swtest.ru)
 
 ## Проект состоит из 4 страниц:
 - главная страница,
