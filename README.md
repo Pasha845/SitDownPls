@@ -1,6 +1,6 @@
 # Создание интернет-магазина для компании "SitDownPls"
 
-![Главная](https://user-images.githubusercontent.com/106194295/208980006-b0a29dd3-428d-4721-b3bc-7c90798a529f.jpg)
+![Баннер](https://github.com/Pasha845/SitDownPls/assets/106194295/517f5d3d-0991-4f54-8278-b47887407bfb)
 
 ## В проекте использовались следующие библеотеки и плагины:
 - Choices.js - создание селекта,
