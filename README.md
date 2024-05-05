@@ -1,7 +1,5 @@
 # Создание интернет-магазина для компании "SitDownPls"
 
-http://sitdownpls.com.swtest.ru/
-
 ![Баннер](https://github.com/Pasha845/SitDownPls/assets/106194295/517f5d3d-0991-4f54-8278-b47887407bfb)
 
 ## В проекте использовались следующие библеотеки и плагины:
@@ -10,6 +8,8 @@ http://sitdownpls.com.swtest.ru/
 - Tippy.js - создание тултипа,
 - Just-validate - валидация полей формы,
 - Inputmask - создание маски для телефона
+
+С работой можно ознакомиться по ссылке: http://sitdownpls.com.swtest.ru/
 
 ## Проект состоит из 4 страниц:
 - главная страница,
