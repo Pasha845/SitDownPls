@@ -1,6 +1,6 @@
 # Создание интернет-магазина для компании "SitDownPls"
 
-https://sitdownpls.com.swtest.ru
+[sitdownpls.com.swtest.ru](sitdownpls.com.swtest.ru)
 
 ![Баннер](https://github.com/Pasha845/SitDownPls/assets/106194295/517f5d3d-0991-4f54-8278-b47887407bfb)
 
