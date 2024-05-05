@@ -1,5 +1,7 @@
 # Создание интернет-магазина для компании "SitDownPls"
 
+http://sitdownpls.com.swtest.ru/
+
 ![Баннер](https://github.com/Pasha845/SitDownPls/assets/106194295/517f5d3d-0991-4f54-8278-b47887407bfb)
 
 ## В проекте использовались следующие библеотеки и плагины:
